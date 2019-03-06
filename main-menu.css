@@ -1,0 +1,48 @@
+.main-header {
+  height: 70px;
+  border-bottom: 1px solid #e8ebf2;
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background: #fff;
+  z-index: 10;
+}
+.main-header .container {
+  position: relative;
+}
+.main-header .logo {
+  top: 17px;
+  left: 20px;
+  position: absolute;
+}
+.main-header .main-menu {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+.main-header .main-menu ul {
+  display: flex;
+}
+.main-header .main-menu ul li {
+  margin-left: 35px;
+}
+.main-header .main-menu ul li a {
+  line-height: 40px;
+  color: var(--gunmetal);
+  text-decoration: none;
+}
+.main-header .main-menu ul li.menu-btn a {
+  display: inline-block;
+  height: 40px;
+  border-radius: 4px;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.15);
+  background-color: var(--darkish-blue);
+  text-align: center;
+  color: var(--white);
+  padding: 0 35px;
+  font-size: 15px;
+  line-height: 40px;
+  text-decoration: none;
+}
