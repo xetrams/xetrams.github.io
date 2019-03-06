@@ -1,0 +1,284 @@
+:root {
+  --darkish-blue: #03267d;
+  --blue: #034fc1;
+  --gunmetal: #424a56;
+  --steel: #68789c;
+  --white: #f9f9f9;
+  --white: #ffffff;
+  --lavender: #d9b2e5;
+  --very-light-blue: #e8ebf2;
+  --cerise: #ef0c5e;
+  --light-navy: #113059;
+  --light-blue-grey: #b8c3da;
+  --violet: #ae16dc;
+  --darkish-blue: #00298f;
+}
+
+/* Text styles */
+.H1leftdefault {
+  font-family: Exo2;
+  font-size: 50px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: var(--light-navy);
+}
+.H2leftdefault {
+  font-family: Exo2;
+  font-size: 35px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  color: var(--light-navy);
+}
+.H2centerdefault {
+  font-family: Exo2;
+  font-size: 35px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--light-navy);
+}
+.H3leftnegative {
+  font-family: Exo2;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: var(--white);
+}
+.H3leftdefault {
+  font-family: Exo2;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: var(--light-navy);
+}
+.txtleftbod {
+  font-family: Rubik;
+  font-size: 15px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  color: var(--gunmetal);
+}
+.btncenternegative {
+  font-family: Rubik;
+  font-size: 15px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.07;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--white);
+}
+.Linkleftnegative {
+  font-family: Exo2;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: var(--white);
+}
+.Linkleftdefault {
+  font-family: Exo2;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: var(--gunmetal);
+}
+.btnlefthover {
+  font-family: Rubik;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: var(--darkish-blue);
+}
+.txtleftnavy {
+  font-family: Rubik;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  color: var(--darkish-blue);
+}
+.txtcenterdefault {
+  font-family: Rubik;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--gunmetal);
+}
+.btncenterlight {
+  font-family: Rubik;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--steel);
+}
+.txtleftnegative {
+  font-family: Rubik;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  color: var(--white);
+}
+.Linkleftactive {
+  font-family: Rubik;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: var(--blue);
+}
+.btncentercolor {
+  font-family: Rubik;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--blue);
+}
+.txtleftdefault {
+  font-family: Rubik;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  color: var(--gunmetal);
+}
+.labelleftdefault {
+  font-family: Exo2;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: 1px;
+  color: var(--steel);
+}
+.labelcenterdefault {
+  font-family: Exo2;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: 1px;
+  text-align: center;
+  color: var(--steel);
+}
+.H4leftnegative {
+  font-family: Exo2;
+  font-size: 13px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.23;
+  letter-spacing: 0.7px;
+  color: var(--very-light-blue);
+}
+.H4leftgray {
+  font-family: Exo2;
+  font-size: 13px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.23;
+  letter-spacing: 0.7px;
+  color: var(--steel);
+}
+.txt-sleftnegative-link {
+  font-family: Exo2;
+  font-size: 13px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  color: var(--white);
+}
+.txt-sleftcolor {
+  font-family: Exo2;
+  font-size: 13px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  color: var(--blue);
+}
+.txt-srightred {
+  font-family: Exo2;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: right;
+  color: var(--cerise);
+}
+.txt-sleftgray {
+  font-family: Exo2;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  color: var(--light-blue-grey);
+}
+.txt-sleftdefault {
+  font-family: Exo2;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  color: var(--steel);
+}

@@ -1,0 +1,43 @@
+:root {
+  --darkish-blue: #03267d;
+  --blue: #034fc1;
+  --gunmetal: #424a56;
+  --steel: #68789c;
+  --white: #f9f9f9;
+  --white: #ffffff;
+  --lavender: #d9b2e5;
+  --very-light-blue: #e8ebf2;
+  --cerise: #ef0c5e;
+  --light-navy: #113059;
+  --light-blue-grey: #b8c3da;
+  --violet: #ae16dc;
+  --darkish-blue: #00298f;
+}
+
+body {
+  font-size: 15px;
+  font-family: Rubik;
+}
+
+.h1 {
+  font-family: "Exo 2";
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: var(--light-navy);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: block;
+}
+
+/* html {background: url(homepage.jpg) center 0;}body {opacity: 0.5;} */
+
+p {
+  margin: 0;
+}
