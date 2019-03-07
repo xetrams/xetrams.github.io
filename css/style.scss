@@ -1,3 +1,10 @@
+@import "bootstrap-grid.scss";
+@import "homepage.scss";
+@import "main-menu.scss";
+@import "normalize.scss";
+@import "styleguide.scss";
+@import "typography.scss";
+
 :root {
   --darkish-blue: #03267d;
   --blue: #034fc1;
@@ -17,14 +24,6 @@
 body {
   font-size: 15px;
   font-family: Rubik;
-}
-
-.h1 {
-  font-family: "Exo 2";
-  font-size: 50px;
-  font-weight: bold;
-  line-height: 60px;
-  color: var(--light-navy);
 }
 
 ul {

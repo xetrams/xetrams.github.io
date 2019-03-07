@@ -1,0 +1,385 @@
+.main-banner {
+  margin-top: 70px;
+  background: #f4f4f4;
+  overflow: hidden;
+  font-size: 0;
+  background: url(../images/home_hero.png) 50% 0;
+  background-repeat: no-repeat;
+
+  .h1 {
+    width: 560px;
+    margin-top: 100px;
+    margin-bottom: 0;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    height: 40px;
+    border-radius: 4px;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.15);
+    background-color: var(--darkish-blue);
+    text-align: center;
+    color: var(--white);
+    padding: 0 35px;
+    font-size: 15px;
+    line-height: 40px;
+    text-decoration: none;
+    margin-top: 35px;
+    margin-bottom: 125px;
+  }
+}
+
+.what-we-do-section {
+
+  .h4 {
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 50px;
+  }
+
+  .block {
+    display: block;
+    text-decoration: none;
+    padding: 25px;
+    height: 445px;
+    overflow: hidden;
+    position: relative;
+    font-size: 0;
+    border-radius: 4px;
+    box-shadow: 0 0 0 1px rgb(232, 235, 242);
+    transition: .3s;
+
+    &:hover {
+      box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.15);
+      background-color: var(--white);
+      border-color: rgba(0, 0, 0, 0);
+    }
+
+    .block-icon {
+      width: 75px;
+      height: 75px;
+    }
+
+    .h3 {
+      font-family: "Exo 2";
+      font-size: 25px;
+      font-weight: bold;
+      line-height: 30px;
+      color: var(--light-navy);
+      margin: 35px 0 0;
+    }
+
+    p {
+      font-family: Rubik;
+      font-size: 15px;
+      line-height: 25px;
+      color: var(--gunmetal);
+      margin: 25px 0 0;
+    }
+
+    .link-more {
+      font-family: Rubik;
+      font-size: 15px;
+      line-height: 15px;
+      color: var(--blue);
+      text-decoration: none;
+      position: absolute;
+      left: 25px;
+      bottom: 30px;
+    }
+  }
+}
+
+
+/* PLANNING A SOFTWARE PROJECT */
+
+.quote-section {
+  text-align: center;
+  font-size: 0;
+  margin-bottom: 91px;
+
+  .quote-icon {
+    width: 120px;
+    height: 100px;
+    margin-top: 75px;
+  }
+
+  .h2 {
+    font-family: "Exo 2";
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 45px;
+    color: var(--light-navy);
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    height: 40px;
+    border-radius: 4px;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.15);
+    background-color: var(--darkish-blue);
+    text-align: center;
+    color: var(--white);
+    padding: 0 35px;
+    font-size: 15px;
+    line-height: 40px;
+    text-decoration: none;
+    margin-top: 35px;
+    position: relative;
+  }
+
+  .btn-primary.green-square:after {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background: #DDFAEC;
+    border-radius: 2px;
+    display: block;
+    position: absolute;
+    right: -16px;
+    bottom: -16px;
+    z-index: -1;
+  }
+}
+
+
+.expertie-section {
+  padding: 50px 0;
+  border-bottom: 1px solid var(--very-light-blue);
+
+}
+
+
+.portfolio-section {
+  font-size: 0;
+
+  .h4 {
+    font-family: "Exo 2";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.43;
+    letter-spacing: 1px;
+    color: var(--steel);
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .row:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  .view-more-block {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn-secondary {
+    display: block;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--blue);
+    text-align: center;
+    color: var(--blue);
+    padding: 0 35px;
+    font-size: 15px;
+    line-height: 40px;
+    text-decoration: none;
+  }
+}
+
+
+.contact-section {
+  background: #f4f4f4;
+  overflow: hidden;
+}
+.contact-section .container {
+  margin: 50px auto;
+}
+.contact-section .contact-form {
+  padding: 50px;
+  border-radius: 4px;
+  box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.15);
+  background-color: var(--white);
+}
+.contact-section .contact-form .h2 {
+  font-family: "Exo 2";
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 1.29;
+  color: var(--light-navy);
+  margin: 0;
+}
+.contact-section .contact-form p {
+  font-family: Rubik;
+  font-size: 15px;
+  line-height: 1.67;
+  color: var(--gunmetal);
+  margin-top: 15px;
+}
+.contact-section .inputs-row {
+  padding-top: 33px;
+  margin-top: 35px;
+  border-top: 1px solid var(--very-light-blue);
+}
+.contact-section .input-block {
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 25px;
+}
+.contact-section .input-block:last-child {
+  margin-bottom: 0;
+}
+.contact-section .inputs-col label {
+  height: 25px;
+  font-family: Rubik;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  color: var(--gunmetal);
+  line-height: 40px;
+}
+.contact-section .inputs-col input {
+  width: 320px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: var(--white);
+  border: 1px solid var(--light-blue-grey);
+  padding-left: 17px;
+}
+.contact-section .textarea textarea {
+  display: block;
+  width: 100%;
+  height: 170px;
+  border-radius: 4px;
+  background-color: var(--white);
+  border: 1px solid var(--light-blue-grey);
+  padding: 25px;
+}
+.contact-section .btn-primary {
+  display: inline-block;
+  height: 40px;
+  border-radius: 4px;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.15);
+  background-color: var(--darkish-blue);
+  text-align: center;
+  color: var(--white);
+  padding: 0 35px;
+  font-size: 15px;
+  line-height: 40px;
+  text-decoration: none;
+  margin-top: 25px;
+}
+
+
+.main-footer {
+  padding-top: 50px;
+  background-color: var(--darkish-blue);
+  font-family: "Exo 2";
+  color: #fff;
+  font-size: 13px;
+
+  .contact-row {
+    padding-bottom: 36px;
+    position: relative;
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+      right: 20px;
+      border-bottom: 1px solid var(--steel);
+    }
+
+    p.dimmed {
+      color: var(--light-blue-grey);
+      font-weight: 400;
+    }
+
+    p {
+      font-weight: 500;
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+
+    .second-contact-col {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .block-social {
+      font-size: 0;
+
+      a {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  .pages-row {
+    padding-bottom: 35px;
+    position: relative;
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+      right: 20px;
+      border-bottom: 1px solid var(--steel);
+    }
+
+    .footer-pages-header {
+      font-weight: 600;
+      text-transform: uppercase;
+      line-height: 1.23;
+      letter-spacing: 0.7px;
+      color: var(--very-light-blue);
+      margin-bottom: 15px;
+      padding-top: 35px;
+    }
+
+    li:not(:last-child) {
+      margin-bottom: 5px;
+    }
+
+    a {
+      line-height: 1.38;
+      color: var(--light-blue-grey);
+      text-decoration: none;
+    }
+  }
+
+  .copyright-row {
+    padding: 35px 0;
+    line-height: 1.38;
+    color: var(--light-blue-grey);
+    display: flex;
+
+    a {
+      color: var(--light-blue-grey);
+      line-height: 1.38;
+      text-decoration: none;
+      margin-left: 35px;
+    }
+  }
+
+  .footer-links {
+    justify-content: flex-end;
+    display: flex;
+  }
+}

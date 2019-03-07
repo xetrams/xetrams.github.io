@@ -6,12 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Smartex</title>
   <link href="https://fonts.googleapis.com/css?family=Exo+2:400,500,600,700|Rubik:400,400i,700&amp;subset=latin-ext" rel="stylesheet">
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="bootstrap-grid.css">
-  <link rel="stylesheet" href="styleguide.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="homepage.css">
-  <link rel="stylesheet" href="main-menu.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="main-header">
@@ -19,7 +14,7 @@
       <img src="images/logo.png" class="logo">
       <nav class="main-menu">
         <ul>
-          <li><a href="#">Company</a></li>
+          <li class="active"><a href="#">Company</a></li>
           <li><a href="#">Domains</a></li>
           <li><a href="#">Solutions</a></li>
           <li><a href="#">Platforms</a></li>
@@ -41,55 +36,95 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-4">
-          <div class="block active">
-            <img src="http://placehold.it/75x75" class="block-icon">
+          <a href="#" class="block active">
+            <img src="images/icons/cubes/ic_cube-1.png" class="block-icon">
             <h3 class="h3">Software Product Design & Development</h3>
             <p>Be an active participant of an iterative approach and benefit from close collaboration with our team and full transparency of projects.</p>
-            <a href="#" class="link-more">Learn More</a>
-          </div>
+            <div href="#" class="link-more">Learn More</div>
+          </a>
         </div>
         <div class="col-lg-4">
-          <div class="block">
-            <img src="http://placehold.it/75x75" class="block-icon">
+          <a href="#" class="block">
+            <img src="images/icons/cubes/ic_cube-2.png" class="block-icon">
             <h3 class="h3">Domain-Specific Solutions Development</h3>
             <p>Looking for an experienced partner in software development for fintech and healthcare? Address the challenges you face with, taking advantage of our expertise and knowledge of your business domain.</p>
-            <a href="#" class="link-more">Learn More</a>
-          </div>
+            <div href="#" class="link-more">Learn More</div>
+          </a>
         </div>
         <div class="col-lg-4">
-          <div class="block">
-            <img src="http://placehold.it/75x75" class="block-icon">
+          <a href="#" class="block">
+            <img src="images/icons/cubes/ic_cube-4.png" class="block-icon">
             <h3 class="h3">Leading Platforms Customization & Integration</h3>
             <p>Benefit from increased transparency, faster time to market, and smooth connectivity of business applications with custom solutions for well-coordinated integration and platform customization.</p>
-            <a href="#" class="link-more">Learn More</a>
-          </div>
+            <div class="link-more">Learn More</div>
+          </a>
         </div>
       </div>
     </div>
   </div>
   <div class="quote-section">
     <div class="container">
-      <h2 class="h2">What’s Your Idea?</h2>
-      <p>CTA line: Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. </p>
-      <a href="#" class="btn-primary">Get a Quote</a>
+      <img src="images/icons/cubes/ic_cube-cta.png" class="quote-icon">
+      <h2 class="h2">Planning a Software Project?</h2>
+      <a href="#" class="btn-primary green-square">Get a Quote</a>
     </div>
   </div>
   <div class="expertie-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6"><img src="http://placehold.it/560x500"></div>
-        <div class="col-lg-6">
-          <h2 class="h4">Our expertise</h2>
-          <ul class="toggle">
-            <li class="active"><a href="#">Domains</a></li>
-            <li><a href="#">Solutions</a></li>
-          </ul>
-          <h3 class="h2">Domains</h3>
-          <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar.</p>
-          <div class="link-more-block">
-            <a href="#" class="link-more">Learn More</a>
+    <h2 class="h4">OUR EXPERTISE</h2>
+    <div class="doamins">
+      <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="images/domains_illustration.png">
+            </div>
+            <div class="col-lg-6">
+              <div class="text-block">
+                <h3 class="h2">Domains</h3>
+                <p>Navigate the business landscape with domain experts, utilizing industry knowledge and technology capabilities. We offer straightforward solutions to complex business challenges, combining results-driven strategy and custom software development at scale.</p>
+                <h4>Healthcare</h4>
+                <ul>
+                  <li><a href="#">Dental</a></li>
+                  <li><a href="#">Veterinary</a></li>
+                  <li><a href="#">Hospital & Clinic</a></li>
+                  <li><a href="#">Therapist</a></li>
+                  <li><a href="#">Pharmacy</a></li>
+                </ul>
+                <h4>FinTech</h4>
+                <ul>
+                  <li><a href="#">Accounting</a></li>
+                  <li><a href="#">Loan</a></li>
+                  <li><a href="#">Leasing</a></li>
+                  <li><a href="#">Mortgage</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="text-block">
+                <h3 class="h2">Domains</h3>
+                <p>Navigate the business landscape with domain experts, utilizing industry knowledge and technology capabilities. We offer straightforward solutions to complex business challenges, combining results-driven strategy and custom software development at scale.</p>
+                <h4>Healthcare</h4>
+                <ul>
+                  <li><a href="#">Dental</a></li>
+                  <li><a href="#">Veterinary</a></li>
+                  <li><a href="#">Hospital & Clinic</a></li>
+                  <li><a href="#">Therapist</a></li>
+                  <li><a href="#">Pharmacy</a></li>
+                </ul>
+                <h4>FinTech</h4>
+                <ul>
+                  <li><a href="#">Accounting</a></li>
+                  <li><a href="#">Loan</a></li>
+                  <li><a href="#">Leasing</a></li>
+                  <li><a href="#">Mortgage</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img src="images/domains_illustration.png">
+            </div>
+          </div>
       </div>
     </div>
   </div>
