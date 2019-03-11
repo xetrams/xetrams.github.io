@@ -8,44 +8,111 @@
   right: 0;
   background: #fff;
   z-index: 10;
-}
-.main-header .container {
-  position: relative;
-}
-.main-header .logo {
-  top: 17px;
-  left: 20px;
-  position: absolute;
-}
-.main-header .main-menu {
-  position: absolute;
-  right: 20px;
-  top: 15px;
-}
-.main-header .main-menu ul {
-  display: flex;
-}
-.main-header .main-menu ul li {
-  margin-left: 35px;
-}
-.main-header .main-menu ul li a {
-  line-height: 40px;
-  color: var(--gunmetal);
-  text-decoration: none;
-}
-.main-header .main-menu ul li.active a {
-  color: var(--blue);
-}
-.main-header .main-menu ul li.menu-btn a {
-  display: inline-block;
-  height: 40px;
-  border-radius: 4px;
-  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.15);
-  background-color: var(--darkish-blue);
-  text-align: center;
-  color: var(--white);
-  padding: 0 35px;
-  font-size: 15px;
-  line-height: 40px;
-  text-decoration: none;
+
+  .burger-btn {
+    width: 40px;
+    height: 40px;
+    background: url(../images/icons/nav/ic_burger.svg);
+    display: none;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+
+    @media (max-width: 840px) {
+      display: block;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    height: 101px;
+    border-bottom: none;
+
+    &:after {
+      content: "";
+      top: 60px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      border-top: 1px solid var(--very-light-blue);
+    }
+  }
+
+  @media (max-width: 840px) {
+    height: 50px;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .logo {
+    top: 17px;
+    left: 20px;
+    position: absolute;
+
+    @media (max-width: 1200px) {
+      top: 11px;
+    }
+
+    @media (max-width: 840px) {
+      top: 10px;
+      height: 30px;
+    }
+  }
+
+  .main-menu {
+    display: flex;
+
+    @media (max-width: 840px) {
+      display: none;
+    }
+
+    @media (max-width: 1200px) {
+      padding-top: 60px;
+    }
+
+    ul {
+      display: flex;
+      margin: 15px 0 0 auto;
+
+      @media (max-width: 1200px) {
+        margin-top: 0;
+      }
+
+      li {
+        margin-left: 35px;
+
+        &.menu-btn {
+
+          @media (max-width: 1200px) {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+          }
+
+          a {
+            @include btn;
+          }
+        }
+
+        &:not(.menu-btn) a {
+          line-height: 40px;
+          color: var(--gunmetal);
+          text-decoration: none;
+
+          &:hover {
+            color: var(--blue);
+          }
+        }
+
+        &.active a {
+          color: var(--blue);
+        }
+      }
+    }
+  }
 }

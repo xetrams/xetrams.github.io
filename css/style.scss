@@ -1,3 +1,4 @@
+@import "components.scss";
 @import "bootstrap-grid.scss";
 @import "homepage.scss";
 @import "main-menu.scss";
@@ -10,7 +11,7 @@
   --blue: #034fc1;
   --gunmetal: #424a56;
   --steel: #68789c;
-  --white: #f9f9f9;
+  --light-gray: #f9f9f9;
   --white: #ffffff;
   --lavender: #d9b2e5;
   --very-light-blue: #e8ebf2;
@@ -18,12 +19,15 @@
   --light-navy: #113059;
   --light-blue-grey: #b8c3da;
   --violet: #ae16dc;
-  --darkish-blue: #00298f;
+  --darkish-blue-darker: #00298f;
+  --ice: #ddfaec;
+  --greenish-teal: #31ca81;
 }
-
 body {
   font-size: 15px;
   font-family: Rubik;
+  color: var(--gunmetal);
+  line-height: 25px;
 }
 
 ul {
@@ -35,8 +39,4 @@ li {
   display: block;
 }
 
-/* html {background: url(homepage.jpg) center 0;}body {opacity: 0.5;} */
-
-p {
-  margin: 0;
-}
+// html {background: url(../homepage.jpg) center 0;}body {opacity: 0.5;} 

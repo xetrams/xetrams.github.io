@@ -11,7 +11,7 @@
 <body>
   <header class="main-header">
     <div class="container">
-      <img src="images/logo.png" class="logo">
+      <img src="images/icons/logo.svg" class="logo">
       <nav class="main-menu">
         <ul>
           <li class="active"><a href="#">Company</a></li>
@@ -23,6 +23,7 @@
           <li class="menu-btn"><a href="#">Contact</a></li>
         </ul>
       </nav>
+      <div class="burger-btn"></div>
     </div>
   </header>
   <div class="main-banner">
@@ -71,17 +72,19 @@
   </div>
   <div class="expertie-section">
     <h2 class="h4">OUR EXPERTISE</h2>
-    <div class="doamins">
+    <div class="domains">
       <div class="container">
           <div class="row">
             <div class="col-lg-6">
-              <img src="images/domains_illustration.png">
+              <div class="image-block">
+                <img class="domains-image" src="images/domains_illustration.png">
+              </div>
             </div>
             <div class="col-lg-6">
               <div class="text-block">
                 <h3 class="h2">Domains</h3>
                 <p>Navigate the business landscape with domain experts, utilizing industry knowledge and technology capabilities. We offer straightforward solutions to complex business challenges, combining results-driven strategy and custom software development at scale.</p>
-                <h4>Healthcare</h4>
+                <h4 class="h5">Healthcare</h4>
                 <ul>
                   <li><a href="#">Dental</a></li>
                   <li><a href="#">Veterinary</a></li>
@@ -89,55 +92,92 @@
                   <li><a href="#">Therapist</a></li>
                   <li><a href="#">Pharmacy</a></li>
                 </ul>
-                <h4>FinTech</h4>
+                <h4 class="h5">FinTech</h4>
                 <ul>
                   <li><a href="#">Accounting</a></li>
                   <li><a href="#">Loan</a></li>
                   <li><a href="#">Leasing</a></li>
-                  <li><a href="#">Mortgage</a></li>
+                  <!-- <li><a href="#">Mortgage</a></li> -->
                 </ul>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="solutions">
+        <div class="container">
           <div class="row">
             <div class="col-lg-6">
               <div class="text-block">
-                <h3 class="h2">Domains</h3>
-                <p>Navigate the business landscape with domain experts, utilizing industry knowledge and technology capabilities. We offer straightforward solutions to complex business challenges, combining results-driven strategy and custom software development at scale.</p>
-                <h4>Healthcare</h4>
+                <h3 class="h2">Solutions</h3>
+                <p>Streamline your business and transform your challenging financial objectives into successes – improve operational effectiveness, optimize business processes, and develop better customer experiences with advanced analytics and reporting for smart business decisions.</p>
                 <ul>
-                  <li><a href="#">Dental</a></li>
-                  <li><a href="#">Veterinary</a></li>
-                  <li><a href="#">Hospital & Clinic</a></li>
-                  <li><a href="#">Therapist</a></li>
-                  <li><a href="#">Pharmacy</a></li>
-                </ul>
-                <h4>FinTech</h4>
-                <ul>
-                  <li><a href="#">Accounting</a></li>
-                  <li><a href="#">Loan</a></li>
-                  <li><a href="#">Leasing</a></li>
-                  <li><a href="#">Mortgage</a></li>
+                    <li><a href="#">Revenue Cycle </a></li>
+                    <li><a href="#">Management</a></li>
+                    <li><a href="#">Billing</a></li>
+                    <li><a href="#">Scheduling</a></li>
+                    <li><a href="#">Office Management</a></li>
+                    <li><a href="#">Payroll</a></li>
+                    <li><a href="#">Practice Management</a></li>
+                    <li><a href="#">Payment Processing</a></li>
+                    <li><a href="#">Risk Management</a></li>
+                    <!-- <li><a href="#">Report Management</a></li> -->
                 </ul>
               </div>
             </div>
             <div class="col-lg-6">
-              <img src="images/domains_illustration.png">
+              <div class="image-block">
+                <img class="solutions-image" src="images/solutions_illustration.png">
+              </div>
             </div>
           </div>
       </div>
     </div>
   </div>
+  <div class="quote-section">
+    <div class="container">
+      <img src="images/icons/cubes/ic_cube-3.png" class="small-quote-icon">
+      <h2 class="h2">Who we help?</h2>
+      <p>Our platforms and solutions are used all over the world in some of the best-known companies.</p>
+    </div>
+  </div>
   <div class="portfolio-section">
-    <h2 class="h4">Our portfolio</h2>
     <div class="container">
       <div class="row">
-        <div class="col-lg-4"><img src="http://placehold.it/360x325"></div>
-        <div class="col-lg-8"><img src="http://placehold.it/760x325"></div>
+        <div class="col-lg-4">
+          <a href="#" class="project dark-img" style="background: url(images/project_preview_1_3_dealtable.png)">
+            <div class="text-block">
+              <h3 class="h3">Papaya Global</h3>
+              <p>First GDPR compliant global HRIS solution</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-8">
+          <a href="#" class="project" style="background: url(images/project_preview_2_3_papaya.png)">
+            <div class="text-block">
+              <h3 class="h3">ThingIT</h3>
+              <p>End-to-end solution to connect all your systems, things, processes and data under a single IoT platform</p>
+            </div>
+          </a>
+        </div>
       </div>
       <div class="row">
-        <div class="col-lg-8"><img src="http://placehold.it/760x325"></div>
-        <div class="col-lg-4"><img src="http://placehold.it/360x325"></div>
+        <div class="col-lg-8">
+          <a href="#" class="project" style="background: url(images/project_preview_2_3_ticketpony.png)">
+            <div class="text-block">
+              <h3 class="h3">Dealtabe</h3>
+              <p>Secure deal management platform for founders and investors to manage deals, process documents online, and share files</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4">
+          <a href="#" class="project dark-img" style="background: url(images/project_preview_1_3_night_owl.png)">
+            <div class="text-block">
+              <h3 class="h3">Didomi</h3>
+              <p>GDPR compliant privacy and consent management platform in real-time</p>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
     <div class="view-more-block">
@@ -146,35 +186,27 @@
   </div>
   <div class="contact-section">
     <div class="container">
-      <form action="" class="contact-form">
-        <h2 class="h2">Contact Us</h2>
-        <p>Our team will contact you shortly to discuss next steps.</p>
-        <div class="inputs-row row">
-          <div class="inputs-col col-lg-6">
-            <div class="input-block">
-              <label for="">Name</label>
-              <input type="text">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <h2 class="h2">Let’s Get in Touch</h2>
+          <form action="" class="contact-form">
+            <input type="text">
+            <input type="text">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <div class="checkbox-block">
+              <input type="checkbox" id="confirmation">
+              <label for="confirmation">I give my consent for SmartexLab to process my personal data pursuant to SmartexLab <a href="#">Privacy</a> and <a href="#">Cookies Policy</a></label>
             </div>
-            <div class="input-block optional">
-              <label for="">Comapny Name</label>
-              <input type="text">
+            <div class="row">
+              <div class="col-lg-6">
+                <img class="recaptcha" src="images/recaptcha.png">
+              </div>
+              <div class="col-lg-6 send-block">
+                <a href="#" class="btn-primary">Send</a>
+              </div>
             </div>
-            <div class="input-block">
-              <label for="">Email</label>
-              <input type="text">
-            </div>
-            <div class="input-block optional">
-              <label for="">Phone</label>
-              <input type="text">
-            </div>
-          </div>
-          <div class="submit-col col-lg-6">
-            <div class="textarea">
-              <textarea name="" id="" cols="30" rows="10"></textarea>
-            </div>
-            <div class="btn-primary">Send</div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
   </div>
@@ -182,21 +214,33 @@
     <div class="container">
       <div class="row contact-row">
         <div class="col-lg-4 logo-col">
-          <img src="http://placehold.it/149x36" class="logo">
+          <img src="images/icons/logo_big.svg" class="logo">
         </div>
-        <div class="col-lg-2 first-contact-col">
+        <div class="col-lg-2 contact-col">
+          <h3>CONTACT US</h3>
           <p>hello@smartexlab.com</p>
           <p>+1 234 567 890</p>
         </div>
-        <div class="col-lg-6 second-contact-col">
+        <div class="col-lg-2 first-office-col">
+          <h3>OUR OFFICES</h3>
           <div class="block-address">
-            <p class="dimmed">Maskouskaja Street, 208 Brest, Belarus</p>
-            <p>View on Google Maps</p>
+            <p>Maskouskaja Street, 208 <span class="dimmed">Brest, Belarus</span></p>
           </div>
-          <div class="block-social">
-            <a href="#"><img src="http://placehold.it/40x40"></a>
-            <a href="#"><img src="http://placehold.it/40x40"></a>
-            <a href="#"><img src="http://placehold.it/40x40"></a>
+          <div class="block-address">
+            <p>Address 2, Example St. <span class="dimmed">City, Country</span></p>
+          </div>
+        </div>
+        <div class="col-lg-2 second-office-col">
+          <div class="block-address">
+            <p>Address 2, Example St. <span class="dimmed">City, Country</span></p>
+          </div>
+        </div>
+        <div class="col-lg-2 follow-col">
+          <h3>FOLLOW US</h3>
+          <div class="social-block">
+            <a href="#"><img src="images/icons/social/ic_social-fb.svg"></a>
+            <a href="#"><img src="images/icons/social/ic_social-twitter.svg"></a>
+            <a href="#"><img src="images/icons/social/ic_social-linkedin.svg"></a>
           </div>
         </div>
       </div>
