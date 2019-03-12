@@ -46,11 +46,18 @@
       left: 20px;
       box-shadow: 0 0 0 1px rgb(232, 235, 242);
       border-radius: 4px;
+      transition: .3s;
+      cursor: pointer;
 
       @media (max-width: 1200px) {
         right: 15px;
         left: 15px;
       }
+    }
+
+    &:hover:after {
+      box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.15);
+      border-color: rgba(0, 0, 0, 0);
     }
   }
 
@@ -67,17 +74,10 @@
     height: 445px;
     overflow: hidden;
     position: relative;
-    transition: .3s;
 
     @media (max-width: 1200px) {
       padding: 15px;
       height: 421px;
-    }
-
-    &:hover {
-      box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.15);
-      background-color: var(--white);
-      border-color: rgba(0, 0, 0, 0);
     }
 
     .block-icon {
