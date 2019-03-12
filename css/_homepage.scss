@@ -22,12 +22,22 @@
     @media (max-width: 1200px) {
       width: 490px;
     }
+
+    @media (max-width: 840px) {
+      margin-top: 75px;
+      width: 250px;
+    }
   }
 
   .btn-primary {
     @include btn;
     margin-top: 35px;
     margin-bottom: 125px;
+
+    @media (max-width: 840px) {
+      margin-top: 25px;
+      margin-bottom: 82px;
+    }
   }
 }
 
@@ -35,6 +45,10 @@
 
   .col-lg-4 {
     position: relative;
+
+    @media (max-width: 840px) {
+      margin-top: 15px;
+    }
 
     &:after {
       content: "";
@@ -65,6 +79,11 @@
     text-align: center;
     margin-top: 75px;
     margin-bottom: 50px;
+
+    @media (max-width: 840px) {
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
   }
 
   .block {
@@ -78,6 +97,10 @@
     @media (max-width: 1200px) {
       padding: 15px;
       height: 421px;
+    }
+
+    @media (max-width: 840px) {
+      height: auto;
     }
 
     .block-icon {
@@ -96,6 +119,10 @@
 
       @media (max-width: 1200px) {
         margin-top: 25px;
+      }
+
+      @media (max-width: 840px) {
+        margin-top: 15px;
       }
     }
 
@@ -122,6 +149,11 @@
         bottom: 15px;
         line-height: 22px;
       }
+
+      @media (max-width: 840px) {
+        margin-top: 15px;
+        position: static;
+      }
     }
   }
 }
@@ -137,6 +169,13 @@
     height: 100px;
     display: block;
     margin: 75px auto 0;
+
+    @media (max-width: 840px) {
+      width: 90px;
+      height: 75px;
+      display: block;
+      margin: 50px auto 0;
+    }
   }
 
   .small-quote-icon {
@@ -144,10 +183,18 @@
     height: 75px;
     display: block;
     margin: 75px auto 0;
+
+    @media (max-width: 840px) {
+      margin: 50px auto 25px;
+    }
   }
 
   .h2 {
     margin-top: 25px;
+
+    @media (max-width: 840px) {
+      margin-top: 15px;
+    }
   }
 
   .btn-primary {
@@ -155,6 +202,10 @@
     margin-top: 35px;
     position: relative;
     margin-bottom: 41px;
+
+    @media (max-width: 840px) {
+      margin-top: 25px;
+    }
   }
 
   .btn-primary.green-square:after {
@@ -177,6 +228,13 @@
   position: relative;
   overflow: hidden;
   margin-top: 50px;
+  
+  @media (max-width: 840px) {
+    padding: 50px 0 65px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 25px;
+  }
 
   p + ul {
     padding-top: 5px;
@@ -184,10 +242,22 @@
     @media (max-width: 1200px) {
       padding-top: 0;
     }
+
+    @media (max-width: 840px) {
+      padding-top: 4px;
+    }
   }
 
   .domains {
     margin-top: 50px;
+  
+    @media (max-width: 840px) {
+      margin-top: 35px;
+
+      .col-lg-5 {
+        order: 2;
+      }
+    }
   }
 
   .solutions {
@@ -221,6 +291,10 @@
   .image-block {
     height: 200px;
 
+    @media (max-width: 840px) {
+      height: 283px;
+    }
+
     .domains-image {
       width: 860px;
       position: relative;
@@ -231,6 +305,12 @@
         width: 648px;
         left: -252px;
         top: 70px;
+      }
+
+      @media (max-width: 840px) {
+        width: 478px;
+        left: -73px;
+        top: 2px;
       }
     }
   
@@ -245,6 +325,12 @@
         left: -75px;
         top: 0px;
       }
+
+      @media (max-width: 840px) {
+        width: 570px;
+        left: -105px;
+        top: -21px;
+      }
     }
   }
 
@@ -257,12 +343,20 @@
     @media (max-width: 1200px) {
       padding: 25px;
     }
+  
+    @media (max-width: 840px) {
+      padding: 15px;
+    }
 
     p {
 
       @media (max-width: 1200px) {
         margin-top: 22px;
         margin-bottom: 10px;
+      }
+  
+      @media (max-width: 840px) {
+        margin-top: 15px;
       }
     }
 
@@ -276,14 +370,26 @@
 
     ul {
       font-size: 0;
+      line-height: 0;
       
       li {
         display: inline-block;
         margin-top: 15px;
         margin-right: 15px;
 
+        @media (max-width: 840px) {
+          margin-top: 10px;
+          margin-right: 10px;
+        }
+
         a {
           @include btn-secondary;
+
+          @media (max-width: 840px) {
+            height: 30px;
+            line-height: 30px;
+            padding: 0 15px;
+          }
         }
       }
     }
@@ -293,6 +399,10 @@
 
 .portfolio-section {
   margin-top: 50px;
+
+  @media (max-width: 840px) {
+    margin-top: 35px;
+  }
 
   .h-label {
     font-family: "Exo 2";
@@ -320,6 +430,10 @@
 
     @media (max-width: 1200px) {
       height: 275px;
+    }
+
+    @media (max-width: 840px) {
+      margin-top: 15px;
     }
 
     &:hover {
@@ -393,6 +507,11 @@
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
+
+    @media (max-width: 840px) {
+      margin-top: 10px;
+      margin-bottom: 35px;
+    }
   }
 
   .btn-secondary {
@@ -404,7 +523,7 @@
 .contact-section {
   background: #f4f4f4;
   overflow: hidden;
-  padding: 75px 0;
+  padding: 50px 0;
 
   h2 {
     text-align: center;
@@ -446,6 +565,11 @@
   .checkbox-block {
     line-height: 18px;
     margin: 25px 0 35px;
+
+    @media (max-width: 840px) {
+      line-height: 16px;
+      margin-bottom: 20px;
+    }
 
     input {
       display: none;
@@ -496,6 +620,10 @@
   .send-block {
     display: flex;
 
+    @media (max-width: 840px) {
+      margin-top: 15px;
+    }
+
     .btn-primary {
       width: 100%;
       margin: auto 0;
@@ -512,12 +640,21 @@
   color: #fff;
   font-size: 13px;
 
+  @media (max-width: 840px) {
+    font-size: 12px;
+    padding-top: 40px;
+  }
+
   .contact-row {
     padding-bottom: 20px;
     position: relative;
 
     @media (max-width: 1200px) {
       padding-bottom: 10px;
+    }
+
+    @media (max-width: 840px) {
+      padding-bottom: 25px;
     }
 
     &:after {
@@ -532,6 +669,10 @@
 
     .logo {
       height: 40px;
+
+      @media (max-width: 840px) {
+        height: 38px;
+      }
     }
 
     .second-office-col {
@@ -544,6 +685,12 @@
 
     .follow-col {
 
+      @media (max-width: 840px) {
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+      }
+
       .social-block {
         display: flex;
 
@@ -555,6 +702,11 @@
             height: 35px;
             fill: #E8EBF2;
             transition: .3s;
+
+            @media (max-width: 840px) {
+              width: 25px;
+              height: 25px;
+            }
 
             &:hover {
               fill: #4EDD99;
@@ -583,6 +735,13 @@
       font-weight: normal;
       letter-spacing: 1px;
       margin-bottom: 15px;
+
+      @media (max-width: 840px) {
+        font-size: 11px;
+        line-height: 14px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+      }
     }
 
     p {
@@ -590,8 +749,17 @@
       margin-top: 0;
       line-height: 18px;
 
+      @media (max-width: 840px) {
+        line-height: 16px;
+        margin: 10px 0;
+      }
+
       &:not(:last-child) {
         margin-bottom: 5px;
+
+        @media (max-width: 840px) {
+          margin-bottom: 10px;
+        }
       }
     }
 
@@ -604,6 +772,10 @@
   .pages-row {
     padding-bottom: 35px;
     position: relative;
+  
+    @media (max-width: 840px) {
+      display: none;
+    }
 
     &:after {
       content: "";
@@ -670,10 +842,25 @@
         color: #fff;
       }
     }
-  }
 
-  .footer-links {
-    justify-content: flex-end;
-    display: flex;
+    .footer-links {
+      justify-content: flex-end;
+      display: flex;
+  
+      @media (max-width: 840px) {
+        display: block;
+  
+        a {
+          display: block;
+          margin-left: 0;
+          text-align: right;
+          line-height: 16px;
+
+          &:last-child {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
   }
 }
