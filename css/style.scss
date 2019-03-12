@@ -28,6 +28,11 @@ body {
   font-family: Rubik;
   color: var(--gunmetal);
   line-height: 25px;
+
+  @media (max-width: 1200px) {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 ul {
@@ -40,3 +45,5 @@ li {
 }
 
 // html {background: url(../homepage.jpg) center 0;}body {opacity: 0.5;} 
+html {background: url(../homepage_m.jpg) center 0;}body {opacity: 0.5;} 
+// html {background: url(../homepage_s.jpg) center 0;}body {opacity: 0.5;} 

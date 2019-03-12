@@ -5,6 +5,16 @@
   line-height: 60px;
   color: var(--light-navy);
   margin: 0;
+
+  @media (max-width: 1200px) {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  @media (max-width: 840px) {
+    font-size: 26px;
+    line-height: 32px;
+  }
 }
 
 .h2 {
@@ -14,6 +24,16 @@
   line-height: 45px;
   color: var(--light-navy);
   margin: 0;
+
+  @media (max-width: 1200px) {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  @media (max-width: 840px) {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 .h3 {
@@ -23,9 +43,44 @@
   line-height: 30px;
   color: var(--light-navy);
   margin: 0;
+
+  @media (max-width: 1200px) {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  @media (max-width: 840px) {
+    font-size: 18px;
+    line-height: 26px;
+  }
 }
 
 .h4 {
+  font-family: "Exo 2";
+  font-size: 13px;
+  color: var(--steel);
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+
+  @media (max-width: 1200px) {
+  }
+
+  @media (max-width: 840px) {
+    font-size: 11px;
+    line-height: 14px;
+  }
+}
+
+.h5 {
+  color: var(--darkish-blue);
+  font-weight: normal;
+  margin: 0;
+}
+
+.h-label {
   font-family: "Exo 2";
   font-size: 16px;
   color: var(--steel);
@@ -34,12 +89,11 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   margin: 0;
-}
 
-.h5 {
-  color: var(--darkish-blue);
-  font-weight: normal;
-  margin: 0;
+  @media (max-width: 1200px) {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 p {
