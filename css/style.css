@@ -3146,8 +3146,8 @@ html {
   background: #f4f4f4;
   overflow: hidden;
   font-size: 0;
-  background: url(../images/home_hero.png) 50% 0;
-  background-repeat: no-repeat; }
+  background: url(../images/home_hero.png);
+  background-size: cover; }
   @media (max-width: 1200px) {
     .main-banner {
       margin-top: 101px; } }
@@ -3302,6 +3302,9 @@ html {
   margin-top: 50px; }
   .expertie-section p + ul {
     padding-top: 5px; }
+    @media (max-width: 1200px) {
+      .expertie-section p + ul {
+        padding-top: 0; } }
   .expertie-section .domains {
     margin-top: 50px; }
   .expertie-section .solutions {
@@ -3331,7 +3334,6 @@ html {
       @media (max-width: 1200px) {
         .expertie-section .image-block .domains-image {
           width: 648px;
-          position: relative;
           left: -252px;
           top: 70px; } }
     .expertie-section .image-block .solutions-image {
@@ -3339,6 +3341,11 @@ html {
       position: relative;
       left: -80px;
       top: 40px; }
+      @media (max-width: 1200px) {
+        .expertie-section .image-block .solutions-image {
+          width: 634px;
+          left: -75px;
+          top: 0px; } }
   .expertie-section .text-block {
     padding: 50px;
     background: #fff;
@@ -3349,7 +3356,8 @@ html {
         padding: 25px; } }
     @media (max-width: 1200px) {
       .expertie-section .text-block p {
-        margin-top: 22px; } }
+        margin-top: 22px;
+        margin-bottom: 10px; } }
     .expertie-section .text-block .h5 {
       margin-top: 35px; }
       @media (max-width: 1200px) {
@@ -3398,6 +3406,9 @@ html {
     border-radius: 4px;
     overflow: hidden;
     display: block; }
+    @media (max-width: 1200px) {
+      .portfolio-section .project {
+        height: 275px; } }
     .portfolio-section .project:hover {
       box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15); }
       .portfolio-section .project:hover .text-block:after {
@@ -3414,6 +3425,9 @@ html {
       bottom: 0;
       left: 0;
       right: 0; }
+      @media (max-width: 1200px) {
+        .portfolio-section .project .text-block {
+          padding: 15px; } }
       .portfolio-section .project .text-block:after {
         content: "";
         display: block;
@@ -3428,6 +3442,9 @@ html {
         margin-right: 10px;
         opacity: 0;
         transition: .3s; }
+        @media (max-width: 1200px) {
+          .portfolio-section .project .text-block:after {
+            display: none; } }
       .portfolio-section .project .text-block p {
         margin: 10px 0 0;
         color: var(--gunmetal); }
@@ -3547,16 +3564,24 @@ html {
   .main-footer .contact-row {
     padding-bottom: 20px;
     position: relative; }
+    @media (max-width: 1200px) {
+      .main-footer .contact-row {
+        padding-bottom: 10px; } }
     .main-footer .contact-row:after {
       content: "";
       display: block;
       position: absolute;
       bottom: 0;
-      left: 20px;
-      right: 20px;
+      left: 10px;
+      right: 10px;
       border-bottom: 1px solid var(--steel); }
+    .main-footer .contact-row .logo {
+      height: 40px; }
     .main-footer .contact-row .second-office-col {
       padding-top: 31px; }
+      @media (max-width: 1200px) {
+        .main-footer .contact-row .second-office-col {
+          padding-top: 0; } }
     .main-footer .contact-row .follow-col .social-block {
       display: flex; }
       .main-footer .contact-row .follow-col .social-block a {
@@ -3600,8 +3625,8 @@ html {
       display: block;
       position: absolute;
       bottom: 0;
-      left: 20px;
-      right: 20px;
+      left: 10px;
+      right: 10px;
       border-bottom: 1px solid var(--steel); }
     .main-footer .pages-row .footer-pages-header {
       font-weight: 600;
@@ -3611,6 +3636,9 @@ html {
       color: var(--very-light-blue);
       margin-bottom: 15px;
       padding-top: 35px; }
+      @media (max-width: 1200px) {
+        .main-footer .pages-row .footer-pages-header {
+          padding-top: 25px; } }
     .main-footer .pages-row li:not(:last-child) {
       margin-bottom: 5px; }
     .main-footer .pages-row li {
@@ -3627,6 +3655,9 @@ html {
     line-height: 18px;
     color: var(--light-blue-grey);
     display: flex; }
+    @media (max-width: 1200px) {
+      .main-footer .copyright-row {
+        padding-top: 20px; } }
     .main-footer .copyright-row a {
       color: var(--light-blue-grey);
       line-height: 18px;

@@ -3,8 +3,8 @@
   background: #f4f4f4;
   overflow: hidden;
   font-size: 0;
-  background: url(../images/home_hero.png) 50% 0;
-  background-repeat: no-repeat;
+  background: url(../images/home_hero.png);
+  background-size: cover;
 
   @media (max-width: 1200px) {
     margin-top: 101px;
@@ -180,6 +180,10 @@
 
   p + ul {
     padding-top: 5px;
+
+    @media (max-width: 1200px) {
+      padding-top: 0;
+    }
   }
 
   .domains {
@@ -225,7 +229,6 @@
 
       @media (max-width: 1200px) {
         width: 648px;
-        position: relative;
         left: -252px;
         top: 70px;
       }
@@ -236,6 +239,12 @@
       position: relative;
       left: -80px;
       top: 40px;
+
+      @media (max-width: 1200px) {
+        width: 634px;
+        left: -75px;
+        top: 0px;
+      }
     }
   }
 
@@ -253,6 +262,7 @@
 
       @media (max-width: 1200px) {
         margin-top: 22px;
+        margin-bottom: 10px;
       }
     }
 
@@ -308,6 +318,10 @@
     overflow: hidden;
     display: block;
 
+    @media (max-width: 1200px) {
+      height: 275px;
+    }
+
     &:hover {
       @include shadow();
 
@@ -339,6 +353,10 @@
       left: 0;
       right: 0;
 
+      @media (max-width: 1200px) {
+        padding: 15px;
+      }
+
       &:after {
         content: "";
         display: block;
@@ -353,6 +371,10 @@
         margin-right: 10px;
         opacity: 0;
         transition: .3s;
+
+        @media (max-width: 1200px) {
+          display: none;
+        }
       }
 
       p {
@@ -494,18 +516,30 @@
     padding-bottom: 20px;
     position: relative;
 
+    @media (max-width: 1200px) {
+      padding-bottom: 10px;
+    }
+
     &:after {
       content: "";
       display: block;
       position: absolute;
       bottom: 0;
-      left: 20px;
-      right: 20px;
+      left: 10px;
+      right: 10px;
       border-bottom: 1px solid var(--steel);
+    }
+
+    .logo {
+      height: 40px;
     }
 
     .second-office-col {
       padding-top: 31px;
+
+      @media (max-width: 1200px) {
+        padding-top: 0;
+      }
     }
 
     .follow-col {
@@ -576,8 +610,8 @@
       display: block;
       position: absolute;
       bottom: 0;
-      left: 20px;
-      right: 20px;
+      left: 10px;
+      right: 10px;
       border-bottom: 1px solid var(--steel);
     }
 
@@ -589,6 +623,10 @@
       color: var(--very-light-blue);
       margin-bottom: 15px;
       padding-top: 35px;
+
+      @media (max-width: 1200px) {
+        padding-top: 25px;
+      }
     }
 
     li:not(:last-child) {
@@ -616,6 +654,10 @@
     line-height: 18px;
     color: var(--light-blue-grey);
     display: flex;
+
+    @media (max-width: 1200px) {
+      padding-top: 20px;
+    }
 
     a {
       color: var(--light-blue-grey);
