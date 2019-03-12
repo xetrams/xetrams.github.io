@@ -3212,6 +3212,8 @@ html {
   .what-we-do-section .col-lg-4:hover:after {
     box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.15);
     border-color: rgba(0, 0, 0, 0); }
+  .what-we-do-section .col-lg-4:hover .link-more {
+    color: #00298f; }
 .what-we-do-section .h-label {
   text-align: center;
   margin-top: 75px;
@@ -3263,7 +3265,8 @@ html {
     text-decoration: none;
     position: absolute;
     left: 25px;
-    bottom: 30px; }
+    bottom: 30px;
+    transition: .3s; }
     @media (max-width: 1200px) {
       .what-we-do-section .block .link-more {
         left: 15px;

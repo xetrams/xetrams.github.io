@@ -69,9 +69,16 @@
       }
     }
 
-    &:hover:after {
-      box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.15);
-      border-color: rgba(0, 0, 0, 0);
+    &:hover{
+
+      &:after {
+        box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.15);
+        border-color: rgba(0, 0, 0, 0);
+      }
+
+      .link-more {
+        color: #00298f;
+      }
     }
   }
 
@@ -143,6 +150,7 @@
       position: absolute;
       left: 25px;
       bottom: 30px;
+      transition: .3s;
 
       @media (max-width: 1200px) {
         left: 15px;
