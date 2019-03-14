@@ -3759,7 +3759,8 @@ html {
       .main-footer .contact-row .follow-col {
         position: absolute;
         bottom: 30px;
-        left: 0; } }
+        left: 0;
+        width: 50%; } }
     .main-footer .contact-row .follow-col .social-block {
       display: flex; }
       .main-footer .contact-row .follow-col .social-block a {
