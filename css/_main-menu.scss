@@ -109,7 +109,10 @@
 
     @media (max-width: 840px) {
       top: 10px;
-      height: 30px;
+
+      img {
+        height: 30px;
+      }
     }
   }
 
