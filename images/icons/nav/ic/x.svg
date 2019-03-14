@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>ic/x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M15,16.0339355 L8.10071451,22.933221 C7.81872596,23.2152095 7.35867474,23.2123521 7.07316135,22.9268387 C6.78764795,22.6413253 6.78479049,22.181274 7.06677903,21.8992855 L13.9660645,15 L7.06677903,8.10071451 C6.78479049,7.81872596 6.78764795,7.35867474 7.07316135,7.07316135 C7.35867474,6.78764795 7.81872596,6.78479049 8.10071451,7.06677903 L15,13.9660645 L21.8992855,7.06677903 C22.181274,6.78479049 22.6413253,6.78764795 22.9268387,7.07316135 C23.2123521,7.35867474 23.2152095,7.81872596 22.933221,8.10071451 L16.0339355,15 L22.933221,21.8992855 C23.2152095,22.181274 23.2123521,22.6413253 22.9268387,22.9268387 C22.6413253,23.2123521 22.181274,23.2152095 21.8992855,22.933221 L15,16.0339355 Z" id="path-1"></path>
+    </defs>
+    <g id="Style-Guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic/x" transform="translate(-6.000000, -6.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#979797" fill-rule="nonzero" xlink:href="#path-1"></use>
+            <g id="swatch/gray" mask="url(#mask-2)" fill="#B8C3DA" fill-rule="evenodd">
+                <rect id="Rectangle" x="0" y="0" width="30" height="30"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -14,18 +14,68 @@
       <img src="images/icons/logo.svg" class="logo">
       <nav class="main-menu">
         <ul>
-          <li class="active"><a href="#">Company</a></li>
-          <li><a href="#">Domains</a></li>
-          <li><a href="#">Solutions</a></li>
-          <li><a href="#">Platforms</a></li>
+          <li class="expandable" class="active">
+            <a class="drop-opener" href="#">Company</a>
+            <ul class="dropdown">
+              <li><a href="#">Healthcare</a></li>
+              <li class="expandable">
+                <a class="drop-opener" href="#">FinTech</a>
+                <ul class="dropdown">
+                  <li><a href="#">Dental</a></li>
+                  <li><a href="#">Veterinary</a></li>
+                  <li><a href="#">Hospital & Clinic</a></li>
+                  <li><a href="#">Therapist</a></li>
+                  <li><a href="#">Pharmacy</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="expandable"><a href="#">Domains</a></li>
+          <li class="expandable"><a href="#">Solutions</a></li>
+          <li class="expandable"><a href="#">Platforms</a></li>
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">Insights</a></li>
           <li class="menu-btn"><a href="#">Contact</a></li>
         </ul>
       </nav>
+      <div class="overlay"></div>
+      <div class="menu-cross"></div>
       <div class="burger-btn"></div>
     </div>
   </header>
+  <script>
+    var mainMenu = document.getElementsByClassName("main-menu")[0];
+
+    var overlay = document.getElementsByClassName("overlay")[0];
+    var burger = document.getElementsByClassName("burger-btn")[0];
+    var cross = document.getElementsByClassName("menu-cross")[0];
+
+    overlay.addEventListener("click", toggleMenu);
+    burger.addEventListener("click", toggleMenu);
+    cross.addEventListener("click", toggleMenu);
+
+    function toggleMenu() {
+
+      if (mainMenu.className == "main-menu") {
+        mainMenu.className = "main-menu opened";
+      } else {
+        mainMenu.className = "main-menu";
+      }
+    }
+
+    var dropLink = document.getElementsByClassName("drop-opener");
+
+    for (var i = 0; i < dropLink.length; i++) {
+
+      dropLink[i].addEventListener("click", function() {
+        if (this.className == "drop-opener") {
+          this.className = "drop-opener drop-active";
+        } else {
+          this.className = "drop-opener";
+        }
+      }, false);
+    }
+  </script>
   <div class="main-banner">
     <div class="container">
       <h1 class="h1">Digitize your business with a reliable software partner</h1>
@@ -190,9 +240,18 @@
         <div class="col-xl-6 col-lg-10">
           <h2 class="h2">Let’s Get in Touch</h2>
           <form action="" class="contact-form">
-            <input type="text">
-            <input type="text">
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <div class="input-block">
+              <input type="text" placeholder="Name">
+              <div class="error-text">Please enter a valid  email name</div>
+            </div>
+            <div class="input-block error">
+              <input type="text" placeholder="Email">
+              <div class="error-text">Please enter a valid  email email</div>
+            </div>
+            <div class="input-block">
+              <textarea placeholder="Your Message…" name="" id="" cols="30" rows="10"></textarea>
+              <div class="error-text">Please enter a valid  email message</div>
+            </div>
             <div class="checkbox-block">
               <input type="checkbox" id="confirmation">
               <label for="confirmation">I give my consent for SmartexLab to process my personal data pursuant to SmartexLab <a href="#">Privacy</a> and <a href="#">Cookies Policy</a></label>
@@ -227,14 +286,17 @@
               <h3>OUR OFFICES</h3>
               <div class="block-address">
                 <p>Maskouskaja Street, 208 <span class="dimmed">Brest, Belarus</span></p>
+                <a href="#" class="google-maps-popup">Show on Google Maps</a>
               </div>
               <div class="block-address">
                 <p>Address 2, Example St. <span class="dimmed">City, Country</span></p>
+                <a href="#" class="google-maps-popup">Show on Google Maps</a>
               </div>
             </div>
             <div class="col-xl-6 second-office-col">
               <div class="block-address">
                 <p>Address 2, Example St. <span class="dimmed">City, Country</span></p>
+                <a href="#" class="google-maps-popup">Show on Google Maps</a>
               </div>
             </div>
           </div>
