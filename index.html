@@ -7,6 +7,8 @@
   <title>Smartex</title>
   <link href="https://fonts.googleapis.com/css?family=Exo+2:400,500,600,700|Rubik:400,400i,700&amp;subset=latin-ext" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="jquery.min.js"></script>
+  <script src="jquery.malihu.PageScroll2id.js"></script>
 </head>
 <body>
   <header class="main-header">
@@ -35,7 +37,7 @@
           <li class="expandable"><a href="#">Platforms</a></li>
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">Insights</a></li>
-          <li class="menu-btn"><a href="#">Contact</a></li>
+          <li class="menu-btn"><a href="#contact-section" rel="m_PageScroll2id">Contact</a></li>
         </ul>
       </nav>
       <div class="overlay"></div>
@@ -79,7 +81,7 @@
   <div class="main-banner">
     <div class="container">
       <h1 class="h1">Digitize your business with a reliable software partner</h1>
-      <a href="#" class="btn-primary">Get a Quote</a>
+      <a href="#contact-section" rel="m_PageScroll2id" class="btn-primary">Get a Quote</a>
     </div>
   </div>
   <div class="what-we-do-section">
@@ -117,7 +119,7 @@
     <div class="container">
       <img src="images/icons/cubes/ic_cube-cta.png" class="quote-icon">
       <h2 class="h2">Planning a Software Project?</h2>
-      <a href="#" class="btn-primary green-square">Get a Quote</a>
+      <a  href="#contact-section" rel="m_PageScroll2id" class="btn-primary green-square">Get a Quote</a>
     </div>
   </div>
   <div class="expertie-section">
@@ -234,7 +236,7 @@
       <a href="#" class="btn-secondary">View More Projects</a>
     </div>
   </div>
-  <div class="contact-section">
+  <div class="contact-section" id="contact-section">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-xl-6 col-lg-10">
@@ -285,17 +287,17 @@
             <div class="col-xl-6">
               <h3>OUR OFFICES</h3>
               <div class="block-address">
-                <p>Maskouskaja Street, 208 <span class="dimmed">Brest, Belarus</span></p>
+                <p>Maskouskaja Street, 208 <br><span class="dimmed">Brest, Belarus</span></p>
                 <a href="#" class="google-maps-popup">Show on Google Maps</a>
               </div>
               <div class="block-address">
-                <p>Address 2, Example St. <span class="dimmed">City, Country</span></p>
+                <p>Address 2, Example St. <br><span class="dimmed">City, Country</span></p>
                 <a href="#" class="google-maps-popup">Show on Google Maps</a>
               </div>
             </div>
             <div class="col-xl-6 second-office-col">
               <div class="block-address">
-                <p>Address 2, Example St. <span class="dimmed">City, Country</span></p>
+                <p>Address 2, Example St. <br><span class="dimmed">City, Country</span></p>
                 <a href="#" class="google-maps-popup">Show on Google Maps</a>
               </div>
             </div>
@@ -410,5 +412,13 @@
       </div>
     </div>
   </div>
+  <script>
+    var menuOffset = $(".main-header").height();
+    (function($){
+        $(window).on("load",function(){
+            $("a[rel='m_PageScroll2id']").mPageScroll2id({scrollSpeed: 500,offset: menuOffset});
+        });
+    })(jQuery);
+  </script>
 </body>
 </html>
