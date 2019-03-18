@@ -4000,6 +4000,9 @@ p {
         padding: 35px;
         left: 20px;
         right: 20px; } }
+    .inner-page-main-banner .dark-label .h-label {
+      margin-bottom: 15px;
+      color: #31ca81; }
     .inner-page-main-banner .dark-label .h2 {
       margin-bottom: 0;
       color: #fff; }
