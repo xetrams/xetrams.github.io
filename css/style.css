@@ -23,8 +23,8 @@ html {
 @media (min-width: 840px) {
   .container {
     max-width: 799px;
-    padding-right: 15px;
-    padding-left: 15px; } }
+    padding-right: 20px;
+    padding-left: 20px; } }
 @media (min-width: 1200px) {
   .container {
     max-width: 1200px; } }
@@ -69,8 +69,8 @@ html {
     .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
     .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
     .col-xl-auto {
-      padding-right: 15px;
-      padding-left: 15px; } }
+      padding-right: 20px;
+      padding-left: 20px; } }
 
 .col {
   -ms-flex-preferred-size: 0;
@@ -4069,9 +4069,13 @@ p {
       height: 30px;
       background: #DDFAEC;
       border-radius: 2px;
-      top: -11px;
-      left: 50%;
-      margin-left: -16px; }
+      top: -7px;
+      left: -18px; }
+      @media (max-width: 840px) {
+        .description-section .accent-col .accent-p:after {
+          top: -11px;
+          left: 50%;
+          margin-left: -16px; } }
     .description-section .accent-col .accent-p:before {
       content: "";
       display: block;
@@ -4080,9 +4084,13 @@ p {
       height: 20px;
       background: #DDFAEC;
       border-radius: 2px;
-      top: -31px;
-      left: 50%;
-      margin-left: -36px; }
+      top: -26px;
+      left: -38px; }
+      @media (max-width: 840px) {
+        .description-section .accent-col .accent-p:before {
+          top: -31px;
+          left: 50%;
+          margin-left: -36px; } }
     .description-section .accent-col .accent-p p {
       font-family: "Exo 2";
       font-size: 25px;
@@ -4191,7 +4199,7 @@ p {
         left: -14px; }
       .what-we-do-line-section .progress-bar-block li:nth-child(2n) h3:before {
         right: auto;
-        left: -137px; }
+        left: -132px; }
         @media (max-width: 1200px) {
           .what-we-do-line-section .progress-bar-block li:nth-child(2n) h3:before {
             left: -95px; } }
@@ -4230,7 +4238,7 @@ p {
         background: #fff;
         position: absolute;
         background: #fff;
-        right: -137px;
+        right: -132px;
         top: 33px;
         border-radius: 50%;
         border: 8px solid #31ca81;
@@ -4695,7 +4703,20 @@ p {
   padding: 75px 0; }
   @media (max-width: 840px) {
     .four-col-text-section {
-      padding-top: 50px; } }
+      padding-top: 50px; }
+      .four-col-text-section .custom-row {
+        overflow: hidden; }
+        .four-col-text-section .custom-row:after {
+          content: "";
+          display: block;
+          clear: both; }
+        .four-col-text-section .custom-row .icon-col {
+          width: 50px;
+          float: left; }
+          .four-col-text-section .custom-row .icon-col img {
+            display: block; }
+        .four-col-text-section .custom-row .heading-col {
+          margin-left: 60px; } }
   .four-col-text-section .section-label {
     color: var(--steel);
     font-size: 16px;
@@ -4726,29 +4747,29 @@ p {
       .four-col-text-section .lead-text {
         margin: 15px 20px 20px;
         width: auto; } }
-  .four-col-text-section .row {
+  .four-col-text-section > .container > .row {
     margin-top: 75px; }
     @media (max-width: 1200px) {
-      .four-col-text-section .row {
+      .four-col-text-section > .container > .row {
         margin-top: 40px; }
-        .four-col-text-section .row .col-lg-6 {
+        .four-col-text-section > .container > .row .col-lg-6 {
           margin-top: 35px; } }
     @media (max-width: 840px) {
-      .four-col-text-section .row {
+      .four-col-text-section > .container > .row {
         margin-top: 0; } }
-    .four-col-text-section .row img {
+    .four-col-text-section > .container > .row img {
       width: 75px;
       height: 75px;
       display: block; }
       @media (max-width: 1200px) {
-        .four-col-text-section .row img {
+        .four-col-text-section > .container > .row img {
           width: 50px;
           height: 50px; } }
-    .four-col-text-section .row .h3 {
+    .four-col-text-section > .container > .row .h3 {
       margin-top: 35px;
       line-height: 35px; }
       @media (max-width: 1200px) {
-        .four-col-text-section .row .h3 {
+        .four-col-text-section > .container > .row .h3 {
           margin-top: 10px;
           line-height: 26px;
           margin-bottom: 15px; } }
@@ -5838,5 +5859,8 @@ ul {
 
 li {
   display: block; }
+
+.no-border {
+  border: none !important; }
 
 /*# sourceMappingURL=style.css.map */
