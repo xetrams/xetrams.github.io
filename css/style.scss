@@ -1,11 +1,12 @@
 @import "components.scss";
 @import "bootstrap-grid.scss";
+@import "typography.scss";
 @import "homepage.scss";
 @import "domain.scss";
 @import "main-menu.scss";
 @import "normalize.scss";
 @import "styleguide.scss";
-@import "typography.scss";
+@import "footer.scss";
 
 :root {
   --darkish-blue: #03267d;
@@ -49,3 +50,9 @@ li {
 // html {background: url(../homepage_m.jpg) center 118px;}body {opacity: 0.5;} 
 // html {background: url(../homepage_s.jpg) center 0;}body {opacity: 0.5;} 
 // html {background: url(../mobile_menu.png) center 0;}body {opacity: 0.5;} 
+
+
+
+// html {background: url(../domain_fintech_l.jpg) center 0;}body {opacity: 0.5;} 
+// html {background: url(../domain_fintech_m.jpg) center 0;}body {opacity: 0.5;} 
+// html {background: url(../domain_fintech_s.jpg) center 0;}body {opacity: 0.5;} 
