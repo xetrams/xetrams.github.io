@@ -4131,6 +4131,9 @@ p {
   left: 50%;
   margin-left: -1px;
   background: var(--very-light-blue); }
+  @media (max-width: 840px) {
+    .what-we-do-line-section .progress-bar {
+      display: none; } }
 .what-we-do-line-section .progress-bar-block {
   padding-top: 50px; }
   @media (max-width: 840px) {
@@ -4235,6 +4238,9 @@ p {
         @media (max-width: 1200px) {
           .what-we-do-line-section .progress-bar-block li h3:before {
             right: -95px; } }
+        @media (max-width: 840px) {
+          .what-we-do-line-section .progress-bar-block li h3:before {
+            display: none; } }
     .what-we-do-line-section .progress-bar-block li p:last-child {
       margin-bottom: 0; }
 

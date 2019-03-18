@@ -213,6 +213,10 @@
     left: 50%;
     margin-left: -1px;
     background: var(--very-light-blue);
+
+    @media (max-width: 840px) {
+      display: none;
+    }
   }
 
   .progress-bar-block {
@@ -355,6 +359,10 @@
 
           @media (max-width: 1200px) {
             right: -95px;
+          }
+
+          @media (max-width: 840px) {
+            display: none;
           }
         }
       }
