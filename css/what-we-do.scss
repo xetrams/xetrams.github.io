@@ -220,12 +220,12 @@
           margin-left: auto;
           margin-right: 0;
   
-          li:after {
+          &:after {
             right: auto;
             left: 0;
           }
   
-          li:before {
+          &:before {
             right: auto;
             left: 0;
           }

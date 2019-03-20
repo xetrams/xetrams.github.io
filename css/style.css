@@ -4115,10 +4115,10 @@ p {
       .what-we-do-line-section .progress-bar-block ul.right-list li {
         margin-left: auto;
         margin-right: 0; }
-        .what-we-do-line-section .progress-bar-block ul.right-list li li:after {
+        .what-we-do-line-section .progress-bar-block ul.right-list li:after {
           right: auto;
           left: 0; }
-        .what-we-do-line-section .progress-bar-block ul.right-list li li:before {
+        .what-we-do-line-section .progress-bar-block ul.right-list li:before {
           right: auto;
           left: 0; }
         .what-we-do-line-section .progress-bar-block ul.right-list li h3:before {
