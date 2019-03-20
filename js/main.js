@@ -1,3 +1,5 @@
+// MAIN MENU
+
 var mainMenu = document.getElementsByClassName("main-menu")[0];
 
 var overlay = document.getElementsByClassName("overlay")[0];
@@ -39,96 +41,102 @@ var menuOffset = $(".main-header").height();
 
 
 // PROGRESS BAR
+if($('.progress-bar').length >0 ) {
+	var vindowHeight = $(window).height();
+	var progressOffset = $('.progress-bar').offset().top;
+	var headerHeight = $('.main-header').height();
+	var halfScreen = $(window).height()/2 + headerHeight/2;
+	var progressBarHeight = $('.progress-bar').height();
+	var progress = $('.progress');
 
-var vindowHeight = $(window).height();
-var progressOffset = $('.progress-bar').offset().top;
-var headerHeight = $('.main-header').height();
-var halfScreen = $(window).height()/2 + headerHeight/2;
-var progressBarHeight = $('.progress-bar').height();
-var progress = $('.progress');
-
-var listOfPanels = $('.progress-bar-block li');
-var numOfPanels = $('.progress-bar-block li').length;
+	var listOfPanels = $('.progress-bar-block li');
+	var numOfPanels = $('.progress-bar-block li').length;
 
 
-function manageActivePanels(progress) {
-	for (var i = 0; i < numOfPanels; i++) {
-		if ($(listOfPanels[i]).offset().top - progress < 0) {
-			$(listOfPanels[i]).addClass("active");
-		} else {
-			$(listOfPanels[i]).removeClass("active");
+	function manageActivePanels(progress) {
+		for (var i = 0; i < numOfPanels; i++) {
+			if ($(listOfPanels[i]).offset().top - progress < 0) {
+				$(listOfPanels[i]).addClass("active");
+			} else {
+				$(listOfPanels[i]).removeClass("active");
+			}
 		}
 	}
+
+	manageActivePanels();
+
+	$(window).scroll(function (event) {
+		var scroll = $(window).scrollTop();
+		var middleScreen = scroll + halfScreen;
+		var progressHeight = middleScreen - progressOffset;
+		manageActivePanels(middleScreen - 26);
+		if (progressHeight > 0 && progressHeight < progressBarHeight) {
+			progress.height(progressHeight);
+		} else if (progressHeight > progressBarHeight) {
+			progress.height(progressBarHeight);
+		} else {
+			progress.height(0);
+		}
+	});
+
+	$(window).ready(function (event) {
+		var scroll = $(window).scrollTop();
+		var middleScreen = scroll + halfScreen;
+		var progressHeight = middleScreen - progressOffset;
+		manageActivePanels(middleScreen - 26);
+		if (progressHeight > 0 && progressHeight < progressBarHeight) {
+			progress.height(progressHeight);
+		} else if (progressHeight > progressBarHeight) {
+			progress.height(progressBarHeight);
+		} else {
+			progress.height(0);
+		}
+	});
 }
-
-manageActivePanels();
-
-$(window).scroll(function (event) {
-	var scroll = $(window).scrollTop();
-	var middleScreen = scroll + halfScreen;
-	var progressHeight = middleScreen - progressOffset;
-	manageActivePanels(middleScreen - 26);
-	if (progressHeight > 0 && progressHeight < progressBarHeight) {
-		progress.height(progressHeight);
-	} else if (progressHeight > progressBarHeight) {
-		progress.height(progressBarHeight);
-	} else {
-		progress.height(0);
-	}
-});
-
-$(window).ready(function (event) {
-	var scroll = $(window).scrollTop();
-	var middleScreen = scroll + halfScreen;
-	var progressHeight = middleScreen - progressOffset;
-	manageActivePanels(middleScreen - 26);
-	if (progressHeight > 0 && progressHeight < progressBarHeight) {
-		progress.height(progressHeight);
-	} else if (progressHeight > progressBarHeight) {
-		progress.height(progressBarHeight);
-	} else {
-		progress.height(0);
-	}
-});
 
 
 // TABS
-var tabs = $('.tab-list li');
-var tabsNum = tabs.length;
-var cards = $('.card-stack .card');
 
-for (var i = 0; i < tabsNum; i++) {
+if($('.tab-list').length >0 ) {
+	var tabs = $('.tab-list li');
+	var tabsNum = tabs.length;
+	var cards = $('.card-stack .card');
 
-	$(tabs[i]).click(function(i) {
-		var l = $(this).data("position") - 1;
-		for (var j = 0; j < tabsNum; j++) {
-			if (l != j) {
-				$(cards[j]).fadeOut(0);
-				$(tabs[j]).removeClass('active');
+	for (var i = 0; i < tabsNum; i++) {
+
+		$(tabs[i]).click(function(i) {
+			var l = $(this).data("position") - 1;
+			for (var j = 0; j < tabsNum; j++) {
+				if (l != j) {
+					$(cards[j]).fadeOut(0);
+					$(tabs[j]).removeClass('active');
+				}
 			}
-		}
 
-		$(cards[l]).fadeIn(0);
-		$(this).addClass('active');
-	});
+			$(cards[l]).fadeIn(0);
+			$(this).addClass('active');
+		});
+	}
 }
 
 // CAROUSEL
 
-$('.projects-carousel').owlCarousel({
-	center: true,
-	loop: true,
-	margin: 40,
-	autoWidth: true,
-	responsive:{
-		0:{
-			margin: 20
-		},
-		840:{
-			margin: 30
-		},
-		1200:{
-			margin: 40
+if($('.projects-carousel').length >0 ) {
+	$('.projects-carousel').owlCarousel({
+		center: true,
+		loop: true,
+		margin: 40,
+		autoWidth: true,
+		responsive:{
+			0:{
+				margin: 20
+			},
+			840:{
+				margin: 30
+			},
+			1200:{
+				margin: 40
+			}
 		}
-	}
-});
+	});
+}
