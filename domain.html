@@ -7,6 +7,7 @@
   <title>Smartex</title>
   <link href="https://fonts.googleapis.com/css?family=Exo+2:400,500,600,700|Rubik:400,400i,700&amp;subset=latin-ext" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="owl/assets/owl.carousel.min.css">
 </head>
 <body>
   <header class="main-header">
@@ -109,25 +110,29 @@
     <h2 class="h2">What We Do</h2>
     <p class="h-lead">Tap into the power of digital with SmartexLab. Explore our all-new solutions and give your business a positive shake up.</p>
     <div class="container">
-      <div class="progress-bar"></div>
-      <ul class="progress-bar-block">
-        <li class="active">
-          <h3 class="h3">Financial management</h3>
-          <p>Track daily financial operations,  generate regular reports in one click, and monitor your performance with a range of financial software tools for analysis and reporting. </p>
-        </li>
-        <li class="active">
-          <h3 class="h3">Data analytics and reporting </h3>
-          <p>Improve competitiveness and drive business growth through accurate data management. Our financial solutions provide you everything your company needs to grow: data analytics, user flows, smart dashboards, advanced reporting, and immutable storage and record keeping. </p>
-        </li>
-        <li>
-          <h3 class="h3">Customer experience</h3>
-          <p>Stay ahead of your competitors by delivering awesome personalized customer experiences and increase the performance of your company through various financial software solutions such as mobile apps, online banking solutions, CRMs, marketing automation systems, portals, loyalty programs and more. </p>
-        </li>
-        <li>
-          <h3 class="h3">Risk management and <br>mitigation </h3>
-          <p>Understand every aspect of your business and make smart strategic decisions with the help of tailored financial software. It gives you the tools needed for comprehensive integrated risk oversight, including risk management, regulatory compliance, fraud detection and prevention.</p>
-        </li>
-      </ul>
+      <div class="progress-bar"><div class="progress"></div></div>
+      <div class="progress-bar-block">
+        <ul class="left-list">
+          <li>
+            <h3 class="h3">Financial management</h3>
+            <p>Track daily financial operations,  generate regular reports in one click, and monitor your performance with a range of financial software tools for analysis and reporting. </p>
+          </li>
+          <li>
+            <h3 class="h3">Data analytics and reporting </h3>
+            <p>Improve competitiveness and drive business growth through accurate data management. Our financial solutions provide you everything your company needs to grow: data analytics, user flows, smart dashboards, advanced reporting, and immutable storage and record keeping. </p>
+          </li>
+        </ul>
+        <ul class="right-list">
+          <li>
+            <h3 class="h3">Customer experience</h3>
+            <p>Stay ahead of your competitors by delivering awesome personalized customer experiences and increase the performance of your company through various financial software solutions such as mobile apps, online banking solutions, CRMs, marketing automation systems, portals, loyalty programs and more. </p>
+          </li>
+          <li>
+            <h3 class="h3">Risk management and <br>mitigation </h3>
+            <p>Understand every aspect of your business and make smart strategic decisions with the help of tailored financial software. It gives you the tools needed for comprehensive integrated risk oversight, including risk management, regulatory compliance, fraud detection and prevention.</p>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
   <div class="quote-section">
@@ -144,18 +149,38 @@
           <h2 class="h2">How We Add Value</h2>
           <p>Challenge your competitors on the fintech arena and go digital first. Benefit from linking finance and technology by opting for the most relevant accounting, loan, leasing or mortgage fintech software development.</p>
           <ul class="tab-list">
-            <li class="active"><a href="#">Accounting</a></li>
-            <li><a href="#">Loan</a></li>
-            <li><a href="#">Leasing</a></li>
-            <li><a href="#">Mortgage</a></li>
+            <li data-position="1" class="active"><a href="javascript:void(0)">Accounting</a></li>
+            <li data-position="2"><a href="javascript:void(0)">Loan</a></li>
+            <li data-position="3"><a href="javascript:void(0)">Leasing</a></li>
+            <li data-position="4"><a href="javascript:void(0)">Mortgage</a></li>
           </ul>
         </div>
         <div class="col-xl-6 offset-xl-1 offset-lg-1 col-lg-6">
           <div class="card-stack">
-            <div class="h-label card-label">Accounting</div>
-            <h3 class="h3">Be the future of the accounting landscape with our custom accounting software. </h3>
-            <p>We focus on accounting information system design, mobile accounting app development, and invoicing and accounts receivable.</p>
-            <p>Find everything you need in the accounting domain among custom financial accounting software solutions like dynamic payment schedules, API integration, expense tracking, invoice management, and rich reporting module.</p>
+            <div class="card active">
+              <div class="h-label card-label">Accounting</div>
+              <h3 class="h3">Be the future of the accounting landscape with our custom accounting software. </h3>
+              <p>We focus on accounting information system design, mobile accounting app development, and invoicing and accounts receivable.</p>
+              <p>Find everything you need in the accounting domain among custom financial accounting software solutions like dynamic payment schedules, API integration, expense tracking, invoice management, and rich reporting module.</p>
+            </div>
+            <div class="card">
+              <div class="h-label card-label">Loan</div>
+              <h3 class="h3">Be the future of the accounting landscape with our custom accounting software. 2</h3>
+              <p>We focus on accounting information system design, mobile accounting app development, and invoicing and accounts receivable.</p>
+              <p>Find everything you need in the accounting domain among custom financial accounting software solutions like dynamic payment schedules, API integration, expense tracking, invoice management, and rich reporting module.</p>
+            </div>
+            <div class="card">
+              <div class="h-label card-label">Leasing</div>
+              <h3 class="h3">Be the future of the accounting landscape with our custom accounting software. 3</h3>
+              <p>We focus on accounting information system design, mobile accounting app development, and invoicing and accounts receivable.</p>
+              <p>Find everything you need in the accounting domain among custom financial accounting software solutions like dynamic payment schedules, API integration, expense tracking, invoice management, and rich reporting module.</p>
+            </div>
+            <div class="card">
+              <div class="h-label card-label">Mortgage</div>
+              <h3 class="h3">Be the future of the accounting landscape with our custom accounting software. 4</h3>
+              <p>We focus on accounting information system design, mobile accounting app development, and invoicing and accounts receivable.</p>
+              <p>Find everything you need in the accounting domain among custom financial accounting software solutions like dynamic payment schedules, API integration, expense tracking, invoice management, and rich reporting module.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -200,48 +225,31 @@
     <div class="content">
       <div class="section-label">Highlighted Projects</div>
       <div class="lead-text">At SmartexLab, we take pride in our projects. Learn more about the fintech projects we have delivered to meet our clients’ needs.</div>
-      <ul class="list-of-project">
-        <li>
-          <a href="#" class="project" style="background: url(images/project_preview_2_3_ticketpony.png)">
-            <div class="text-block">
-              <h3 class="h3">ThingIT</h3>
-              <p>End-to-end solution to connect all your systems, things, processes and data under a single IoT platform</p>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="project" style="background: url(images/project_preview_2_3_papaya.png)">
-            <div class="text-block">
-              <h3 class="h3">Papaya Global</h3>
-              <p>First GDPR compliant global HRIS solution</p>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="project dark-img" style="background: url(images/project_preview_1_3_dealtable.png)">
-            <div class="text-block">
-              <h3 class="h3">Dealtabe</h3>
-              <p>Secure deal management platform for founders and investors to manage deals, process documents online, and share files</p>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="project dark-img" style="background: url(images/project_preview_1_3_night_owl.png)">
-            <div class="text-block">
-              <h3 class="h3">NightOwl</h3>
-              <p>GDPR compliant privacy and consent management platform in real-time</p>
-            </div>
-          </a>
-        </li>
-      </ul>
-      <div class="carousel-navigation-block">
-        <ul class="carousel-navigation">
-          <li></li>
-          <li class="active"></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+      <div class="owl-carousel projects-carousel list-of-project">
+        <a href="javascript:void(0)" class="project" style="background: url(images/project_preview_2_3_ticketpony.png)">
+          <div class="text-block">
+            <h3 class="h3">ThingIT</h3>
+            <p>End-to-end solution to connect all your systems, things, processes and data under a single IoT platform</p>
+          </div>
+        </a>
+        <a href="javascript:void(0)" class="project" style="background: url(images/project_preview_2_3_papaya.png)">
+          <div class="text-block">
+            <h3 class="h3">Papaya Global</h3>
+            <p>First GDPR compliant global HRIS solution</p>
+          </div>
+        </a>
+        <a href="javascript:void(0)" class="project dark-img" style="background: url(images/project_preview_1_3_dealtable.png)">
+          <div class="text-block">
+            <h3 class="h3">Dealtabe</h3>
+            <p>Secure deal management platform for founders and investors to manage deals, process documents online, and share files</p>
+          </div>
+        </a>
+        <a href="javascript:void(0)" class="project dark-img" style="background: url(images/project_preview_1_3_night_owl.png)">
+          <div class="text-block">
+            <h3 class="h3">NightOwl</h3>
+            <p>GDPR compliant privacy and consent management platform in real-time</p>
+          </div>
+        </a>
       </div>
     </div>
   </div>
@@ -475,6 +483,7 @@
   </div>
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.malihu.PageScroll2id.js"></script>
+  <script src="owl/owl.carousel.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
