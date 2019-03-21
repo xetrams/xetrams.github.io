@@ -140,3 +140,31 @@ if($('.projects-carousel').length >0 ) {
 		}
 	});
 }
+
+
+// BENEFITS LIST
+
+if($('.benefits-list').length >0 ) {
+	var benefits = $('.benefits-list li');
+	var benefitsNum = benefits.length;
+
+	for (var i = 0; i < benefits.length; i++) {
+		if ($(benefits[i]).hasClass('active')) {
+			$(".active .block-content-wrapper").slideDown(0);
+		}
+	}
+
+	for (var i = 0; i < benefits.length; i++) {
+
+		$(benefits[i]).click(function(i) {
+			if (!$(this).hasClass('active')) {
+				for (var j = 0; j < benefitsNum; j++) {
+					$(benefits[j]).removeClass();
+					$(benefits[j]).find('.block-content-wrapper').slideUp(300);
+				}
+				$(this).addClass('active');
+				$(".active .block-content-wrapper").slideDown(300);
+			}
+		});
+	}
+}

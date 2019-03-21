@@ -3,6 +3,7 @@
 @import "typography.scss";
 @import "homepage.scss";
 @import "what-we-do.scss";
+@import "benefits.scss";
 @import "domain.scss";
 @import "main-menu.scss";
 @import "normalize.scss";
@@ -49,6 +50,10 @@ li {
 
 .no-border {
   border: none !important;
+}
+
+.border-top {
+  border-top: 1px solid #e8ebf2 !important;
 }
 
 // html {background: url(../homepage.jpg) center 0;}body {opacity: 0.5;} 
