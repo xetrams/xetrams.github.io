@@ -43,10 +43,20 @@ var menuOffset = $(".main-header").height();
 // PROGRESS BAR
 if($('.progress-bar').length >0 ) {
 	var vindowHeight = $(window).height();
+
 	var progressOffset = $('.progress-bar').offset().top;
 	var headerHeight = $('.main-header').height();
 	var halfScreen = $(window).height()/2 + headerHeight/2;
 	var progressBarHeight = $('.progress-bar').height();
+
+	$(window).resize(function (event) {
+		vindowHeight = $(window).height();
+		progressOffset = $('.progress-bar').offset().top;
+		headerHeight = $('.main-header').height();
+		halfScreen = $(window).height()/2 + headerHeight/2;
+		progressBarHeight = $('.progress-bar').height();
+	});
+
 	var progress = $('.progress');
 
 	var listOfPanels = $('.progress-bar-block li');
