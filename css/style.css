@@ -3272,6 +3272,36 @@ p {
         margin-top: 25px;
         margin-bottom: 82px; } }
 
+.what-we-do-section.what-we-do-section__border {
+  border-bottom: 1px solid #e8ebf2 !important;
+  padding-bottom: 75px; }
+  @media (max-width: 840px) {
+    .what-we-do-section.what-we-do-section__border {
+      padding-bottom: 50px; } }
+.what-we-do-section .lead-text {
+  font-family: "Exo 2";
+  color: var(--light-navy);
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+  width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 32px;
+  margin-bottom: 75px; }
+  @media (max-width: 1200px) {
+    .what-we-do-section .lead-text {
+      font-size: 18px;
+      line-height: 26px;
+      width: 630px;
+      margin-top: 25px; } }
+  @media (max-width: 840px) {
+    .what-we-do-section .lead-text {
+      margin-top: 15px;
+      margin-bottom: 35px;
+      width: auto;
+      margin-left: 20px;
+      margin-right: 20px; } }
 .what-we-do-section .col-lg-4 {
   position: relative; }
   @media (max-width: 840px) {
@@ -3300,12 +3330,15 @@ p {
     color: #00298f; }
 .what-we-do-section .h-label {
   text-align: center;
-  margin-top: 75px;
-  margin-bottom: 50px; }
+  margin-top: 75px; }
   @media (max-width: 840px) {
     .what-we-do-section .h-label {
-      margin-top: 50px;
-      margin-bottom: 20px; } }
+      margin-top: 50px; } }
+.what-we-do-section .h-label + .container {
+  margin-top: 50px; }
+  @media (max-width: 840px) {
+    .what-we-do-section .h-label + .container {
+      margin-top: 20px; } }
 .what-we-do-section .block {
   display: block;
   text-decoration: none;
@@ -6037,5 +6070,8 @@ li {
 
 .border-top {
   border-top: 1px solid #e8ebf2 !important; }
+
+.border-bottom {
+  border-bottom: 1px solid #e8ebf2 !important; }
 
 /*# sourceMappingURL=style.css.map */
