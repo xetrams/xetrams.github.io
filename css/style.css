@@ -3317,17 +3317,11 @@ p {
     left: 20px;
     box-shadow: 0 0 0 1px #e8ebf2;
     border-radius: 4px;
-    transition: .3s;
-    cursor: pointer; }
+    transition: .3s; }
     @media (max-width: 1200px) {
       .what-we-do-section .col-lg-4:after {
         right: 15px;
         left: 15px; } }
-  .what-we-do-section .col-lg-4:hover:after {
-    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.15);
-    border-color: rgba(0, 0, 0, 0); }
-  .what-we-do-section .col-lg-4:hover .link-more {
-    color: #00298f; }
 .what-we-do-section .h-label {
   text-align: center;
   margin-top: 75px; }

@@ -98,7 +98,7 @@
       box-shadow: 0 0 0 1px rgb(232, 235, 242);
       border-radius: 4px;
       transition: .3s;
-      cursor: pointer;
+      // cursor: pointer;
 
       @media (max-width: 1200px) {
         right: 15px;
@@ -106,17 +106,17 @@
       }
     }
 
-    &:hover{
+    // &:hover {
 
-      &:after {
-        box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.15);
-        border-color: rgba(0, 0, 0, 0);
-      }
+    //   &:after {
+    //     box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.15);
+    //     border-color: rgba(0, 0, 0, 0);
+    //   }
 
-      .link-more {
-        color: #00298f;
-      }
-    }
+    //   .link-more {
+    //     color: #00298f;
+    //   }
+    // }
   }
 
   .h-label {
