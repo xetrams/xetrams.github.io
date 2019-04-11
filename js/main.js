@@ -1,10 +1,10 @@
 // MAIN MENU
 
-var mainMenu = document.getElementsByClassName("main-menu")[0];
+let mainMenu = document.getElementsByClassName("main-menu")[0];
 
-var overlay = document.getElementsByClassName("overlay")[0];
-var burger = document.getElementsByClassName("burger-btn")[0];
-var cross = document.getElementsByClassName("menu-cross")[0];
+let overlay = document.getElementsByClassName("overlay")[0];
+let burger = document.getElementsByClassName("burger-btn")[0];
+let cross = document.getElementsByClassName("menu-cross")[0];
 
 overlay.addEventListener("click", toggleMenu);
 burger.addEventListener("click", toggleMenu);
@@ -19,9 +19,9 @@ function toggleMenu() {
   }
 }
 
-var dropLink = document.getElementsByClassName("drop-opener");
+let dropLink = document.getElementsByClassName("drop-opener");
 
-for (var i = 0; i < dropLink.length; i++) {
+for (let i = 0; i < dropLink.length; i++) {
 
   dropLink[i].addEventListener("click", function() {
 	if (this.className == "drop-opener") {
@@ -32,7 +32,7 @@ for (var i = 0; i < dropLink.length; i++) {
   }, false);
 }
 
-var menuOffset = $(".main-header").height();
+let menuOffset = $(".main-header").height();
 (function($){
 	$(window).on("load",function(){
 		$("a[rel='m_PageScroll2id']").mPageScroll2id({scrollSpeed: 500,offset: menuOffset});
@@ -42,12 +42,12 @@ var menuOffset = $(".main-header").height();
 
 // PROGRESS BAR
 if($('.progress-bar').length >0 ) {
-	var vindowHeight = $(window).height();
+	let vindowHeight = $(window).height();
 
-	var progressOffset = $('.progress-bar').offset().top;
-	var headerHeight = $('.main-header').height();
-	var halfScreen = $(window).height()/2 + headerHeight/2;
-	var progressBarHeight = $('.progress-bar').height();
+	let progressOffset = $('.progress-bar').offset().top;
+	let headerHeight = $('.main-header').height();
+	let halfScreen = $(window).height()/2 + headerHeight/2;
+	let progressBarHeight = $('.progress-bar').height();
 
 	$(window).resize(function (event) {
 		vindowHeight = $(window).height();
@@ -57,14 +57,14 @@ if($('.progress-bar').length >0 ) {
 		progressBarHeight = $('.progress-bar').height();
 	});
 
-	var progress = $('.progress');
+	let progress = $('.progress');
 
-	var listOfPanels = $('.progress-bar-block li');
-	var numOfPanels = $('.progress-bar-block li').length;
+	let listOfPanels = $('.progress-bar-block li');
+	let numOfPanels = $('.progress-bar-block li').length;
 
 
 	function manageActivePanels(progress) {
-		for (var i = 0; i < numOfPanels; i++) {
+		for (let i = 0; i < numOfPanels; i++) {
 			if ($(listOfPanels[i]).offset().top - progress < 0) {
 				$(listOfPanels[i]).addClass("active");
 			} else {
@@ -76,9 +76,9 @@ if($('.progress-bar').length >0 ) {
 	manageActivePanels();
 
 	$(window).scroll(function (event) {
-		var scroll = $(window).scrollTop();
-		var middleScreen = scroll + halfScreen;
-		var progressHeight = middleScreen - progressOffset;
+		let scroll = $(window).scrollTop();
+		let middleScreen = scroll + halfScreen;
+		let progressHeight = middleScreen - progressOffset;
 		manageActivePanels(middleScreen - 26);
 		if (progressHeight > 0 && progressHeight < progressBarHeight) {
 			progress.height(progressHeight);
@@ -90,9 +90,9 @@ if($('.progress-bar').length >0 ) {
 	});
 
 	$(window).ready(function (event) {
-		var scroll = $(window).scrollTop();
-		var middleScreen = scroll + halfScreen;
-		var progressHeight = middleScreen - progressOffset;
+		let scroll = $(window).scrollTop();
+		let middleScreen = scroll + halfScreen;
+		let progressHeight = middleScreen - progressOffset;
 		manageActivePanels(middleScreen - 26);
 		if (progressHeight > 0 && progressHeight < progressBarHeight) {
 			progress.height(progressHeight);
@@ -108,15 +108,15 @@ if($('.progress-bar').length >0 ) {
 // TABS
 
 if($('.tab-list').length >0 ) {
-	var tabs = $('.tab-list li');
-	var tabsNum = tabs.length;
-	var cards = $('.card-stack .card');
+	let tabs = $('.tab-list li');
+	let tabsNum = tabs.length;
+	let cards = $('.card-stack .card');
 
-	for (var i = 0; i < tabsNum; i++) {
+	for (let i = 0; i < tabsNum; i++) {
 
 		$(tabs[i]).click(function(i) {
-			var l = $(this).data("position") - 1;
-			for (var j = 0; j < tabsNum; j++) {
+			let l = $(this).data("position") - 1;
+			for (let j = 0; j < tabsNum; j++) {
 				if (l != j) {
 					$(cards[j]).fadeOut(0);
 					$(tabs[j]).removeClass('active');
@@ -155,25 +155,69 @@ if($('.projects-carousel').length >0 ) {
 // BENEFITS LIST
 
 if($('.benefits-list').length >0 ) {
-	var benefits = $('.benefits-list li');
-	var benefitsNum = benefits.length;
+	let benefits = $('.benefits-list li');
+	let benefitsNum = benefits.length;
 
-	for (var i = 0; i < benefits.length; i++) {
+	for (let i = 0; i < benefits.length; i++) {
 		if ($(benefits[i]).hasClass('active')) {
 			$(".active .block-content-wrapper").slideDown(0);
 		}
 	}
 
-	for (var i = 0; i < benefits.length; i++) {
+	for (let i = 0; i < benefits.length; i++) {
 
 		$(benefits[i]).click(function(i) {
 			if (!$(this).hasClass('active')) {
-				for (var j = 0; j < benefitsNum; j++) {
+				for (let j = 0; j < benefitsNum; j++) {
 					$(benefits[j]).removeClass();
 					$(benefits[j]).find('.block-content-wrapper').slideUp(300);
 				}
 				$(this).addClass('active');
 				$(".active .block-content-wrapper").slideDown(300);
+			}
+		});
+	}
+}
+
+
+// PORTFOLIO LIST
+
+
+if($('#category-selector').length > 0 ) {
+	let tabs = $('#category-selector a');
+	let tabsNum = tabs.length;
+
+	for (let i = 0; i < tabsNum; i++) {
+
+		$(tabs[i]).click(function(i) {
+			if ($(this).hasClass("link")) {
+				for (let j = 0; j < tabsNum; j++) {
+					if ($(tabs[j]).hasClass("active")) {
+						$(tabs[j]).addClass("link").removeClass("active");
+					}
+				}
+
+				$(this).addClass("active").removeClass("link");
+			}
+		});
+	}
+}
+
+if($('#area-selector').length > 0 ) {
+	let tabs = $('#area-selector a');
+	let tabsNum = tabs.length;
+
+	for (let i = 0; i < tabsNum; i++) {
+
+		$(tabs[i]).click(function(i) {
+			if ($(this).hasClass("link")) {
+				for (let j = 0; j < tabsNum; j++) {
+					if ($(tabs[j]).hasClass("active")) {
+						$(tabs[j]).addClass("link").removeClass("active");
+					}
+				}
+
+				$(this).addClass("active").removeClass("link");
 			}
 		});
 	}
