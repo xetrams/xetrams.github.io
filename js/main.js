@@ -182,10 +182,13 @@ if($('.benefits-list').length >0 ) {
 
 // PORTFOLIO LIST
 
+var projectsCategory = "all";
+var projectsArea = "all";
 
 if($('#category-selector').length > 0 ) {
 	let tabs = $('#category-selector a');
 	let tabsNum = tabs.length;
+	let projects = $(".project");
 
 	for (let i = 0; i < tabsNum; i++) {
 
@@ -194,6 +197,22 @@ if($('#category-selector').length > 0 ) {
 				for (let j = 0; j < tabsNum; j++) {
 					if ($(tabs[j]).hasClass("active")) {
 						$(tabs[j]).addClass("link").removeClass("active");
+					}
+				}
+
+				projectsCategory = $(this).data("selector");
+
+				for (let i = 0; i < projects.length; i++) {
+					if (projectsCategory == "all" && projectsArea == "all") {
+						$(projects[i]).show();
+					} else if ($(projects[i]).data("category") == projectsCategory && projectsArea == "all") {
+						$(projects[i]).show();
+					} else if ("all" == projectsCategory && $(projects[i]).data("area") == projectsArea) {
+						$(projects[i]).hide();
+					} else if ($(projects[i]).data("category") == projectsCategory && $(projects[i]).data("area") == projectsArea) {
+						$(projects[i]).show();
+					} else {
+						$(projects[i]).hide();
 					}
 				}
 
@@ -206,6 +225,7 @@ if($('#category-selector').length > 0 ) {
 if($('#area-selector').length > 0 ) {
 	let tabs = $('#area-selector a');
 	let tabsNum = tabs.length;
+	let projects = $(".project");
 
 	for (let i = 0; i < tabsNum; i++) {
 
@@ -214,6 +234,22 @@ if($('#area-selector').length > 0 ) {
 				for (let j = 0; j < tabsNum; j++) {
 					if ($(tabs[j]).hasClass("active")) {
 						$(tabs[j]).addClass("link").removeClass("active");
+					}
+				}
+
+				projectsArea = $(this).data("selector");
+
+				for (let i = 0; i < projects.length; i++) {
+					if (projectsCategory == "all" && projectsArea == "all") {
+						$(projects[i]).show();
+					} else if ($(projects[i]).data("category") == projectsCategory && projectsArea == "all") {
+						$(projects[i]).show();
+					} else if ("all" == projectsCategory && $(projects[i]).data("area") == projectsArea) {
+						$(projects[i]).show();
+					} else if ($(projects[i]).data("category") == projectsCategory && $(projects[i]).data("area") == projectsArea) {
+						$(projects[i]).show();
+					} else {
+						$(projects[i]).hide();
 					}
 				}
 

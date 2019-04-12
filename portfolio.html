@@ -46,7 +46,7 @@
               </li>
             </ul>
           </li>
-          <li class="expandable active">
+          <li class="expandable">
             <a class="drop-opener" href="#">Solutions</a>
             <ul class="dropdown">
               <li><a href="javascript:void(0)"></a></li>
@@ -72,7 +72,7 @@
               <li><a href="javascript:void(0)">Zoho CRM</a></li>
             </ul>
           </li>
-          <li><a href="#">Portfolio</a></li>
+          <li class="active"><a href="#">Portfolio</a></li>
           <li><a href="#">Insights</a></li>
           <li class="menu-btn"><a href="#contact-section" rel="m_PageScroll2id">Contact</a></li>
         </ul>
@@ -93,128 +93,130 @@
       <div class="type-choosing-part">
         <div class="label">Show:</div>
         <ul class="project-selector" id="category-selector">
-          <li><a href="javascript:void(0)" class="active">All Projects</a></li>
-          <li><a href="javascript:void(0)" class="link">Domains</a></li>
-          <li><a href="javascript:void(0)" class="link">Solutions</a></li>
+          <li><a href="javascript:void(0)" data-selector="all" class="active">All Projects</a></li>
+          <li><a href="javascript:void(0)" data-selector="domains" class="link">Domains</a></li>
+          <li><a href="javascript:void(0)" data-selector="solutions" class="link">Solutions</a></li>
         </ul>
       </div>
       <div class="area-choosing-part">
         <ul class="project-selector" id="area-selector">
-          <li><a href="javascript:void(0)" class="active">All Categories</a></li>
-          <li><a href="javascript:void(0)" class="disabled">Revenue Cycle Management</a></li>
-          <li><a href="javascript:void(0)" class="link">Billing</a></li>
-          <li><a href="javascript:void(0)" class="link">Scheduling</a></li>
-          <li><a href="javascript:void(0)" class="disabled">Office Management</a></li>
-          <li><a href="javascript:void(0)" class="link">Payroll</a></li>
-          <li><a href="javascript:void(0)" class="disabled">Practice Management</a></li>
-          <li><a href="javascript:void(0)" class="disabled">Payment Processing</a></li>
-          <li><a href="javascript:void(0)" class="disabled">Therapist</a></li>
-          <li><a href="javascript:void(0)" class="disabled">Pharmacy</a></li>
-          <li><a href="javascript:void(0)" class="disabled">Accounting</a></li>
-          <li><a href="javascript:void(0)" class="link">Loan</a></li>
+          <li><a href="javascript:void(0)" class="active" data-selector="all">All Categories</a></li>
+          <li><a href="javascript:void(0)" class="disabled" data-selector="revenue_cycle_management">Revenue Cycle Management</a></li>
+          <li><a href="javascript:void(0)" class="link" data-selector="billing">Billing</a></li>
+          <li><a href="javascript:void(0)" class="link" data-selector="scheduling">Scheduling</a></li>
+          <li><a href="javascript:void(0)" class="disabled" data-selector="office-management">Office Management</a></li>
+          <li><a href="javascript:void(0)" class="link" data-selector="payroll">Payroll</a></li>
+          <li><a href="javascript:void(0)" class="disabled" data-selector="practice_management">Practice Management</a></li>
+          <li><a href="javascript:void(0)" class="disabled" data-selector="payment_processing">Payment Processing</a></li>
+          <li><a href="javascript:void(0)" class="disabled" data-selector="therapist">Therapist</a></li>
+          <li><a href="javascript:void(0)" class="disabled" data-selector="pharmacy">Pharmacy</a></li>
+          <li><a href="javascript:void(0)" class="disabled" data-selector="accounting">Accounting</a></li>
+          <li><a href="javascript:void(0)" class="link" data-selector="loan">Loan</a></li>
         </ul>
       </div>
     </div>
   </div>
   <div class="container">
-    <div class="portfolio-projects-list">
-      <a href="javascript:void(0)" class="project" style="background: url(images/project_preview_2_3_ticketpony.png)">
-        <div class="text-block">
-          <h3 class="h3">ThingIT</h3>
-          <p>End-to-end solution to connect all your systems, things, processes and data under a single IoT platform.</p>
-          <p>The platform provides business process and task management modeling and execution capabilities to add new value chains to current business solution and digitize industries. </p>
-        </div>
-      </a>
-      <a href="javascript:void(0)" class="project" style="background: url(images/project_preview_2_3_papaya.png)">
-        <div class="text-block">
-          <h3 class="h3">Papaya Global</h3>
-          <p>First GDPR compliant global HRIS solution</p>
-        </div>
-      </a>
-      <a href="javascript:void(0)" class="project dark-img" style="background: url(images/project_preview_1_3_dealtable.png)">
-        <div class="text-block">
-          <h3 class="h3">Dealtabe</h3>
-          <p>Secure deal management platform for founders and investors to manage deals, process documents online, and share files</p>
-        </div>
-      </a>
-      <a href="javascript:void(0)" class="project dark-img" style="background: url(images/project_preview_1_3_night_owl.png)">
-        <div class="text-block">
-          <h3 class="h3">NightOwl</h3>
-          <p>GDPR compliant privacy and consent management platform in real-time</p>
-        </div>
-      </a>
-      <a href="javascript:void(0)" class="project" style="background: url(images/project_preview_2_3_ticketpony.png)">
-        <div class="text-block">
-          <h3 class="h3">ThingIT</h3>
-          <p>End-to-end solution to connect all your systems, things, processes and data under a single IoT platform</p>
-        </div>
-      </a>
-      <a href="javascript:void(0)" class="project" style="background: url(images/project_preview_2_3_papaya.png)">
-        <div class="text-block">
-          <h3 class="h3">Papaya Global</h3>
-          <p>First GDPR compliant global HRIS solution</p>
-        </div>
-      </a>
-      <a href="javascript:void(0)" class="project dark-img" style="background: url(images/project_preview_1_3_dealtable.png)">
-        <div class="text-block">
-          <h3 class="h3">Dealtabe</h3>
-          <p>Secure deal management platform for founders and investors to manage deals, process documents online, and share files</p>
-        </div>
-      </a>
-      <a href="javascript:void(0)" class="project dark-img" style="background: url(images/project_preview_1_3_night_owl.png)">
-        <div class="text-block">
-          <h3 class="h3">NightOwl</h3>
-          <p>GDPR compliant privacy and consent management platform in real-time</p>
-        </div>
-      </a>
-      <a href="javascript:void(0)" class="project" style="background: url(images/project_preview_2_3_ticketpony.png)">
-        <div class="text-block">
-          <h3 class="h3">ThingIT</h3>
-          <p>End-to-end solution to connect all your systems, things, processes and data under a single IoT platform</p>
-        </div>
-      </a>
-      <a href="javascript:void(0)" class="project" style="background: url(images/project_preview_2_3_papaya.png)">
-        <div class="text-block">
-          <h3 class="h3">Papaya Global</h3>
-          <p>First GDPR compliant global HRIS solution</p>
-        </div>
-      </a>
-      <a href="javascript:void(0)" class="project dark-img" style="background: url(images/project_preview_1_3_dealtable.png)">
-        <div class="text-block">
-          <h3 class="h3">Dealtabe</h3>
-          <p>Secure deal management platform for founders and investors to manage deals, process documents online, and share files</p>
-        </div>
-      </a>
-      <a href="javascript:void(0)" class="project dark-img" style="background: url(images/project_preview_1_3_night_owl.png)">
-        <div class="text-block">
-          <h3 class="h3">NightOwl</h3>
-          <p>GDPR compliant privacy and consent management platform in real-time</p>
-        </div>
-      </a>
-      <a href="javascript:void(0)" class="project" style="background: url(images/project_preview_2_3_ticketpony.png)">
-        <div class="text-block">
-          <h3 class="h3">ThingIT</h3>
-          <p>End-to-end solution to connect all your systems, things, processes and data under a single IoT platform</p>
-        </div>
-      </a>
-      <a href="javascript:void(0)" class="project" style="background: url(images/project_preview_2_3_papaya.png)">
-        <div class="text-block">
-          <h3 class="h3">Papaya Global</h3>
-          <p>First GDPR compliant global HRIS solution</p>
-        </div>
-      </a>
-      <a href="javascript:void(0)" class="project dark-img" style="background: url(images/project_preview_1_3_dealtable.png)">
-        <div class="text-block">
-          <h3 class="h3">Dealtabe</h3>
-          <p>Secure deal management platform for founders and investors to manage deals, process documents online, and share files</p>
-        </div>
-      </a>
-      <a href="javascript:void(0)" class="project dark-img" style="background: url(images/project_preview_1_3_night_owl.png)">
-        <div class="text-block">
-          <h3 class="h3">NightOwl</h3>
-          <p>GDPR compliant privacy and consent management platform in real-time</p>
-        </div>
-      </a>
+    <div class="row">
+      <div class="portfolio-projects-list">
+        <a href="javascript:void(0)" data-category="domains" data-area="pharmacy" class="project" style="background: url(images/project_preview_2_3_ticketpony.png)">
+          <div class="text-block">
+            <h3 class="h3">ThingIT</h3>
+            <p>End-to-end solution to connect all your systems, things, processes and data under a single IoT platform.</p>
+            <p>The platform provides business process and task management modeling and execution capabilities to add new value chains to current business solution and digitize industries. </p>
+          </div>
+        </a>
+        <a href="javascript:void(0)" class="project" data-category="domains" data-area="accounting" style="background: url(images/project_preview_2_3_papaya.png)">
+          <div class="text-block">
+            <h3 class="h3">Papaya Global</h3>
+            <p>First GDPR compliant global HRIS solution</p>
+          </div>
+        </a>
+        <a href="javascript:void(0)" class="project dark-img" data-category="domains" data-area="loan" style="background: url(images/project_preview_1_3_dealtable.png)">
+          <div class="text-block">
+            <h3 class="h3">Dealtabe</h3>
+            <p>Secure deal management platform for founders and investors to manage deals, process documents online, and share files</p>
+          </div>
+        </a>
+        <a href="javascript:void(0)" class="project dark-img" data-category="solutions" data-area="accounting" style="background: url(images/project_preview_1_3_night_owl.png)">
+          <div class="text-block">
+            <h3 class="h3">NightOwl</h3>
+            <p>GDPR compliant privacy and consent management platform in real-time</p>
+          </div>
+        </a>
+        <a href="javascript:void(0)" class="project" data-category="solutions" data-area="loan" style="background: url(images/project_preview_2_3_ticketpony.png)">
+          <div class="text-block">
+            <h3 class="h3">ThingIT</h3>
+            <p>End-to-end solution to connect all your systems, things, processes and data under a single IoT platform</p>
+          </div>
+        </a>
+        <a href="javascript:void(0)" class="project" data-category="domains" data-area="therapist" style="background: url(images/project_preview_2_3_papaya.png)">
+          <div class="text-block">
+            <h3 class="h3">Papaya Global</h3>
+            <p>First GDPR compliant global HRIS solution</p>
+          </div>
+        </a>
+        <a href="javascript:void(0)" class="project dark-img" data-category="domains" data-area="therapist" style="background: url(images/project_preview_1_3_dealtable.png)">
+          <div class="text-block">
+            <h3 class="h3">Dealtabe</h3>
+            <p>Secure deal management platform for founders and investors to manage deals, process documents online, and share files</p>
+          </div>
+        </a>
+        <a href="javascript:void(0)" class="project dark-img" data-category="solutions" data-area="therapist" style="background: url(images/project_preview_1_3_night_owl.png)">
+          <div class="text-block">
+            <h3 class="h3">NightOwl</h3>
+            <p>GDPR compliant privacy and consent management platform in real-time</p>
+          </div>
+        </a>
+        <a href="javascript:void(0)" class="project" data-category="solutions" data-area="loan" style="background: url(images/project_preview_2_3_ticketpony.png)">
+          <div class="text-block">
+            <h3 class="h3">ThingIT</h3>
+            <p>End-to-end solution to connect all your systems, things, processes and data under a single IoT platform</p>
+          </div>
+        </a>
+        <a href="javascript:void(0)" class="project" data-category="domains" data-area="therapist" style="background: url(images/project_preview_2_3_papaya.png)">
+          <div class="text-block">
+            <h3 class="h3">Papaya Global</h3>
+            <p>First GDPR compliant global HRIS solution</p>
+          </div>
+        </a>
+        <a href="javascript:void(0)" class="project dark-img" data-category="domains" data-area="payment_processing" style="background: url(images/project_preview_1_3_dealtable.png)">
+          <div class="text-block">
+            <h3 class="h3">Dealtabe</h3>
+            <p>Secure deal management platform for founders and investors to manage deals, process documents online, and share files</p>
+          </div>
+        </a>
+        <a href="javascript:void(0)" class="project dark-img" data-category="solutions" data-area="payment_processing" style="background: url(images/project_preview_1_3_night_owl.png)">
+          <div class="text-block">
+            <h3 class="h3">NightOwl</h3>
+            <p>GDPR compliant privacy and consent management platform in real-time</p>
+          </div>
+        </a>
+        <a href="javascript:void(0)" class="project" data-category="domains" data-area="loan" style="background: url(images/project_preview_2_3_ticketpony.png)">
+          <div class="text-block">
+            <h3 class="h3">ThingIT</h3>
+            <p>End-to-end solution to connect all your systems, things, processes and data under a single IoT platform</p>
+          </div>
+        </a>
+        <a href="javascript:void(0)" class="project" data-category="domains" data-area="loan" style="background: url(images/project_preview_2_3_papaya.png)">
+          <div class="text-block">
+            <h3 class="h3">Papaya Global</h3>
+            <p>First GDPR compliant global HRIS solution</p>
+          </div>
+        </a>
+        <a href="javascript:void(0)" class="project dark-img" data-category="domains" data-area="loan" style="background: url(images/project_preview_1_3_dealtable.png)">
+          <div class="text-block">
+            <h3 class="h3">Dealtabe</h3>
+            <p>Secure deal management platform for founders and investors to manage deals, process documents online, and share files</p>
+          </div>
+        </a>
+        <a href="javascript:void(0)" class="project dark-img" data-category="solutions" data-area="scheduling" style="background: url(images/project_preview_1_3_night_owl.png)">
+          <div class="text-block">
+            <h3 class="h3">NightOwl</h3>
+            <p>GDPR compliant privacy and consent management platform in real-time</p>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
   
