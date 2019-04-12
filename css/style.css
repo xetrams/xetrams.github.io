@@ -6132,8 +6132,14 @@ template {
           background: var(--darkish-blue-darker);
           box-shadow: 8px 8px 15px 0 rgba(0, 0, 0, 0.15); }
 
-.portfolio-header + .container > .portfolio-projects-list {
+.portfolio-header + .container > .row {
   margin-top: -75px; }
+  @media (max-width: 1200px) {
+    .portfolio-header + .container > .row {
+      margin-top: -100px; } }
+  @media (max-width: 840px) {
+    .portfolio-header + .container > .row {
+      margin-top: -150px; } }
 
 .portfolio-header {
   background: #f9f9f9;
