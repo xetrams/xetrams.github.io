@@ -87,29 +87,27 @@
       <h1 class="h2">SmartexLab Privacy Policy</h1>
     </div>
   </div>
-  <div class="container">
+  <div class="container main-container">
     <div class="row">
       <div class="col-lg-4">
-        <h3 class="h-label header-leagal-tabs">Contents</h3>
-        <ul class="legal-tabs">
-          <li><a class="active" href="#general" rel="m_PageScroll2id">General</a></li>
-          <li><a rel="m_PageScroll2id" href="#personal-data">What is personal data?</a></li>
-          <li><a href="#smartex-info" rel="m_PageScroll2id">What information does SmartexLab collect about you?</a></li>
-          <li><a href="#when-smartex-collect" rel="m_PageScroll2id">When does SmartexLab collect your information?</a></li>
-          <li><a href="#how-smartex-use" rel="m_PageScroll2id">How does SmartexLab use your information?</a></li>
-          <li><a href="#what-rights" rel="m_PageScroll2id">What are your rights over your personal data?</a></li>
-          <li><a href="#general" rel="m_PageScroll2id">How does SmartexLab process your personal information, and how long do we do it for?</a></li>
-          <li><a href="#general" rel="m_PageScroll2id">What third parties do we disclose your information to?</a></li>
-          <li><a href="#general" rel="m_PageScroll2id">How does SmartexLab safeguard your personal information?</a></li>
-          <li><a href="#general" rel="m_PageScroll2id">What about links to other sites and services?</a></li>
-          <li><a href="#smartex-cookie" rel="m_PageScroll2id">What is SmartexLab’s cookie policy?</a></li>
-          <li><a href="#control-cookies" rel="m_PageScroll2id">Can you control your cookies?</a></li>
-          <li><a href="#ad-targeting" rel="m_PageScroll2id">Can you opt out of interest-based ad targeting?</a></li>
-          <li><a href="#privacy-changes" rel="m_PageScroll2id">Changes to the Privacy Policy</a></li>
-          <li><a href="#contact-section" rel="m_PageScroll2id">Contac Us</a></li>
-        </ul>
+        <div id="sticky-aside">
+          <h3 class="h-label header-leagal-tabs">Contents</h3>
+          <ul class="legal-tabs">
+            <li><a class="active" href="#general" rel="m_PageScroll2id">General</a></li>
+            <li><a rel="m_PageScroll2id" href="#personal-data">What is personal data?</a></li>
+            <li><a href="#smartex-info" rel="m_PageScroll2id">What information does SmartexLab collect about you?</a></li>
+            <li><a href="#when-smartex-collect" rel="m_PageScroll2id">When does SmartexLab collect your information?</a></li>
+            <li><a href="#how-smartex-use" rel="m_PageScroll2id">How does SmartexLab use your information?</a></li>
+            <li><a href="#what-rights" rel="m_PageScroll2id">What are your rights over your personal data?</a></li>
+            <li><a href="#smartex-cookie" rel="m_PageScroll2id">What is SmartexLab’s cookie policy?</a></li>
+            <li><a href="#control-cookies" rel="m_PageScroll2id">Can you control your cookies?</a></li>
+            <li><a href="#ad-targeting" rel="m_PageScroll2id">Can you opt out of interest-based ad targeting?</a></li>
+            <li><a href="#privacy-changes" rel="m_PageScroll2id">Changes to the Privacy Policy</a></li>
+            <li><a href="#contact-section" rel="m_PageScroll2id">Contac Us</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="col-lg-7 offset-lg-1">
+      <div class="col-xl-7 offset-xl-1 col-lg-8 offset-lg-0">
         <div class="legal-text-content">
           <p class="note">Note: Throughout, SmartexLab stands in for the client company name and other placeholder text including the client company address,  website address and so forth is also capitalized.</p>
           <h3 class="h3" id="general">General</h3>
@@ -442,8 +440,20 @@
     </div>
   </div>
   <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.sticky-kit.min.js"></script>
   <script src="js/jquery.malihu.PageScroll2id.js"></script>
   <script src="owl/owl.carousel.min.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#sticky-aside").stick_in_parent()
+      .on("sticky_kit:bottom", function(e) {
+        console.log("bottom!", e.target);
+      })
+      .on("sticky_kit:unbottom", function(e) {
+        console.log("unbottom!", e.target);
+      });
+    });
+  </script>
 </body>
 </html>

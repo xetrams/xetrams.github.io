@@ -1,3 +1,27 @@
+.main-container {
+  margin-top: -100px;
+
+  @media (max-width: 1200px) {
+    margin-top: -130px;
+  }
+
+  @media (max-width: 840px) {
+    margin-top: 0;
+  }
+}
+
+#sticky-aside, .legal-text-content  {
+  padding-top: 100px;
+
+  @media (max-width: 1200px) {
+    padding-top: 130px;
+  }
+
+  @media (max-width: 840px) {
+    padding-top: 0;
+  }
+}
+
 .legal-header {
   padding: 100px 0;
   background: #f9f9f9;
@@ -10,6 +34,19 @@
 
   @media (max-width: 840px) {
     margin-top: 50px;
+    padding: 50px 0;
+    margin-bottom: 50px;
+  }
+}
+
+#sticky-aside {
+  overflow-y: auto;
+  // top: 0 !important;
+  // bottom: 0;
+  padding-bottom: 50px;
+
+  @media (max-width: 840px) {
+    display: none;
   }
 }
 
@@ -21,6 +58,7 @@
 .legal-tabs {
   border-radius: 4px;
   overflow: hidden;
+  background: #fff;
 
   li {
 
@@ -100,6 +138,7 @@
   a {
     color: #034fc1;
     text-decoration: none;
+    word-wrap: break-word;
 
     &:hover {
       color: darken(#034fc1, 10%);

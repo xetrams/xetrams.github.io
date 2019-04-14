@@ -258,3 +258,90 @@ if($('#area-selector').length > 0 ) {
 		});
 	}
 }
+
+if ($(".legal-tabs").length > 0) {
+	let tabs = [];
+	let headerNames = [];
+	let headersOffsets = [];
+	let linkIndex = 0;
+	let headerHeight = $('.main-header').height();
+	for (let i = 0; i < $(".legal-tabs a").length; i++) {
+		tabs.push($(".legal-tabs a")[i]);
+	}
+	for (let i = 0; i < tabs.length; i++) {
+		headerNames.push($(tabs[i]).attr("href"));
+	}
+	for (let i = 0; i < tabs.length; i++) {
+		headersOffsets.push($(headerNames[i]).offset().top);
+	}
+
+	for (let i = tabs.length; i >= 0; i--) {
+		if ($(window).scrollTop()+headerHeight < headersOffsets[i]) {
+			linkIndex = i - 1;
+
+			if (linkIndex < 0) {
+				linkIndex = 0;
+			}
+		}
+	}
+	for (let i = 0; i < tabs.length; i++) {
+		if (i == linkIndex) {
+			$(tabs[i]).addClass("active");
+		} else {
+			$(tabs[i]).removeClass("active");
+		}
+	}
+
+	$(window).resize(function (event) {
+		let tabs = [];
+		let headerNames = [];
+		let headersOffsets = [];
+		let linkIndex = 0;
+		let headerHeight = $('.main-header').height();
+		for (let i = 0; i < $(".legal-tabs a").length; i++) {
+			tabs.push($(".legal-tabs a")[i]);
+		}
+		for (let i = 0; i < tabs.length; i++) {
+			headerNames.push($(tabs[i]).attr("href"));
+		}
+		for (let i = 0; i < tabs.length; i++) {
+			headersOffsets.push($(headerNames[i]).offset().top);
+		}
+
+		for (let i = tabs.length; i >= 0; i--) {
+			if ($(window).scrollTop()+headerHeight < headersOffsets[i]) {
+				linkIndex = i - 1;
+
+				if (linkIndex < 0) {
+					linkIndex = 0;
+				}
+			}
+		}
+		for (let i = 0; i < tabs.length; i++) {
+			if (i == linkIndex) {
+				$(tabs[i]).addClass("active");
+			} else {
+				$(tabs[i]).removeClass("active");
+			}
+		}
+	});
+
+	$(window).scroll(function (event) {
+		for (let i = tabs.length; i >= 0; i--) {
+			if ($(window).scrollTop()+headerHeight < headersOffsets[i]) {
+				linkIndex = i - 1;
+
+				if (linkIndex < 0) {
+					linkIndex = 0;
+				}
+			}
+		}
+		for (let i = 0; i < tabs.length; i++) {
+			if (i == linkIndex) {
+				$(tabs[i]).addClass("active");
+			} else {
+				$(tabs[i]).removeClass("active");
+			}
+		}
+	});
+}
