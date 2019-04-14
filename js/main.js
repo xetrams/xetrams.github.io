@@ -260,6 +260,15 @@ if($('#area-selector').length > 0 ) {
 }
 
 if ($(".legal-tabs").length > 0) {
+	
+	$("#sticky-aside").stick_in_parent()
+	.on("sticky_kit:bottom", function(e) {
+	  console.log("bottom!", e.target);
+	})
+	.on("sticky_kit:unbottom", function(e) {
+	  console.log("unbottom!", e.target);
+	});
+
 	let tabs = [];
 	let headerNames = [];
 	let headersOffsets = [];
