@@ -379,3 +379,51 @@ if($('.project-screenshots').length >0 ) {
 		}
 	});
 }
+
+// TESTIMONIALS
+
+if($('.testimonials-list').length >0 ) {
+	$('.testimonials-list').owlCarousel({
+		center: true,
+		loop: true,
+		margin: 80,
+		autoWidth: true,
+		nav: true,
+		items: 1,
+		responsive:{
+			0:{
+				margin: 20,
+				singleItem: true,
+				autoWidth: false
+			},
+			840:{
+				margin: 80
+			}
+		}
+	});
+}
+
+// TEAM SLIDER
+
+if($('.employee-list').length >0 ) {
+	$('.employee-list').owlCarousel({
+		center: true,
+		loop: true,
+		margin: 65,
+		autoWidth: true,
+		nav: true,
+		items: 1,
+		responsive:{
+			0:{
+				margin: 15
+			},
+			840:{
+				margin: 50
+			},
+			1200:{
+				margin: 65
+			}
+		}
+	});
+}
+$(".testimonials-section .owl-item").css("width", "100px");

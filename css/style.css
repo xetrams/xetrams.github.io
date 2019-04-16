@@ -6803,6 +6803,401 @@ template {
         color: var(--gunmetal);
         transition: .3s; }
 
+.inner-page-image-header {
+  height: 350px;
+  margin-top: 70px; }
+  @media (max-width: 1200px) {
+    .inner-page-image-header {
+      margin-top: 101px; } }
+  @media (max-width: 840px) {
+    .inner-page-image-header {
+      margin-top: 50px; } }
+
+@media (max-width: 840px) {
+  .about-us-description .accent-p p {
+    margin-top: 35px !important; } }
+
+.banner-with-statistic-section {
+  height: 450px;
+  margin-top: 75px; }
+  .banner-with-statistic-section .statistic-list {
+    height: 195px;
+    background: #fff;
+    display: flex;
+    padding: 50px 0;
+    border-radius: 4px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+    top: -75px; }
+    @media (max-width: 1200px) {
+      .banner-with-statistic-section .statistic-list {
+        padding: 35px 17px;
+        height: 174px; } }
+    @media (max-width: 840px) {
+      .banner-with-statistic-section .statistic-list {
+        width: 168px;
+        display: block;
+        top: -50px;
+        height: auto;
+        padding: 15px; } }
+    .banner-with-statistic-section .statistic-list li {
+      flex-grow: 1;
+      position: relative;
+      padding-left: 60px; }
+      @media (max-width: 1200px) {
+        .banner-with-statistic-section .statistic-list li {
+          padding-left: 18px;
+          padding-right: 18px; } }
+      @media (max-width: 840px) {
+        .banner-with-statistic-section .statistic-list li {
+          padding: 0; }
+          .banner-with-statistic-section .statistic-list li:not(:last-child) {
+            padding-bottom: 20px; }
+          .banner-with-statistic-section .statistic-list li:not(:first-child) {
+            padding-top: 15px; } }
+      .banner-with-statistic-section .statistic-list li:not(:first-child):after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 1px;
+        background: rgba(0, 0, 0, 0.15); }
+      @media (max-width: 840px) {
+        .banner-with-statistic-section .statistic-list li:not(:first-child):after {
+          top: 0;
+          bottom: auto;
+          left: 0;
+          right: 0;
+          height: 1px;
+          width: auto;
+          background: rgba(0, 0, 0, 0.15); } }
+      .banner-with-statistic-section .statistic-list li .number {
+        font-size: 60px;
+        line-height: 60px;
+        font-family: "Exo 2";
+        color: #31ca81; }
+        @media (max-width: 1200px) {
+          .banner-with-statistic-section .statistic-list li .number {
+            font-size: 50px;
+            line-height: 50px; } }
+        @media (max-width: 840px) {
+          .banner-with-statistic-section .statistic-list li .number {
+            font-size: 40px;
+            line-height: 40px; } }
+      .banner-with-statistic-section .statistic-list li .description {
+        color: #00298f; }
+        @media (max-width: 840px) {
+          .banner-with-statistic-section .statistic-list li .description {
+            margin-top: 5px; } }
+
+.testimonials-section {
+  padding-top: 75px;
+  padding-bottom: 50px;
+  text-align: center; }
+  @media (max-width: 840px) {
+    .testimonials-section {
+      padding-top: 50px; }
+      .testimonials-section .container {
+        padding: 0; } }
+  .testimonials-section .testimonials-list {
+    width: 840px;
+    margin: 0 auto; }
+    .testimonials-section .testimonials-list:after {
+      content: "";
+      width: 168px;
+      height: 131px;
+      background: url(../images/img_quote.png);
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      right: -90px;
+      z-index: -1; }
+      @media (max-width: 840px) {
+        .testimonials-section .testimonials-list:after {
+          right: 50px;
+          top: -15px;
+          width: 103px;
+          height: 80px; } }
+    .testimonials-section .testimonials-list:before {
+      content: "";
+      width: 168px;
+      height: 131px;
+      background: url(../images/img_quote.png);
+      background-size: cover;
+      position: absolute;
+      bottom: 15px;
+      left: -80px;
+      z-index: -1; }
+      @media (max-width: 840px) {
+        .testimonials-section .testimonials-list:before {
+          display: none; } }
+    @media (max-width: 1200px) {
+      .testimonials-section .testimonials-list {
+        width: 583px; } }
+    @media (max-width: 840px) {
+      .testimonials-section .testimonials-list {
+        width: 100%; } }
+    .testimonials-section .testimonials-list .ava-wrapper {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: -50px;
+      margin-left: 50px; }
+    .testimonials-section .testimonials-list .text-wrapper {
+      border-radius: 4px;
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
+      background: #fff;
+      padding: 50px 50px 35px;
+      margin-bottom: 50px;
+      text-align: left; }
+      @media (max-width: 840px) {
+        .testimonials-section .testimonials-list .text-wrapper {
+          margin: 0 20px 35px; } }
+      .testimonials-section .testimonials-list .text-wrapper .name {
+        font-weight: 500;
+        color: #03267d;
+        margin-top: 25px; }
+      .testimonials-section .testimonials-list .text-wrapper .work-label {
+        color: #03267d; }
+      .testimonials-section .testimonials-list .text-wrapper p {
+        font-size: 25px;
+        line-height: 35px;
+        color: #113059;
+        font-family: "Exo 2"; }
+        @media (max-width: 1200px) {
+          .testimonials-section .testimonials-list .text-wrapper p {
+            font-size: 18px;
+            line-height: 26px; } }
+    @media (min-width: 1200px) {
+      .testimonials-section .testimonials-list .owl-item {
+        width: 760px !important; } }
+    @media (max-width: 1200px) and (min-width: 840px) {
+      .testimonials-section .testimonials-list .owl-item {
+        width: 503px !important; } }
+    .testimonials-section .testimonials-list .owl-prev,
+    .testimonials-section .testimonials-list .owl-next {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      background-position: 50% !important;
+      background-color: #f9f9f9 !important;
+      background-repeat: no-repeat !important;
+      border-radius: 50%;
+      top: 225px;
+      outline: none; }
+      @media (max-width: 1200px) {
+        .testimonials-section .testimonials-list .owl-prev,
+        .testimonials-section .testimonials-list .owl-next {
+          top: 150px; } }
+      @media (max-width: 840px) {
+        .testimonials-section .testimonials-list .owl-prev,
+        .testimonials-section .testimonials-list .owl-next {
+          display: none; } }
+      .testimonials-section .testimonials-list .owl-prev span,
+      .testimonials-section .testimonials-list .owl-next span {
+        display: none; }
+    .testimonials-section .testimonials-list .owl-prev {
+      left: -90px;
+      background-image: url(../images/icons/arrow-left.svg) !important; }
+      @media (max-width: 1200px) {
+        .testimonials-section .testimonials-list .owl-prev {
+          left: -35px; } }
+      .testimonials-section .testimonials-list .owl-prev:hover {
+        background-image: url(../images/icons/arrow-left-green.svg) !important; }
+    .testimonials-section .testimonials-list .owl-next {
+      right: -90px;
+      background-image: url(../images/icons/arrow_small_gray.svg) !important; }
+      @media (max-width: 1200px) {
+        .testimonials-section .testimonials-list .owl-next {
+          right: -35px; } }
+      .testimonials-section .testimonials-list .owl-next:hover {
+        background-image: url(../images/icons/arrow_small_green.svg) !important; }
+    .testimonials-section .testimonials-list .owl-dots {
+      padding: 15px 25px;
+      background: #F9F9F9;
+      border-radius: 25px;
+      display: inline-block;
+      font-size: 0;
+      line-height: 0; }
+      .testimonials-section .testimonials-list .owl-dots .owl-dot {
+        border-radius: 50%;
+        height: 7px;
+        width: 7px;
+        margin: 0 4px;
+        background: #B8C3DA;
+        border: 6px solid #F9F9F9;
+        box-sizing: content-box;
+        outline: none;
+        position: relative;
+        transition: .3s; }
+        .testimonials-section .testimonials-list .owl-dots .owl-dot:after {
+          content: "";
+          position: absolute;
+          top: -15px;
+          bottom: -15px;
+          left: -11px;
+          right: -11px;
+          display: block; }
+        .testimonials-section .testimonials-list .owl-dots .owl-dot:hover {
+          background: #31ca81; }
+        .testimonials-section .testimonials-list .owl-dots .owl-dot.active {
+          border-color: #31ca81;
+          background: #fff; }
+
+.team-section {
+  background: #f9f9f9;
+  padding-top: 75px; }
+  .team-section .h-label {
+    text-align: center; }
+  .team-section .top-employee {
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 150px;
+    background: #fff;
+    border: 1px solid #e8ebf2;
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    transition: .3s; }
+    .team-section .top-employee:hover {
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0); }
+    @media (max-width: 1200px) {
+      .team-section .top-employee {
+        margin-top: 112px; } }
+    @media (max-width: 840px) {
+      .team-section .top-employee {
+        margin-top: 87px; } }
+    .team-section .top-employee .name {
+      margin-top: -75px; }
+      @media (max-width: 1200px) {
+        .team-section .top-employee .name {
+          margin-top: -40px; } }
+      @media (max-width: 840px) {
+        .team-section .top-employee .name {
+          margin-top: -35px; } }
+    .team-section .top-employee .title {
+      margin-bottom: 25px; }
+      @media (max-width: 1200px) {
+        .team-section .top-employee .title {
+          margin-bottom: 40px; } }
+      @media (max-width: 840px) {
+        .team-section .top-employee .title {
+          margin-bottom: 15px; } }
+    .team-section .top-employee .linkedin-link {
+      padding: 15px 0;
+      display: block;
+      border-top: 1px solid #e8ebf2; }
+      @media (max-width: 840px) {
+        .team-section .top-employee .linkedin-link {
+          padding: 10px 0; } }
+      .team-section .top-employee .linkedin-link svg {
+        fill: #b8c3da;
+        transition: .3s;
+        width: 35px;
+        height: 35px; }
+        @media (max-width: 840px) {
+          .team-section .top-employee .linkedin-link svg {
+            width: 25px;
+            height: 25px; } }
+      .team-section .top-employee .linkedin-link:hover svg {
+        fill: #31ca81; }
+    .team-section .top-employee .ava-wrapper {
+      border-radius: 50%;
+      overflow: hidden;
+      width: 175px;
+      margin: 0 auto;
+      height: 175px;
+      position: relative;
+      top: -100px; }
+      @media (max-width: 1200px) {
+        .team-section .top-employee .ava-wrapper {
+          width: 125px;
+          height: 125px;
+          top: -62px; } }
+      @media (max-width: 840px) {
+        .team-section .top-employee .ava-wrapper {
+          width: 100px;
+          height: 100px;
+          top: -50px; } }
+      .team-section .top-employee .ava-wrapper img {
+        display: block; }
+        @media (max-width: 1200px) {
+          .team-section .top-employee .ava-wrapper img {
+            width: 125px;
+            height: 125px; } }
+        @media (max-width: 840px) {
+          .team-section .top-employee .ava-wrapper img {
+            width: 100px;
+            height: 100px; } }
+    .team-section .top-employee .name {
+      color: #03267d;
+      font-weight: 500; }
+      @media (max-width: 840px) {
+        .team-section .top-employee .name {
+          margin-bottom: 5px; } }
+    .team-section .top-employee .title {
+      color: #68789c; }
+  .team-section .employee-list {
+    margin-top: 75px;
+    padding-bottom: 100px; }
+    @media (max-width: 840px) {
+      .team-section .employee-list {
+        padding-bottom: 50px;
+        margin-top: 50px; } }
+    .team-section .employee-list .owl-nav {
+      display: none; }
+    .team-section .employee-list .owl-dots {
+      display: none; }
+    .team-section .employee-list .employee {
+      width: 150px;
+      height: 150px;
+      overflow: hidden;
+      border-radius: 50%;
+      position: relative;
+      text-align: center;
+      transition: .3s; }
+      @media (max-width: 840px) {
+        .team-section .employee-list .employee {
+          width: 100px;
+          height: 100px; } }
+      @media (min-width: 840px) {
+        .team-section .employee-list .employee:hover {
+          background: #31ca81; }
+          .team-section .employee-list .employee:hover .name {
+            opacity: 1; }
+          .team-section .employee-list .employee:hover .title {
+            opacity: 1; }
+          .team-section .employee-list .employee:hover a {
+            opacity: 1; } }
+      .team-section .employee-list .employee img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1; }
+      .team-section .employee-list .employee .name {
+        color: #fff;
+        font-weight: 500;
+        margin-top: 50px;
+        transition: .3s;
+        opacity: 0; }
+      .team-section .employee-list .employee .title {
+        color: #fff;
+        transition: .3s;
+        opacity: 0; }
+      .team-section .employee-list .employee a {
+        margin-top: 5px;
+        display: block;
+        transition: .3s;
+        opacity: 0; }
+        .team-section .employee-list .employee a svg {
+          fill: #fff;
+          transition: .3s; }
+        .team-section .employee-list .employee a:hover svg {
+          fill: rgba(255, 255, 255, 0.7); }
+
 :root {
   --darkish-blue: #03267d;
   --blue: #034fc1;
