@@ -6473,6 +6473,701 @@ template {
       background: #31ca81;
       display: block; }
 
+@media (max-width: 840px) {
+  .metodology-description .col-lg-6 {
+    order: -1; } }
+
+.metodologies-list-section {
+  background: #f9f9f9;
+  padding: 50px 0; }
+  @media (max-width: 840px) {
+    .metodologies-list-section {
+      padding: 25px 0; } }
+  .metodologies-list-section .metodologies-list {
+    display: flex;
+    justify-content: space-between; }
+    .metodologies-list-section .metodologies-list li {
+      flex-grow: 1;
+      text-align: center; }
+      .metodologies-list-section .metodologies-list li:not(:last-child) {
+        margin-right: 40px; }
+        @media (max-width: 1200px) {
+          .metodologies-list-section .metodologies-list li:not(:last-child) {
+            margin-right: 30px; } }
+        @media (max-width: 840px) {
+          .metodologies-list-section .metodologies-list li:not(:last-child) {
+            margin-right: 20px; } }
+      .metodologies-list-section .metodologies-list li a {
+        line-height: 65px;
+        font-family: "Exo 2";
+        font-size: 25px;
+        background: #fff;
+        display: block;
+        border-radius: 4px;
+        text-decoration: none;
+        color: #113059;
+        box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+        transition: .3s; }
+        @media (max-width: 1200px) {
+          .metodologies-list-section .metodologies-list li a {
+            line-height: 56px;
+            font-size: 18px; } }
+        @media (max-width: 840px) {
+          .metodologies-list-section .metodologies-list li a {
+            line-height: 42px;
+            font-size: 14px; } }
+        .metodologies-list-section .metodologies-list li a:hover {
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15); }
+
+.methodology-section {
+  padding: 100px 0;
+  overflow: hidden; }
+  @media (max-width: 1200px) {
+    .methodology-section {
+      padding: 75px 0; } }
+  @media (max-width: 840px) {
+    .methodology-section {
+      padding: 50px 0; } }
+  .methodology-section .metodology-description .lead-text {
+    color: #113059;
+    font-size: 25px;
+    line-height: 35px;
+    font-family: "Exo 2"; }
+    @media (max-width: 1200px) {
+      .methodology-section .metodology-description .lead-text {
+        font-size: 18px;
+        line-height: 26px; } }
+  .methodology-section .metodology-description .list-box {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 50px;
+    background: #fff; }
+    @media (max-width: 1200px) {
+      .methodology-section .metodology-description .list-box {
+        padding: 25px; } }
+    @media (max-width: 840px) {
+      .methodology-section .metodology-description .list-box {
+        margin-top: 50px;
+        padding: 15px; } }
+    .methodology-section .metodology-description .list-box img {
+      display: block;
+      margin-bottom: 15px;
+      width: 75px;
+      height: 75px; }
+      @media (max-width: 840px) {
+        .methodology-section .metodology-description .list-box img {
+          width: 50px;
+          height: 50px; } }
+    .methodology-section .metodology-description .list-box h3 {
+      font-size: 25px;
+      line-height: 35px;
+      margin-bottom: 25px; }
+      @media (max-width: 1200px) {
+        .methodology-section .metodology-description .list-box h3 {
+          font-size: 18px;
+          line-height: 26px; } }
+    .methodology-section .metodology-description .list-box ul li {
+      position: relative;
+      margin: 5px 0;
+      padding-left: 20px; }
+      .methodology-section .metodology-description .list-box ul li:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 9px;
+        width: 5px;
+        height: 5px;
+        background: #31ca81;
+        display: block; }
+  .methodology-section .metodology-steps {
+    margin-bottom: 75px;
+    margin-top: 50px; }
+    @media (max-width: 840px) {
+      .methodology-section .metodology-steps .col-lg-7 {
+        order: -1; } }
+    @media (max-width: 840px) {
+      .methodology-section .metodology-steps {
+        margin-bottom: 0; } }
+    .methodology-section .metodology-steps h3 {
+      margin-bottom: 50px; }
+    .methodology-section .metodology-steps .metodology-steps-list li {
+      padding: 25px 25px 25px 82px;
+      position: relative;
+      overflow: hidden;
+      margin-top: -1px;
+      cursor: pointer;
+      transition: .3s;
+      background-image: url(../images/icons/slide-arrow-bottom.svg);
+      background-repeat: no-repeat;
+      background-position: 25px 18px;
+      background-color: #fff; }
+      @media (max-width: 840px) {
+        .methodology-section .metodology-steps .metodology-steps-list li {
+          margin: 0 -20px; } }
+      .methodology-section .metodology-steps .metodology-steps-list li:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 5px;
+        background: #e8ebf2;
+        z-index: 1;
+        transition: .3s; }
+      .methodology-section .metodology-steps .metodology-steps-list li:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border: 1px solid #e8ebf2;
+        transition: .3s; }
+      .methodology-section .metodology-steps .metodology-steps-list li:first-child, .methodology-section .metodology-steps .metodology-steps-list li:first-child:before {
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px; }
+      .methodology-section .metodology-steps .metodology-steps-list li:first-child:after {
+        border-top-left-radius: 4px; }
+      .methodology-section .metodology-steps .metodology-steps-list li:last-child, .methodology-section .metodology-steps .metodology-steps-list li:last-child:before {
+        border-bottom-right-radius: 4px;
+        border-bottom-left-radius: 4px; }
+      .methodology-section .metodology-steps .metodology-steps-list li:last-child:after {
+        border-bottom-left-radius: 4px; }
+      .methodology-section .metodology-steps .metodology-steps-list li .block-content-wrapper {
+        display: none; }
+      .methodology-section .metodology-steps .metodology-steps-list li p {
+        margin: 0; }
+      .methodology-section .metodology-steps .metodology-steps-list li h4 {
+        transition: .3s; }
+      .methodology-section .metodology-steps .metodology-steps-list li p:first-child {
+        padding-top: 25px; }
+      .methodology-section .metodology-steps .metodology-steps-list li.active {
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
+        z-index: 1;
+        border: none;
+        cursor: default;
+        background-image: url(../images/icons/slide-arrow-top.svg); }
+        .methodology-section .metodology-steps .metodology-steps-list li.active h4 {
+          color: #31ca81; }
+        .methodology-section .metodology-steps .metodology-steps-list li.active:before {
+          border-color: rgba(232, 235, 242, 0); }
+        .methodology-section .metodology-steps .metodology-steps-list li.active:after {
+          background: #31ca81; }
+  @media (max-width: 840px) {
+    .methodology-section .methodology-chart-block {
+      display: none; } }
+  .methodology-section .methodology-chart-block h3 {
+    text-align: center;
+    margin-bottom: 50px; }
+
+.scrum-section .app-placeholder-img-wrapper {
+  position: relative; }
+  .scrum-section .app-placeholder-img-wrapper .app-placeholder-img {
+    width: 560px;
+    height: 560px;
+    position: absolute;
+    left: -100px;
+    z-index: 1; }
+    @media (max-width: 1200px) {
+      .scrum-section .app-placeholder-img-wrapper .app-placeholder-img {
+        width: 460px;
+        height: 460px;
+        left: -90px; } }
+    @media (max-width: 840px) {
+      .scrum-section .app-placeholder-img-wrapper .app-placeholder-img {
+        position: static;
+        margin-top: 25px; } }
+.scrum-section .methodology-chart-block {
+  padding-bottom: 50px; }
+
+.kanban-section {
+  background: #f9f9f9; }
+  .kanban-section .metodology-steps {
+    margin-top: 75px; }
+  .kanban-section .app-placeholder-img-wrapper {
+    position: relative; }
+    .kanban-section .app-placeholder-img-wrapper .app-placeholder-img {
+      width: 640px;
+      height: 446px;
+      position: absolute;
+      left: -100px;
+      z-index: 1; }
+      @media (max-width: 1200px) {
+        .kanban-section .app-placeholder-img-wrapper .app-placeholder-img {
+          width: 386px;
+          height: 269px;
+          margin-top: 130px; } }
+      @media (max-width: 840px) {
+        .kanban-section .app-placeholder-img-wrapper .app-placeholder-img {
+          position: static;
+          margin-top: 25px; } }
+  .kanban-section .kanban-scheme .list-metodology-scheme div:nth-child(1) {
+    left: 0;
+    white-space: nowrap; }
+  .kanban-section .kanban-scheme .list-metodology-scheme div:nth-child(2) {
+    width: 230px;
+    left: 180px; }
+    @media (max-width: 1200px) {
+      .kanban-section .kanban-scheme .list-metodology-scheme div:nth-child(2) {
+        left: 115px; } }
+  .kanban-section .kanban-scheme .list-metodology-scheme div:nth-child(3) {
+    width: 260px;
+    left: 367px; }
+    @media (max-width: 1200px) {
+      .kanban-section .kanban-scheme .list-metodology-scheme div:nth-child(3) {
+        left: 230px; } }
+  .kanban-section .kanban-scheme .list-metodology-scheme div:nth-child(4) {
+    left: 549px;
+    white-space: nowrap; }
+    @media (max-width: 1200px) {
+      .kanban-section .kanban-scheme .list-metodology-scheme div:nth-child(4) {
+        left: 345px; } }
+  .kanban-section .kanban-scheme .list-metodology-scheme div:nth-child(5) {
+    left: 728px;
+    white-space: nowrap; }
+    @media (max-width: 1200px) {
+      .kanban-section .kanban-scheme .list-metodology-scheme div:nth-child(5) {
+        left: 460px; } }
+  .kanban-section .kanban-scheme .list-metodology-scheme div:nth-child(6) {
+    left: 912px;
+    white-space: nowrap; }
+    @media (max-width: 1200px) {
+      .kanban-section .kanban-scheme .list-metodology-scheme div:nth-child(6) {
+        left: 575px; } }
+  .kanban-section .kanban-scheme .list-metodology-scheme div:nth-child(7) {
+    left: 1094px;
+    white-space: nowrap; }
+    @media (max-width: 1200px) {
+      .kanban-section .kanban-scheme .list-metodology-scheme div:nth-child(7) {
+        left: 690px; } }
+
+.waterfall-section .metodology-steps {
+  margin-top: 75px; }
+.waterfall-section .app-placeholder-img-wrapper {
+  position: relative; }
+  .waterfall-section .app-placeholder-img-wrapper .app-placeholder-img {
+    width: 720px;
+    height: 406px;
+    position: absolute;
+    left: -70px;
+    z-index: 1; }
+    @media (max-width: 1200px) {
+      .waterfall-section .app-placeholder-img-wrapper .app-placeholder-img {
+        height: 373px;
+        width: 661px; } }
+    @media (max-width: 840px) {
+      .waterfall-section .app-placeholder-img-wrapper .app-placeholder-img {
+        position: relative;
+        margin-top: 25px; } }
+.waterfall-section .waterfall-scheme .horizontal-bar {
+  background: #f9f9f9; }
+.waterfall-section .waterfall-scheme .list-metodology-scheme div {
+  white-space: nowrap; }
+  .waterfall-section .waterfall-scheme .list-metodology-scheme div:nth-child(1) {
+    left: 0; }
+  .waterfall-section .waterfall-scheme .list-metodology-scheme div:nth-child(2) {
+    left: 175px; }
+  .waterfall-section .waterfall-scheme .list-metodology-scheme div:nth-child(3) {
+    left: 350px; }
+  .waterfall-section .waterfall-scheme .list-metodology-scheme div:nth-child(4) {
+    left: 525px; }
+  .waterfall-section .waterfall-scheme .list-metodology-scheme div:nth-child(5) {
+    left: 700px; }
+  .waterfall-section .waterfall-scheme .list-metodology-scheme div:nth-child(6) {
+    left: 875px; }
+  .waterfall-section .waterfall-scheme .list-metodology-scheme div:nth-child(7) {
+    left: 1050px; }
+
+.metodology-scheme {
+  position: relative;
+  height: 240px; }
+  .metodology-scheme .horizontal-bar {
+    height: 60px;
+    background: #fff;
+    border-radius: 30px;
+    overflow: hidden;
+    top: 90px;
+    position: absolute;
+    left: 0;
+    right: 0; }
+    .metodology-scheme .horizontal-bar:after {
+      content: "";
+      display: block;
+      height: 2px;
+      background: #E8EBF2;
+      top: 29px;
+      left: 29px;
+      right: 29px;
+      position: absolute; }
+    .metodology-scheme .horizontal-bar .horizontal-progress {
+      height: 2px;
+      width: 0;
+      background: #31CA81;
+      margin: 29px 29px;
+      position: relative;
+      z-index: 1; }
+  .metodology-scheme .list-metodology-scheme {
+    height: 240px;
+    position: absolute;
+    top: 0;
+    z-index: 1; }
+    .metodology-scheme .list-metodology-scheme div {
+      flex-grow: 1;
+      padding: 15px;
+      background: rgba(255, 255, 255, 0);
+      border-radius: 4px;
+      position: absolute;
+      box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+      transition: .3s;
+      color: rgba(66, 74, 86, 0); }
+      .metodology-scheme .list-metodology-scheme div:after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background: rgba(255, 255, 255, 0);
+        position: absolute;
+        transform: rotate(45deg);
+        left: 20px;
+        transition: .3s; }
+      .metodology-scheme .list-metodology-scheme div.active {
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
+        background: white;
+        color: #424a56; }
+        .metodology-scheme .list-metodology-scheme div.active:after {
+          background: white; }
+        .metodology-scheme .list-metodology-scheme div.active:before {
+          box-shadow: 0 0 0 8px #31CA81;
+          background: #fff; }
+      .metodology-scheme .list-metodology-scheme div:before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background: #E8EBF2;
+        border-radius: 50%;
+        position: absolute;
+        left: 28px;
+        box-shadow: 0 0 0 3px #E8EBF2;
+        transition: .3s; }
+      .metodology-scheme .list-metodology-scheme div:nth-child(2n + 1) {
+        bottom: 160px; }
+        .metodology-scheme .list-metodology-scheme div:nth-child(2n + 1):after {
+          bottom: -10px; }
+        .metodology-scheme .list-metodology-scheme div:nth-child(2n + 1):before {
+          bottom: -45px; }
+      .metodology-scheme .list-metodology-scheme div:nth-child(2n) {
+        top: 160px; }
+        .metodology-scheme .list-metodology-scheme div:nth-child(2n):after {
+          top: -10px; }
+        .metodology-scheme .list-metodology-scheme div:nth-child(2n):before {
+          top: -45px; }
+
+.scrum-scheme {
+  position: relative; }
+  .scrum-scheme .circle {
+    width: 344px;
+    height: 304px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 0; }
+    .scrum-scheme .circle div {
+      flex-grow: 1;
+      padding: 15px;
+      background: rgba(255, 255, 255, 0);
+      border-radius: 4px;
+      position: absolute;
+      box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+      transition: .6s;
+      color: rgba(66, 74, 86, 0);
+      position: absolute;
+      z-index: 2; }
+      .scrum-scheme .circle div:nth-child(1) {
+        left: 312px;
+        top: 46px;
+        width: 217px; }
+        .scrum-scheme .circle div:nth-child(1):after {
+          left: -10px;
+          top: 18px; }
+        .scrum-scheme .circle div:nth-child(1):before {
+          left: -50px;
+          top: 24px; }
+      .scrum-scheme .circle div:nth-child(2) {
+        left: 80px;
+        top: 275px;
+        width: 217px; }
+        .scrum-scheme .circle div:nth-child(2):after {
+          left: 170px;
+          top: -9px; }
+        .scrum-scheme .circle div:nth-child(2):before {
+          left: 176px;
+          top: -48px; }
+      .scrum-scheme .circle div:nth-child(3) {
+        left: -190px;
+        top: 204px;
+        white-space: nowrap; }
+        .scrum-scheme .circle div:nth-child(3):after {
+          right: -10px;
+          top: 18px; }
+        .scrum-scheme .circle div:nth-child(3):before {
+          right: -50px;
+          top: 23px; }
+      .scrum-scheme .circle div:nth-child(4) {
+        left: -181px;
+        top: 46px;
+        width: 217px; }
+        .scrum-scheme .circle div:nth-child(4):after {
+          right: -10px;
+          top: 18px; }
+        .scrum-scheme .circle div:nth-child(4):before {
+          right: -48px;
+          top: 24px; }
+      .scrum-scheme .circle div:after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background: rgba(255, 255, 255, 0);
+        position: absolute;
+        transform: rotate(45deg);
+        transition: .3s; }
+      .scrum-scheme .circle div:before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background: #E8EBF2;
+        border-radius: 50%;
+        position: absolute;
+        box-shadow: 0 0 0 3px #E8EBF2;
+        transition: .3s; }
+    .scrum-scheme .circle.active div {
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
+      background: white;
+      color: #424a56; }
+      .scrum-scheme .circle.active div:after {
+        background: white; }
+      .scrum-scheme .circle.active div:before {
+        box-shadow: 0 0 0 8px #31CA81;
+        background: #fff; }
+    .scrum-scheme .circle:after {
+      content: "";
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      display: block;
+      background: url(../images/icons/sprint-circle.svg);
+      z-index: -1; }
+    .scrum-scheme .circle:before {
+      content: "";
+      position: absolute;
+      position: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: block;
+      z-index: 0;
+      background: url(../images/icons/sprint-circle-active.svg);
+      transition: .3s;
+      opacity: 0; }
+    .scrum-scheme .circle.active:before {
+      opacity: 1; }
+
+.scrum-first-line {
+  position: relative;
+  height: 240px;
+  margin-bottom: -150px;
+  width: 50%;
+  right: -28px; }
+  .scrum-first-line:after {
+    content: "";
+    height: 60px;
+    left: 0;
+    right: 0;
+    border-radius: 30px;
+    background: #f9f9f9;
+    display: block;
+    position: absolute;
+    top: 90px;
+    z-index: -2; }
+  .scrum-first-line .horizontal-bar {
+    height: 60px;
+    border-radius: 30px;
+    overflow: hidden;
+    top: 90px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1; }
+    .scrum-first-line .horizontal-bar:after {
+      content: "";
+      display: block;
+      height: 2px;
+      background: #E8EBF2;
+      top: 29px;
+      left: 29px;
+      right: 29px;
+      position: absolute; }
+    .scrum-first-line .horizontal-bar .horizontal-progress {
+      height: 2px;
+      width: 0;
+      background: #31CA81;
+      margin: 29px 29px;
+      position: relative;
+      z-index: 1; }
+  .scrum-first-line .list-metodology-scheme {
+    height: 240px;
+    position: absolute;
+    top: 0;
+    z-index: 1; }
+    .scrum-first-line .list-metodology-scheme div {
+      flex-grow: 1;
+      padding: 15px;
+      background: rgba(255, 255, 255, 0);
+      border-radius: 4px;
+      position: absolute;
+      box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+      transition: .3s;
+      color: rgba(66, 74, 86, 0);
+      bottom: 160px; }
+      .scrum-first-line .list-metodology-scheme div.active {
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
+        background: white;
+        color: #424a56; }
+        .scrum-first-line .list-metodology-scheme div.active:after {
+          background: white; }
+        .scrum-first-line .list-metodology-scheme div.active:before {
+          box-shadow: 0 0 0 8px #31CA81;
+          background: #fff; }
+      .scrum-first-line .list-metodology-scheme div:after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background: rgba(255, 255, 255, 0);
+        position: absolute;
+        transform: rotate(45deg);
+        left: 20px;
+        transition: .3s;
+        bottom: -10px; }
+      .scrum-first-line .list-metodology-scheme div:before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background: #E8EBF2;
+        border-radius: 50%;
+        position: absolute;
+        left: 25px;
+        box-shadow: 0 0 0 3px #E8EBF2;
+        transition: .3s;
+        bottom: -45px; }
+      .scrum-first-line .list-metodology-scheme div:nth-child(1) {
+        width: 225px;
+        left: 100px; }
+      .scrum-first-line .list-metodology-scheme div:nth-child(2) {
+        left: 521px;
+        width: 262px; }
+        @media (max-width: 1200px) {
+          .scrum-first-line .list-metodology-scheme div:nth-child(2) {
+            left: 320px; } }
+
+.scrum-second-line {
+  position: relative;
+  height: 150px;
+  margin-top: -133px;
+  width: 470px;
+  left: 666px;
+  z-index: -1; }
+  .scrum-second-line:before {
+    content: "";
+    display: block;
+    background: #f9f9f9;
+    top: 58px;
+    left: -77px;
+    position: absolute;
+    height: 60px;
+    width: 150px;
+    border-radius: 30px;
+    transform: rotate(45deg); }
+  @media (max-width: 1200px) {
+    .scrum-second-line {
+      left: 473px;
+      width: 260px; } }
+  .scrum-second-line .horizontal-bar {
+    height: 60px;
+    background: #f9f9f9;
+    border-radius: 30px;
+    overflow: hidden;
+    top: 90px;
+    position: absolute;
+    left: 0;
+    right: 0; }
+    .scrum-second-line .horizontal-bar:after {
+      content: "";
+      display: block;
+      height: 2px;
+      background: #E8EBF2;
+      top: 29px;
+      left: 29px;
+      right: 29px;
+      position: absolute; }
+    .scrum-second-line .horizontal-bar .horizontal-progress {
+      height: 2px;
+      width: 0;
+      background: #31CA81;
+      margin: 29px 29px;
+      position: relative;
+      z-index: 1; }
+  .scrum-second-line .list-metodology-scheme {
+    height: 150px;
+    position: absolute;
+    top: 0;
+    z-index: 1; }
+    .scrum-second-line .list-metodology-scheme div {
+      flex-grow: 1;
+      padding: 15px;
+      background: rgba(255, 255, 255, 0);
+      border-radius: 4px;
+      position: absolute;
+      box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+      transition: .3s;
+      color: rgba(66, 74, 86, 0);
+      top: 160px;
+      left: 300px;
+      white-space: nowrap; }
+      @media (max-width: 1200px) {
+        .scrum-second-line .list-metodology-scheme div {
+          left: 120px; } }
+      .scrum-second-line .list-metodology-scheme div:after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background: rgba(255, 255, 255, 0);
+        position: absolute;
+        transform: rotate(45deg);
+        left: 20px;
+        transition: .3s;
+        top: -10px; }
+      .scrum-second-line .list-metodology-scheme div.active {
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
+        background: white;
+        color: #424a56; }
+        .scrum-second-line .list-metodology-scheme div.active:after {
+          background: white; }
+        .scrum-second-line .list-metodology-scheme div.active:before {
+          box-shadow: 0 0 0 8px #31CA81;
+          background: #fff; }
+      .scrum-second-line .list-metodology-scheme div:before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background: #E8EBF2;
+        border-radius: 50%;
+        position: absolute;
+        left: 28px;
+        box-shadow: 0 0 0 3px #E8EBF2;
+        transition: .3s;
+        top: -45px; }
+
 .portfolio-header-section {
   background: #f9f9f9;
   height: 420px;
