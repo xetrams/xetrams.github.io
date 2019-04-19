@@ -82,7 +82,7 @@
       left: 0;
       position: absolute;
       width: 100%;
-      border-top: 1px solid var(--very-light-blue);
+      border-top: 1px solid $very-light-blue;
     }
   }
 
@@ -221,7 +221,7 @@
 
         &:not(.menu-btn) a {
           line-height: 69px;
-          color: var(--gunmetal);
+          color: $gunmetal;
           text-decoration: none;
           display: flex;
           align-items: center;
@@ -235,14 +235,14 @@
           @media (min-width: 840px) {
 
             &:hover {
-              color: var(--blue);
+              color: $blue;
               background: $light-gray;
             }
           }
         }
 
         &.active > a {
-          color: var(--blue);
+          color: $blue;
         }
       }
     }
