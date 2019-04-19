@@ -1,3 +1,23 @@
+$darkish-blue: #03267d;
+$blue: #034fc1;
+$gunmetal: #424a56;
+$steel: #68789c;
+$light-gray: #f9f9f9;
+$white: #ffffff;
+$lavender: #d9b2e5;
+$very-light-blue: #e8ebf2;
+$cerise: #ef0c5e;
+$light-navy: #113059;
+$light-blue-grey: #b8c3da;
+$violet: #ae16dc;
+$darkish-blue-darker: #00298f;
+$ice: #ddfaec;
+$greenish-teal: #31ca81;
+$sl-green: #DDFAEC;
+$green-light: #4EDD99;
+$gray: #f4f4f4;
+$dark-blue: #00298f;
+
 @import "components.scss";
 @import "bootstrap-grid.scss";
 @import "typography.scss";
@@ -7,7 +27,6 @@
 @import "domain.scss";
 @import "main-menu.scss";
 @import "normalize.scss";
-@import "styleguide.scss";
 @import "footer.scss";
 @import "contact.scss";
 @import "portfolio.scss";
@@ -16,27 +35,28 @@
 @import "project.scss";
 @import "about-us.scss";
 
-:root {
-  --darkish-blue: #03267d;
-  --blue: #034fc1;
-  --gunmetal: #424a56;
-  --steel: #68789c;
-  --light-gray: #f9f9f9;
-  --white: #ffffff;
-  --lavender: #d9b2e5;
-  --very-light-blue: #e8ebf2;
-  --cerise: #ef0c5e;
-  --light-navy: #113059;
-  --light-blue-grey: #b8c3da;
-  --violet: #ae16dc;
-  --darkish-blue-darker: #00298f;
-  --ice: #ddfaec;
-  --greenish-teal: #31ca81;
-}
+// :root {
+//   --darkish-blue: #03267d;
+//   --blue: #034fc1;
+//   --gunmetal: #424a56;
+//   --steel: #68789c;
+//   --light-gray: #f9f9f9;
+//   --white: #ffffff;
+//   --lavender: #d9b2e5;
+//   --very-light-blue: #e8ebf2;
+//   --cerise: #ef0c5e;
+//   --light-navy: #113059;
+//   --light-blue-grey: #b8c3da;
+//   --violet: #ae16dc;
+//   --darkish-blue-darker: #00298f;
+//   --ice: #ddfaec;
+//   --greenish-teal: #31ca81;
+// }
+
 body {
   font-size: 15px;
   font-family: Rubik;
-  color: var(--gunmetal);
+  color: $gunmetal;
   line-height: 25px;
 
   @media (max-width: 1200px) {
@@ -59,20 +79,9 @@ li {
 }
 
 .border-top {
-  border-top: 1px solid #e8ebf2 !important;
+  border-top: 1px solid $very-light-blue !important;
 }
 
 .border-bottom {
-  border-bottom: 1px solid #e8ebf2 !important;
+  border-bottom: 1px solid $very-light-blue !important;
 }
-
-// html {background: url(../homepage.jpg) center 0;}body {opacity: 0.5;} 
-// html {background: url(../homepage_m.jpg) center 118px;}body {opacity: 0.5;} 
-// html {background: url(../homepage_s.jpg) center 0;}body {opacity: 0.5;} 
-// html {background: url(../mobile_menu.png) center 0;}body {opacity: 0.5;} 
-
-
-
-// html {background: url(../domain_fintech_l.jpg) center 0;}body {opacity: 0.5;} 
-// html {background: url(../domain_fintech_m.jpg) center 0;}body {opacity: 0.5;} 
-// html {background: url(../domain_fintech_s.jpg) center 78px;}body {opacity: 0.5;} 

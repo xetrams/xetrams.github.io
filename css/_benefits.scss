@@ -57,7 +57,7 @@
         top: 0;
         bottom: 0;
         width: 5px;
-        background: #e8ebf2;
+        background: $very-light-blue;
         z-index: 1;
         transition: .3s;
       }
@@ -69,7 +69,7 @@
         right: 0;
         bottom: 0;
         left: 0;
-        border: 1px solid #e8ebf2;
+        border: 1px solid $very-light-blue;
         transition: .3s;
       }
 
@@ -117,11 +117,11 @@
         background-image: url(../images/icons/slide-arrow-top.svg);
 
         &:before {
-          border-color: rgba(#e8ebf2, 0);
+          border-color: rgba($very-light-blue, 0);
         }
 
         &:after {
-          background: #31ca81;
+          background: $greenish-teal;
         }
       }
     }

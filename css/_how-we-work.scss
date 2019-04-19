@@ -10,7 +10,7 @@
 }
 
 .metodologies-list-section {
-  background: #f9f9f9;
+  background: $light-gray;
   padding: 50px 0;
 
   @media (max-width: 840px) {
@@ -45,7 +45,7 @@
         display: block;
         border-radius: 4px;
         text-decoration: none;
-        color: #113059;
+        color: $light-navy;
         box-shadow: 0 0 0 rgba(255, 255, 255, 0);
         transition: .3s;
 
@@ -82,7 +82,7 @@
   .metodology-description {
 
     .lead-text {
-      color: #113059;
+      color: $light-navy;
       font-size: 25px;
       line-height: 35px;
       font-family: "Exo 2";
@@ -198,7 +198,7 @@
           top: 0;
           bottom: 0;
           width: 5px;
-          background: #e8ebf2;
+          background: $very-light-blue;
           z-index: 1;
           transition: .3s;
         }
@@ -210,7 +210,7 @@
           right: 0;
           bottom: 0;
           left: 0;
-          border: 1px solid #e8ebf2;
+          border: 1px solid $very-light-blue;
           transition: .3s;
         }
   
@@ -262,11 +262,11 @@
           }
   
           &:before {
-            border-color: rgba(#e8ebf2, 0);
+            border-color: rgba($very-light-blue, 0);
           }
   
           &:after {
-            background: #31ca81;
+            background: $greenish-teal;
           }
         }
       }
@@ -315,7 +315,7 @@
   }
 }
 .kanban-section {
-  background: #f9f9f9;
+  background: $light-gray;
 
   .metodology-steps {
     margin-top: 75px;
@@ -437,7 +437,7 @@
   .waterfall-scheme  {
 
     .horizontal-bar {
-      background: #f9f9f9;
+      background: $light-gray;
     }
 
     .list-metodology-scheme div {
@@ -496,7 +496,7 @@
       content: "";
       display: block;
       height: 2px;
-      background: #E8EBF2;
+      background: $very-light-blue;
       top: 29px;
       left: 29px;
       right: 29px;
@@ -506,7 +506,7 @@
     .horizontal-progress {
       height: 2px;
       width: 0;
-      background: #31CA81;
+      background: $greenish-teal;
       margin: 29px 29px;
       position: relative;
       z-index: 1;
@@ -527,7 +527,7 @@
       position: absolute;
       box-shadow: 0 0 0 rgba(255, 255, 255, 0);
       transition: .3s;
-      color: rgba(#424a56, 0);
+      color: rgba($gunmetal, 0);
       
       &:after {
         content: "";
@@ -543,14 +543,14 @@
       &.active {
         @include shadow;
         background: rgba(#fff, 1);
-        color: rgba(#424a56, 1);
+        color: rgba($gunmetal, 1);
 
         &:after {
           background: rgba(#fff, 1);
         }
 
         &:before {
-          box-shadow:0 0 0 8px #31CA81;
+          box-shadow:0 0 0 8px $greenish-teal;
           background: #fff;
         }
       }
@@ -559,11 +559,11 @@
         content: "";
         width: 10px;
         height: 10px;
-        background: #E8EBF2;
+        background: $very-light-blue;
         border-radius: 50%;
         position: absolute;
         left: 28px;
-        box-shadow:0 0 0 3px #E8EBF2;
+        box-shadow:0 0 0 3px $very-light-blue;
         transition: .3s;
       }
 
@@ -612,7 +612,7 @@
       position: absolute;
       box-shadow: 0 0 0 rgba(255, 255, 255, 0);
       transition: .6s;
-      color: rgba(#424a56, 0);
+      color: rgba($gunmetal, 0);
       position: absolute;
       z-index: 2;
 
@@ -698,10 +698,10 @@
         content: "";
         width: 10px;
         height: 10px;
-        background: #E8EBF2;
+        background: $very-light-blue;
         border-radius: 50%;
         position: absolute;
-        box-shadow:0 0 0 3px #E8EBF2;
+        box-shadow:0 0 0 3px $very-light-blue;
         transition: .3s;
       }
     }
@@ -709,14 +709,14 @@
     &.active div {
       @include shadow;
       background: rgba(#fff, 1);
-      color: rgba(#424a56, 1);
+      color: rgba($gunmetal, 1);
 
       &:after {
         background: rgba(#fff, 1);
       }
 
       &:before {
-        box-shadow:0 0 0 8px #31CA81;
+        box-shadow:0 0 0 8px $greenish-teal;
         background: #fff;
       }
     }
@@ -791,7 +791,7 @@
       content: "";
       display: block;
       height: 2px;
-      background: #E8EBF2;
+      background: $very-light-blue;
       top: 29px;
       left: 29px;
       right: 29px;
@@ -801,7 +801,7 @@
     .horizontal-progress {
       height: 2px;
       width: 0;
-      background: #31CA81;
+      background: $greenish-teal;
       margin: 29px 29px;
       position: relative;
       z-index: 1;
@@ -822,20 +822,20 @@
       position: absolute;
       box-shadow: 0 0 0 rgba(255, 255, 255, 0);
       transition: .3s;
-      color: rgba(#424a56, 0);
+      color: rgba($gunmetal, 0);
       bottom: 160px;
 
       &.active {
         @include shadow;
         background: rgba(#fff, 1);
-        color: rgba(#424a56, 1);
+        color: rgba($gunmetal, 1);
   
         &:after {
           background: rgba(#fff, 1);
         }
   
         &:before {
-          box-shadow:0 0 0 8px #31CA81;
+          box-shadow:0 0 0 8px $greenish-teal;
           background: #fff;
         }
       }
@@ -856,11 +856,11 @@
         content: "";
         width: 10px;
         height: 10px;
-        background: #E8EBF2;
+        background: $very-light-blue;
         border-radius: 50%;
         position: absolute;
         left: 25px;
-        box-shadow:0 0 0 3px #E8EBF2;
+        box-shadow:0 0 0 3px $very-light-blue;
         transition: .3s;
         bottom: -45px;
       }
@@ -893,7 +893,7 @@
   &:before {
     content: "";
     display: block;
-    background: #f9f9f9;
+    background: $light-gray;
     top: 58px;
     left: -77px;
     position: absolute;
@@ -910,7 +910,7 @@
   
   .horizontal-bar {
     height: 60px;
-    background: #f9f9f9;
+    background: $light-gray;
     border-radius: 30px;
     overflow: hidden;
     top: 90px;
@@ -922,7 +922,7 @@
       content: "";
       display: block;
       height: 2px;
-      background: #E8EBF2;
+      background: $very-light-blue;
       top: 29px;
       left: 29px;
       right: 29px;
@@ -932,7 +932,7 @@
     .horizontal-progress {
       height: 2px;
       width: 0;
-      background: #31CA81;
+      background: $greenish-teal;
       margin: 29px 29px;
       position: relative;
       z-index: 1;
@@ -953,7 +953,7 @@
       position: absolute;
       box-shadow: 0 0 0 rgba(255, 255, 255, 0);
       transition: .3s;
-      color: rgba(#424a56, 0);
+      color: rgba($gunmetal, 0);
       top: 160px;
       left: 300px;
       white-space: nowrap;
@@ -977,14 +977,14 @@
       &.active {
         @include shadow;
         background: rgba(#fff, 1);
-        color: rgba(#424a56, 1);
+        color: rgba($gunmetal, 1);
 
         &:after {
           background: rgba(#fff, 1);
         }
 
         &:before {
-          box-shadow:0 0 0 8px #31CA81;
+          box-shadow:0 0 0 8px $greenish-teal;
           background: #fff;
         }
       }
@@ -993,11 +993,11 @@
         content: "";
         width: 10px;
         height: 10px;
-        background: #E8EBF2;
+        background: $very-light-blue;
         border-radius: 50%;
         position: absolute;
         left: 28px;
-        box-shadow:0 0 0 3px #E8EBF2;
+        box-shadow:0 0 0 3px $very-light-blue;
         transition: .3s;
         top: -45px;
       }

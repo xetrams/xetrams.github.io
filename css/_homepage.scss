@@ -1,6 +1,5 @@
 .main-banner {
   margin-top: 70px;
-  background: #f4f4f4;
   overflow: hidden;
   font-size: 0;
   background: url(../images/home_hero.png);
@@ -44,7 +43,7 @@
 .what-we-do-section {
 
   &.what-we-do-section__border {
-    border-bottom: 1px solid #e8ebf2 !important;
+    border-bottom: 1px solid $very-light-blue !important;
     padding-bottom: 75px;
 
     @media (max-width: 840px) {
@@ -54,7 +53,7 @@
 
   .lead-text {
     font-family: "Exo 2";
-    color: var(--light-navy);
+    color: $light-navy;
     font-size: 25px;
     line-height: 35px;
     text-align: center;
@@ -178,7 +177,7 @@
 
     p {
       margin: 25px 0 0;
-      color: var(--gunmetal);
+      color: $gunmetal;
 
       @media (max-width: 1200px) {
         margin-top: 15px;
@@ -188,7 +187,7 @@
     .link-more {
       font-family: Rubik;
       line-height: 15px;
-      color: var(--blue);
+      color: $blue;
       text-decoration: none;
       position: absolute;
       left: 25px;
@@ -263,7 +262,7 @@
     content: "";
     width: 32px;
     height: 32px;
-    background: #DDFAEC;
+    background: $ice;
     border-radius: 2px;
     display: block;
     position: absolute;
@@ -326,7 +325,7 @@
   &:before,
   &:after {
     content: "";
-    background: #F9F9F9;
+    background: $light-gray;
     display: block;
     height: 500px;
     width: 100%;
@@ -461,93 +460,135 @@
     font-weight: 600;
     line-height: 1.43;
     letter-spacing: 1px;
-    color: var(--steel);
+    color: $steel;
     text-transform: uppercase;
     margin: 0;
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
   }
-
-  .project {
-    height: 325px;
-    background-position: 50% !important;
-    background-size: cover !important;
-    position: relative;
-    transition: .3s;
-    border-radius: 4px;
-    overflow: hidden;
-    display: block;
-
-    @media (max-width: 1200px) {
-      height: 275px;
-    }
-
-    @media (max-width: 840px) {
-      margin-top: 15px;
-    }
-
-    &:hover {
-      @include shadow();
-
-      .text-block {
-
-        &:after {
-          margin-right: 0;
-          opacity: 1;
-        }
-      }
-    }
-
-    &.dark-img {
-
-      .text-block {
-        background: rgba(#113059, .5);
-
-        p, h3 {
-          color: #fff;
-        }
-      }
-    }
-
-    .text-block {
-      padding: 25px 100px 25px 25px;
-      background: rgba(#fff, .5);
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-
+  
+    .project {
+      height: 325px;
+      background-position: 50% !important;
+      background-size: cover !important;
+      position: relative;
+      transition: .3s;
+      border-radius: 4px;
+      overflow: hidden;
+      display: block;
+  
       @media (max-width: 1200px) {
-        padding: 15px;
+        height: 275px;
       }
-
-      &:after {
-        content: "";
-        display: block;
-        height: 50px;
-        width: 50px;
-        border-radius: 50%;
-        position: absolute;
-        bottom: 25px;
-        right: 25px;
-        @include shadow();
-        background: url(../images/icons/arrow.svg) #fff;
-        margin-right: 10px;
-        opacity: 0;
-        transition: .3s;
-
-        @media (max-width: 1200px) {
+  
+      @media (max-width: 840px) {
+        margin-top: 15px;
+        width: 100%;
+  
+        &:not(:first-child) {
           display: none;
         }
       }
+  
+      h3 {
+        position: absolute;
+        bottom: 25px;
+        left: 25px;
+        transition: .3s;
+      }
+  
+      @media (min-width: 1200px) {
+  
+        &:hover {
+          @include shadow();
+  
+          &.dark-img {
+  
+            .text-block {
+              background-color: rgba($light-navy, .85);
+            }
+          }
+  
+          .text-block {
+            background-color: rgba(#fff, .85);
+  
+            h3 {
+              bottom: 270px;
+            }
+  
+            p {
+              top: 0;
+            }
+  
+            &:after {
+              margin-right: 0;
+              opacity: 1;
+            }
+          }
+        }
+      }
+  
+      &.dark-img {
+  
+        .text-block {
+          background-color: rgba($light-navy, 0);
+          background-image: linear-gradient(to bottom, rgba(17, 48, 89, 0), rgba(17, 48, 89, 0.6));
+  
+          p, h3 {
+            color: #fff;
+          }
 
-      p {
-        margin: 10px 0 0;
-        color: var(--gunmetal);
+          &:after {
+            background-color: $light-navy;
+          }
+        }
+      }
+  
+      .text-block {
+        padding: 65px 25px 25px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        transition: .3s;
+        background-color: rgba(255, 255, 255, 0);
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6) 100%);
+  
+        @media (max-width: 1200px) {
+          padding: 15px;
+        }
+  
+        &:after {
+          content: "";
+          display: block;
+          height: 50px;
+          width: 50px;
+          border-radius: 50%;
+          position: absolute;
+          bottom: 25px;
+          right: 25px;
+          background: url(../images/icons/arrow.svg);
+          margin-right: 10px;
+          opacity: 0;
+          transition: .3s;
+          background-color: #fff;
+  
+          @media (max-width: 1200px) {
+            display: none;
+          }
+        }
+  
+        p {
+          position: relative;
+          top: 300px;
+          margin: 10px 0 0;
+          color: $gunmetal;
+          transition: .3s;
+        }
       }
     }
-  }
 
   .row:not(:last-child) {
     margin-bottom: 25px;
@@ -572,7 +613,7 @@
 
 
 .contact-section {
-  background: #f4f4f4;
+  background: $gray;
   overflow: hidden;
   padding: 50px 0;
 
@@ -585,11 +626,11 @@
     width: 100%;
     height: 40px;
     border-radius: 4px;
-    background-color: var(--white);
+    background-color: #fff;
     border: none;
     padding-left: 14px;
     outline: none;
-    color: var(--gunmetal);
+    color: $gunmetal;
   }
 
   textarea {
@@ -597,7 +638,7 @@
     width: 100%;
     height: 125px;
     border-radius: 4px;
-    background-color: var(--white);
+    background-color: $white;
     border: none;
     padding: 25px;
     outline: none;
@@ -607,11 +648,11 @@
 
   input,
   textarea {
-    border: 1px solid rgba(#4EDD99, 0);
+    border: 1px solid rgba($green-light, 0);
     transition: .3s;
     
     &:focus {
-      border: 1px solid #4EDD99;
+      border: 1px solid $green-light;
     }
   }
 
@@ -628,7 +669,7 @@
 
       input,
       textarea {
-        border-color: #EF0C5E;
+        border-color: $cerise;
       }
 
       .error-text {
@@ -643,7 +684,7 @@
       line-height: 18px;
       font-size: 13px;
       font-family: "Exo 2";
-      color: #EF0C5E;
+      color: $cerise;
     }
   }
 
@@ -661,8 +702,8 @@
     }
 
     input[type="checkbox"]:checked + label:after {
-      border-color: rgba(#4EDD99 , 1);
-      background: url(../images/icons/checkbox.svg) #4EDD99 -2px -2px;
+      border-color: rgba($green-light , 1);
+      background: url(../images/icons/checkbox.svg) $green-light -2px -2px;
     }
 
     label {
@@ -679,7 +720,7 @@
         width: 20px;
         height: 20px;
         box-sizing: border-box;
-        border: 2px solid rgba(#B8C3DA, 1);
+        border: 2px solid rgba($light-blue-grey, 1);
         border-radius: 2px;
         position: absolute;
         left: 0;
@@ -688,11 +729,11 @@
       }
 
       &:hover:after {
-        border-color: rgba(#4EDD99 , 1);
+        border-color: rgba($green-light , 1);
       }
 
       a {
-        color: var(--blue);
+        color: $blue;
         text-decoration: none;
       }
     }

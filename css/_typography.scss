@@ -3,7 +3,7 @@
   font-size: 50px;
   font-weight: bold;
   line-height: 60px;
-  color: var(--light-navy);
+  color: $light-navy;
   margin: 0;
 
   @media (max-width: 1200px) {
@@ -22,7 +22,7 @@
   font-size: 35px;
   font-weight: bold;
   line-height: 45px;
-  color: var(--light-navy);
+  color: $light-navy;
   margin: 0;
 
   @media (max-width: 1200px) {
@@ -41,7 +41,7 @@
   font-size: 25px;
   font-weight: bold;
   line-height: 30px;
-  color: var(--light-navy);
+  color: $light-navy;
   margin: 0;
 
   @media (max-width: 1200px) {
@@ -58,7 +58,7 @@
 .h4 {
   font-family: "Exo 2";
   font-size: 13px;
-  color: var(--steel);
+  color: $steel;
   font-weight: 400;
   line-height: 16px;
   letter-spacing: 1px;
@@ -75,7 +75,7 @@
 }
 
 .h5 {
-  color: var(--darkish-blue);
+  color: $darkish-blue;
   font-weight: normal;
   margin: 0;
 }
@@ -83,7 +83,7 @@
 .h-label {
   font-family: "Exo 2";
   font-size: 16px;
-  color: var(--steel);
+  color: $steel;
   font-weight: 600;
   line-height: 20px;
   letter-spacing: 1px;

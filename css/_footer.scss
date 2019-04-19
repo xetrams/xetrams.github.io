@@ -72,24 +72,24 @@
         position: absolute;
         z-index: 1;
         white-space: nowrap;
-        background: #4EDD99;
+        background: $green-light;
         height: 40px;
         padding: 0 17px 0 45px;
         text-decoration: none;
         line-height: 40px;
         display: block;
         border-radius: 4px;
-        color: #00298F;
+        color: $darkish-blue-darker;
         transition: .3s;
         display: none;
-        background: url(../images/icons/location.svg) #4EDD99 17px 12px no-repeat;
+        background: url(../images/icons/location.svg) $green-light 17px 12px no-repeat;
 
         &:after {
           content: "";
           display: block;
           width: 10px;
           height: 10px;
-          background: #4EDD99;
+          background: $green-light;
           transform: rotate(45deg);
           position: absolute;
           left: 20px;
@@ -116,7 +116,7 @@
           svg {
             width: 35px;
             height: 35px;
-            fill: #E8EBF2;
+            fill: $very-light-blue;
             transition: .3s;
 
             @media (max-width: 840px) {
@@ -125,7 +125,7 @@
             }
 
             &:hover {
-              fill: #4EDD99;
+              fill: $green-light;
             }
           }
   

@@ -1,6 +1,5 @@
 .inner-page-main-banner {
   margin-top: 70px;
-  background: #f4f4f4;
   font-size: 0;
   background: url(../images/home_hero.png);
   background-size: cover;
@@ -25,7 +24,7 @@
   .dark-label {
     width: 460px;
     padding: 50px;
-    background: var(--light-navy);
+    background: $light-navy;
     position: absolute;
     bottom: -75px;
     border-radius: 4px;
@@ -64,10 +63,10 @@
     .btn-primary {
       @include btn;
       margin-top: 35px;
-      background: #31ca81;
+      background: $greenish-teal;
 
       &:hover {
-        background: darken(#31ca81, 5%);
+        background: darken($greenish-teal, 5%);
       }
   
       @media (max-width: 840px) {
@@ -79,7 +78,7 @@
 
 .description-section {
   padding: 75px 0;
-  border-bottom: 1px solid #E8EBF2;
+  border-bottom: 1px solid $very-light-blue;
 
   @media (max-width: 1200px) {
     padding-top: 50px;
@@ -96,7 +95,7 @@
       font-size: 25px;
       line-height: 35px;
       font-weight: bold;
-      color: var(--light-navy);
+      color: $light-navy;
       margin-bottom: 25px;
       margin-top: 25px;
 
@@ -162,7 +161,7 @@
         position: absolute;
         width: 30px;
         height: 30px;
-        background: #DDFAEC;
+        background: $sl-green;
         border-radius: 2px;
         top: -7px;
         left: -18px;
@@ -180,7 +179,7 @@
         position: absolute;
         width: 20px;
         height: 20px;
-        background: #DDFAEC;
+        background: $sl-green;
         border-radius: 2px;
         top: -26px;
         left: -38px;
@@ -196,7 +195,7 @@
         font-family: "Exo 2";
         font-size: 25px;
         line-height: 35px;
-        color: #31ca81;
+        color: $greenish-teal;
         margin: 25px 0;
         position: relative;
         z-index: 1;
@@ -240,7 +239,7 @@
     bottom: 0;
     left: 0;
     z-index: -3;
-    background: #F9F9F9;
+    background: $light-gray;
   }
 
   .tab-list {
@@ -269,14 +268,14 @@
       &.active {
 
         a {
-          background: #00298F;
-          border-color: #31ca81;
+          background: $darkish-blue-darker;
+          border-color: $greenish-teal;
           color: #fff !important;
 
           @media (max-width: 840px) {
-            border-bottom: 3px solid #31ca81;
+            border-bottom: 3px solid $greenish-teal;
             background: #fff;
-            color: #00298F !important;
+            color: $darkish-blue-darker !important;
           }
 
           &:after {
@@ -286,7 +285,7 @@
       }
 
       a {
-        border-left: 5px solid #E8EBF2;
+        border-left: 5px solid $very-light-blue;
         background: #fff;
         border-radius: 4px;
         display: block;
@@ -303,8 +302,8 @@
         transition: .3s;
 
         &:hover {
-          border-left-color: #31ca81;
-          color: #31ca81;
+          border-left-color: $greenish-teal;
+          color: $greenish-teal;
         }
 
         @media (max-width: 1200px) {
@@ -394,7 +393,7 @@
       }
 
       .card-label {
-        color: #31ca81;
+        color: $greenish-teal;
   
         @media (max-width: 840px) {
           display: none;
@@ -432,7 +431,7 @@
   padding: 50px 0 100px;
   position: relative;
   overflow: hidden;
-  background: #f9f9f9;
+  background: $light-gray;
   
   @media (max-width: 840px) {
     padding: 50px 0;
@@ -563,7 +562,7 @@
   }
 
   .dark-block {
-    background: var(--light-navy);
+    background: $light-navy;
     overflow: hidden;
     width: 760px;
     margin: 0 auto;
@@ -601,10 +600,10 @@
       margin-top: 35px;
       position: relative;
       margin-bottom: 50px;
-      background: #31ca81;
+      background: $greenish-teal;
 
       &:hover {
-        background: darken(#31ca81, 5%);
+        background: darken($greenish-teal, 5%);
       }
 
       @media (max-width: 840px) {
@@ -618,7 +617,7 @@
 .projects-carousel-section {
   padding: 75px 0 50px;
   overflow: hidden;
-  border-bottom: 1px solid var(--very-light-blue);
+  border-bottom: 1px solid $very-light-blue;
 
   @media (max-width: 840px) {
     padding-top: 50px;
@@ -626,7 +625,7 @@
   }
 
   .section-label {
-    color: var(--steel);
+    color: $steel;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 1px;
@@ -646,7 +645,7 @@
 
   .lead-text {
     font-family: "Exo 2";
-    color: var(--light-navy);
+    color: $light-navy;
     font-size: 25px;
     line-height: 35px;
     text-align: center;
@@ -725,7 +724,7 @@
         &.dark-img {
     
           .text-block {
-            background: rgba(#113059, .5);
+            background: rgba($light-navy, .5);
     
             p, h3 {
               color: #fff;
@@ -771,7 +770,7 @@
     
           p {
             margin: 5px 0 0;
-            color: var(--gunmetal);
+            color: $gunmetal;
           }
         }
       }
@@ -780,7 +779,7 @@
 
   .owl-dots {
     padding: 15px 25px;
-    background: #F9F9F9;
+    background: $light-gray;
     margin: 0 auto;
     border-radius: 25px;
     display: inline-block;
@@ -792,8 +791,8 @@
       height: 7px;
       width: 7px;
       margin: 0 4px;
-      background: #B8C3DA;
-      border: 6px solid #F9F9F9;
+      background: $light-blue-grey;
+      border: 6px solid $light-gray;
       box-sizing: content-box;
       outline: none;
       position: relative;
@@ -810,11 +809,11 @@
       }
 
       &:hover {
-        background: #31ca81;
+        background: $greenish-teal;
       }
 
       &.active {
-        border-color: #31ca81;
+        border-color: $greenish-teal;
         background: #fff;
       }
     }
@@ -856,7 +855,7 @@
   }
 
   .section-label {
-    color: var(--steel);
+    color: $steel;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 1px;
@@ -872,7 +871,7 @@
 
   .lead-text {
     font-family: "Exo 2";
-    color: var(--light-navy);
+    color: $light-navy;
     font-size: 25px;
     line-height: 35px;
     text-align: center;

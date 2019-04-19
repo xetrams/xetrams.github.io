@@ -1,5 +1,5 @@
 .portfolio-header-section {
-  background: #f9f9f9;
+  background: $light-gray;
   height: 420px;
   margin-top: 70px;
   overflow: hidden;
@@ -15,7 +15,7 @@
   }
 
   .back-link {
-    color: #68789c;
+    color: $steel;
     line-height: 12px;
     margin-top: 40px;
     display: block;
@@ -32,7 +32,7 @@
       margin-right: 8px;
 
       path {
-        fill: #B8C3DA;
+        fill: $light-blue-grey;
         transition: .3s;
       }
     }
@@ -91,7 +91,7 @@
       height: 50px;
       position: absolute;
       background-position: 50% !important;
-      background-color: #f9f9f9 !important;
+      background-color: $light-gray !important;
       background-repeat: no-repeat !important;
       border-radius: 50%;
       top: 225px;
@@ -145,7 +145,7 @@
 
     .owl-dots {
       padding: 15px 25px;
-      background: #F9F9F9;
+      background: $light-gray;
       margin: 50px auto;
       border-radius: 25px;
       display: inline-block;
@@ -161,8 +161,8 @@
         height: 7px;
         width: 7px;
         margin: 0 4px;
-        background: #B8C3DA;
-        border: 6px solid #F9F9F9;
+        background: $light-blue-grey;
+        border: 6px solid $light-gray;
         box-sizing: content-box;
         outline: none;
         position: relative;
@@ -179,11 +179,11 @@
         }
   
         &:hover {
-          background: #31ca81;
+          background: $greenish-teal;
         }
   
         &.active {
-          border-color: #31ca81;
+          border-color: $greenish-teal;
           background: #fff;
         }
       }
@@ -249,7 +249,7 @@
     }
 
     .h-label {
-      color: #00298f;
+      color: $dark-blue;
       margin: 35px 0 10px;
     }
 
@@ -302,7 +302,7 @@
 }
 
 .project-text-description-serction {
-  border-bottom: 1px solid #e8ebf2;
+  border-bottom: 1px solid $very-light-blue;
   padding-bottom: 75px;
 
   @media (max-width: 840px) {
@@ -394,7 +394,7 @@
         &.dark-img {
 
           .text-block {
-            background-color: rgba(#113059, .85);
+            background-color: rgba($light-navy, .85);
           }
         }
 
@@ -420,7 +420,7 @@
     &.dark-img {
 
       .text-block {
-        background-color: rgba(#113059, 0);
+        background-color: rgba($light-navy, 0);
         background-image: linear-gradient(to bottom, rgba(17, 48, 89, 0), rgba(17, 48, 89, 0.6));
 
         p, h3 {
@@ -467,7 +467,7 @@
         position: relative;
         top: 300px;
         margin: 10px 0 0;
-        color: var(--gunmetal);
+        color: $gunmetal;
         transition: .3s;
       }
     }

@@ -24,7 +24,7 @@
 
 .legal-header {
   padding: 100px 0;
-  background: #f9f9f9;
+  background: $light-gray;
   margin-top: 70px;
   margin-bottom: 75px;
 
@@ -51,7 +51,7 @@
 }
 
 .header-leagal-tabs {
-  color: #31ca81;
+  color: $greenish-teal;
   margin-bottom: 25px;
 }
 
@@ -75,7 +75,7 @@
       a {
         border-bottom-left-radius: 4px;
         border-bottom-right-radius: 4px;
-        border-bottom: 1px solid #e8ebf2;
+        border-bottom: 1px solid $very-light-blue;
       }
     }
 
@@ -84,21 +84,21 @@
       padding: 10px 15px;
       line-height: 25px;
       display: block;
-      border-bottom: 1px solid #e8ebf2;
+      border-bottom: 1px solid $very-light-blue;
       color: #68789c;
       position: relative;
-      border: 1px solid #e8ebf2;
+      border: 1px solid $very-light-blue;
       border-bottom: none;
 
       &:hover {
-        color: #00298f;;
+        color: $darkish-blue-darker;
       }
 
       &.active {
-        color: #00298f;
+        color: $darkish-blue-darker;
 
         &:after {
-          background: #31ca81;
+          background: $greenish-teal;
         }
       }
 
@@ -109,7 +109,7 @@
         top: -1px;
         bottom: 0;
         width: 5px;
-        background: #e8ebf2;
+        background: $very-light-blue;
       }
     }
   }
@@ -119,7 +119,7 @@
   padding-bottom: 60px;
 
   .note {
-    color: #68789c;
+    color: $steel;
     font-style: italic;
     margin-top: 0;
     margin-bottom: -25px;
@@ -136,12 +136,12 @@
   }
 
   a {
-    color: #034fc1;
+    color: $blue;
     text-decoration: none;
     word-wrap: break-word;
 
     &:hover {
-      color: darken(#034fc1, 10%);
+      color: darken($blue, 10%);
       text-decoration: underline;
     }
   }
@@ -149,7 +149,7 @@
   h5 {
     font-size: 15px;
     font-weight: bold;
-    color: #424a56;
+    color: $gunmetal;
     margin: 0;
     margin-bottom: -15px;
   }
@@ -168,7 +168,7 @@
         top: 9px;
         width: 5px;
         height: 5px;
-        background: #31ca81;
+        background: $greenish-teal;
         display: block;
       }
     }
