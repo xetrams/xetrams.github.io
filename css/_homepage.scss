@@ -489,15 +489,6 @@
         }
       }
   
-      h3 {
-        position: absolute;
-        bottom: 25px;
-        left: 25px;
-        -webkit-transition: .3s;
-        -o-transition: .3s;
-        transition: .3s;
-      }
-  
       @media (min-width: 1200px) {
   
         &:hover {
@@ -595,6 +586,15 @@
           top: 300px;
           margin: 10px 0 0;
           color: $gunmetal;
+          -webkit-transition: .3s;
+          -o-transition: .3s;
+          transition: .3s;
+        }
+  
+        h3 {
+          position: absolute;
+          bottom: 25px;
+          left: 25px;
           -webkit-transition: .3s;
           -o-transition: .3s;
           transition: .3s;

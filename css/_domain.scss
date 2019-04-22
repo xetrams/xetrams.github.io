@@ -720,9 +720,59 @@
         @media (max-width: 1200px) {
           height: 275px;
         }
+  
+        @media (min-width: 1200px) {
+    
+          &:hover {
+            @include shadow();
+    
+            &.dark-img {
+    
+              .text-block {
+                background-color: rgba($light-navy, .85);
+              }
+            }
+    
+            .text-block {
+              background-color: rgba(#fff, .85);
+    
+              h3 {
+                bottom: 290px;
+              }
+    
+              p {
+                top: 0;
+              }
+    
+              &:after {
+                margin-right: 0;
+                opacity: 1;
+              }
+            }
+          }
+        }
     
         @media (max-width: 840px) {
           margin-top: 15px;
+        }
+  
+        &.dark-img {
+    
+          .text-block {
+            background-color: rgba($light-navy, 0);
+            background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 48, 89, 0)), to(rgba(17, 48, 89, 0.6)));
+            background-image: -webkit-linear-gradient(top, rgba(17, 48, 89, 0), rgba(17, 48, 89, 0.6));
+            background-image: -o-linear-gradient(top, rgba(17, 48, 89, 0), rgba(17, 48, 89, 0.6));
+            background-image: linear-gradient(to bottom, rgba(17, 48, 89, 0), rgba(17, 48, 89, 0.6));
+    
+            p, h3 {
+              color: #fff;
+            }
+  
+            &:after {
+              background-color: $light-navy;
+            }
+          }
         }
     
         &:hover {
@@ -747,14 +797,22 @@
             }
           }
         }
-    
+  
         .text-block {
-          padding: 25px 100px 25px 25px;
-          background: rgba(#fff, .5);
+          padding: 65px 25px 25px;
           position: absolute;
           bottom: 0;
           left: 0;
           right: 0;
+          top: 0;
+          -webkit-transition: .3s;
+          -o-transition: .3s;
+          transition: .3s;
+          background-color: rgba(255, 255, 255, 0);
+          background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.6)));
+          background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6) 100%);
+          background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6) 100%);
+          background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6) 100%);
     
           @media (max-width: 1200px) {
             padding: 15px;
@@ -769,26 +827,36 @@
             position: absolute;
             bottom: 25px;
             right: 25px;
-            @include shadow();
-            background: url(../images/icons/arrow.svg) #fff;
+            background: url(../images/icons/arrow.svg);
             margin-right: 10px;
             opacity: 0;
             -webkit-transition: .3s;
             -o-transition: .3s;
             transition: .3s;
+            background-color: #fff;
     
             @media (max-width: 1200px) {
               display: none;
             }
           }
-
-          .h3 {
-            line-height: 35px;
-          }
     
           p {
-            margin: 5px 0 0;
+            position: relative;
+            top: 300px;
+            margin: 10px 0 0;
             color: $gunmetal;
+            -webkit-transition: .3s;
+            -o-transition: .3s;
+            transition: .3s;
+          }
+  
+          h3 {
+            position: absolute;
+            bottom: 25px;
+            left: 25px;
+            -webkit-transition: .3s;
+            -o-transition: .3s;
+            transition: .3s;
           }
         }
       }

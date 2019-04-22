@@ -25,6 +25,24 @@
     }
   }
 
+  .expandable .expandable {
+
+    .drop-opener {
+
+      &:after {
+        display: none !important;
+      }
+    }
+
+    .dropdown {
+      display: block !important;
+
+      a {
+        background: #f9f9f9 !important;
+      }
+    }
+  }
+
   .menu-cross {
     position: absolute;
     top: 15px;
