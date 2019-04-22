@@ -3746,6 +3746,18 @@ p {
   .contact-section h2 {
     text-align: center;
     margin-bottom: 35px; }
+  .contact-section .lead-text {
+    width: 760px;
+    margin-left: -100px;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 50px; }
+    @media (max-width: 1200px) {
+      .contact-section .lead-text {
+        margin-left: 0;
+        width: auto;
+        margin-top: -20px;
+        margin-bottom: 35px; } }
   .contact-section input {
     width: 100%;
     height: 40px;
