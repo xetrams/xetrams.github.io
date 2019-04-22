@@ -5027,8 +5027,7 @@ p {
     right: 25px; }
   @media (max-width: 840px) {
     .main-header {
-      display: block;
-      overflow: hidden; } }
+      display: block; } }
   @media (max-width: 1200px) {
     .main-header {
       height: 101px; }
