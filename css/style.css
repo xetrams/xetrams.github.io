@@ -4984,12 +4984,13 @@ p {
     @media (max-width: 840px) {
       .main-header .burger-btn {
         display: block; } }
-  .main-header .expandable .expandable .drop-opener:after {
-    display: none !important; }
-  .main-header .expandable .expandable .dropdown {
-    display: block !important; }
-    .main-header .expandable .expandable .dropdown a {
-      background: #f9f9f9 !important; }
+  @media (max-width: 840px) {
+    .main-header .expandable .expandable .drop-opener:after {
+      display: none !important; }
+    .main-header .expandable .expandable .dropdown {
+      display: block !important; }
+      .main-header .expandable .expandable .dropdown a {
+        background: #f9f9f9 !important; } }
   .main-header .menu-cross {
     position: absolute;
     top: 15px;

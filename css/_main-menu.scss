@@ -25,20 +25,24 @@
     }
   }
 
-  .expandable .expandable {
 
-    .drop-opener {
+  @media (max-width: 840px) {
+    
+    .expandable .expandable {
 
-      &:after {
-        display: none !important;
+      .drop-opener {
+
+        &:after {
+          display: none !important;
+        }
       }
-    }
 
-    .dropdown {
-      display: block !important;
+      .dropdown {
+        display: block !important;
 
-      a {
-        background: #f9f9f9 !important;
+        a {
+          background: #f9f9f9 !important;
+        }
       }
     }
   }
