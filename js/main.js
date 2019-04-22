@@ -59,7 +59,7 @@ if($('.progress-bar').length >0 ) {
 
 	let progress = $('.progress');
 
-	let listOfPanels = $('.progress-bar-block li');
+	var listOfPanels = $('.progress-bar-block li');
 	var numOfPanels = $('.progress-bar-block li').length;
 
 

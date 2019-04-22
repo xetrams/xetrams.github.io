@@ -18,6 +18,8 @@
     background-size: cover;
     margin: 0 0 0 auto;
     margin-top: 75px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     border-radius: 4px;
     overflow: hidden;
@@ -29,8 +31,12 @@
     .follow-us-block {
       background: $light-navy;
       height: 105px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       margin: auto 0 0 0;
       width: 100%;
 
@@ -41,6 +47,8 @@
 
       ul {
         margin: 0 50px 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
 
         li {
@@ -54,6 +62,8 @@
           width: 35px;
           height: 35px;
           fill: $greenish-teal;
+          -webkit-transition: .3s;
+          -o-transition: .3s;
           transition: .3s;
           display: block;
 
@@ -78,8 +88,10 @@
 
   .onpage-contact-block {
     width: 660px;
-    box-sizing: border-box;
-    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.15);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.15);
+            box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.15);
     background: #fff;
     margin-top: -575px;
     position: relative;
@@ -92,7 +104,8 @@
 
     @media (max-width: 840px) {
       margin: 0 auto;
-      box-shadow: none;
+      -webkit-box-shadow: none;
+              box-shadow: none;
       width: auto;
     }
 
@@ -126,6 +139,8 @@
       }
 
       .back-btn-block {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
 
         .back-btn {
@@ -254,6 +269,8 @@
     input,
     textarea {
       border: 1px solid rgba($green-light, 0);
+      -webkit-transition: .3s;
+      -o-transition: .3s;
       transition: .3s;
       
       &:focus {
@@ -324,12 +341,15 @@
           display: block;
           width: 20px;
           height: 20px;
-          box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
           border: 2px solid rgba($light-blue-grey, 1);
           border-radius: 2px;
           position: absolute;
           left: 0;
           top: 3px;
+          -webkit-transition: .3s border-color;
+          -o-transition: .3s border-color;
           transition: .3s border-color;
         }
 
@@ -345,6 +365,8 @@
     }
 
     .upload-block {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
 
       .upload-btn {

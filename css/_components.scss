@@ -1,16 +1,19 @@
 @mixin shadow() {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, .15);
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, .15);
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, .15);
 }
 
 @mixin shadow-left() {
-  box-shadow: -5px 5px 20px rgba(0, 0, 0, .15);
+  -webkit-box-shadow: -5px 5px 20px rgba(0, 0, 0, .15);
+          box-shadow: -5px 5px 20px rgba(0, 0, 0, .15);
 }
 
 @mixin btn() {
   display: inline-block;
   height: 40px;
   border-radius: 4px;
-  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.15);
   background-color: $darkish-blue;
   text-align: center;
   color: #fff;
@@ -18,11 +21,14 @@
   font-size: 15px;
   line-height: 40px;
   text-decoration: none;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
   transition: .3s;
 
   &:hover {
     background: $darkish-blue-darker;
-    box-shadow: 8px 8px 15px 0 rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 8px 8px 15px 0 rgba(0, 0, 0, 0.15);
+            box-shadow: 8px 8px 15px 0 rgba(0, 0, 0, 0.15);
   }
 }
 
