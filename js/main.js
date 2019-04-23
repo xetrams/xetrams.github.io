@@ -683,3 +683,27 @@ if($('.scrum-second-line').length > 0 ) {
 		}
 	});
 }
+
+
+// TEAM SLIDER
+
+if($('.list-of-offices.owl-carousel').length >0 ) {
+	$('.list-of-offices.owl-carousel').owlCarousel({
+		center: true,
+		loop: false,
+		margin: 30,
+		autoWidth: true,
+		nav: false,
+		responsive:{
+			0:{
+				margin: 30
+			},
+			840:{
+				margin: 30
+			},
+			1200:{
+				margin: 30
+			}
+		}
+	});
+}

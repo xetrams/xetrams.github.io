@@ -5,6 +5,16 @@
 
   @media (max-width: 1200px) {
     margin-top: 101px;
+    background: #fff;
+
+    .container {
+      max-width: none;
+      width: auto;
+    }
+
+    .col-xl-6 {
+      padding: 0;
+    }
   }
 
   @media (max-width: 840px) {
@@ -12,94 +22,15 @@
     background: #fff;
   }
 
-  .follow-us-section {
-    height: 650px;
-    width: 670px;
-    background-size: cover;
-    margin: 0 0 0 auto;
-    margin-top: 75px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    border-radius: 4px;
-    overflow: hidden;
-
-    @media (max-width: 1200px) {
-      display: none;
-    }
-
-    .follow-us-block {
-      background: $light-navy;
-      height: 105px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      margin: auto 0 0 0;
-      width: 100%;
-
-      .h-label {
-        color: #fff;
-        margin-left: 200px;
-      }
-
-      ul {
-        margin: 0 50px 0 auto;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-
-        li {
-          margin-left: 15px;
-        }
-      }
-
-      a {
-
-        svg {
-          width: 35px;
-          height: 35px;
-          fill: $greenish-teal;
-          -webkit-transition: .3s;
-          -o-transition: .3s;
-          transition: .3s;
-          display: block;
-
-          @media (max-width: 840px) {
-            width: 25px;
-            height: 25px;
-          }
-
-          &:hover {
-            fill: $green-light;
-          }
-        }
-
-        img {
-          width: 35px;
-          height: 35px;
-          display: block;
-        }
-      }
-    }
-  }
-
   .onpage-contact-block {
-    width: 660px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    -webkit-box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.15);
-            box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.15);
-    background: #fff;
-    margin-top: -575px;
     position: relative;
     z-index: 1;
-    margin-bottom: 75px;
+    margin-bottom: 100px;
+    margin-top: 100px;
 
     @media (max-width: 1200px) {
-      margin: 50px auto 75px;
+      margin: 125px auto 75px;
+      width: 500px;
     }
 
     @media (max-width: 840px) {
@@ -110,6 +41,15 @@
     }
 
     &.email-sent {
+
+      @media (max-width: 1200px) {
+        margin-top: 50px;
+      }
+
+      @media (max-width: 840px) {
+        margin: 0;
+        margin-bottom: 50px;
+      }
 
       .sent-block {
         display: block;
@@ -125,9 +65,9 @@
     }
 
     .sent-block {
-      padding: 50px 100px;
       display: none;
       margin-bottom: 245px;
+      padding-top: 50px;
       
       img {
         display: block;
@@ -149,12 +89,10 @@
       }
 
       @media (max-width: 1200px) {
-        padding: 50px 66px;
         margin-bottom: 0;
       }
 
       @media (max-width: 840px) {
-        padding: 50px 0;
         text-align: center;
 
         img {
@@ -168,9 +106,9 @@
     }
 
     .inputs-part {
-      padding: 75px 67px 50px;
       border-bottom: 1px solid $very-light-blue;
       position: relative;
+      padding-bottom: 35px;
 
       h2 {
         margin-bottom: 25px;
@@ -210,7 +148,6 @@
     }
 
     .sending-part {
-      padding: 50px 67px 75px;
 
       @media (max-width: 840px) {
         padding-right: 0;
@@ -312,7 +249,8 @@
 
     .checkbox-block {
       line-height: 18px;
-      margin: 10px 0 35px;
+      margin: 0 0 35px;
+      padding-top: 35px;
 
       @media (max-width: 840px) {
         line-height: 16px;
@@ -406,5 +344,137 @@
         @include btn;
       }
     }
+  }
+}
+
+.list-of-offices {
+  margin-top: 175px;
+  margin-bottom: 75px;
+
+  @media (max-width: 1200px) {
+    display: none;
+  }
+
+  .office {
+    @include shadow;
+    border-radius: 4px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    overflow: hidden;
+
+    @media (max-width: 1200px) {
+      
+    }
+
+    .img-block {
+      width: 250px;
+    }
+  
+    .text-block {
+      width: 240px;
+      margin: 35px;
+  
+      h2 {
+        font-size: 15px;
+        line-height: 25px;
+        color: $gunmetal;
+        margin: 0 0 35px;
+      }
+    
+      p {
+        margin: 0;
+      }
+    
+      .email {
+        display: block;
+        margin-top: 15px;
+        color: $blue;
+        text-decoration: none;
+
+        &:hover {
+          color: $dark-blue;
+        }
+      }
+    }
+  }
+}
+.list-of-offices.owl-carousel {
+  margin: 0 0;
+  background: $light-gray;
+  display: none !important;
+
+  @media (max-width: 1200px) {
+    display: block !important;
+  }
+
+  .office {
+    width: 236px;
+    margin: 75px 0;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .img-block {
+      height: 175px;
+      width: auto;
+    }
+
+    .text-block {
+      width: auto;
+      margin: 15px;
+    }
+  }
+}
+
+.warning404 {
+  position: fixed;
+  top: 70px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .warning-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 20px;
+
+    @media (max-width: 840px) {
+      top: 50px;
+      align-items: center;
+      text-align: center;
+    }
+    
+    img {
+      width: 150px;
+      height: 125px;
+      margin-bottom: 25px;
+      display: block;
+    }
+
+    h1 {
+
+    }
+
+    .back-btn {
+      @include btn-secondary;
+      margin-top: 35px;
+
+      @media (max-width: 840px) {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    top: 101px;
+  }
+
+  @media (max-width: 840px) {
+    top: 50px;
   }
 }
