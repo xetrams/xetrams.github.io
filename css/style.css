@@ -3229,7 +3229,7 @@ p {
   margin-top: 70px;
   overflow: hidden;
   font-size: 0;
-  background: url(../images/home_hero.png);
+  background: url(../images/home_hero.jpg);
   background-size: cover;
   background-position: 50% 50%; }
   @media (max-width: 1200px) {
@@ -3237,7 +3237,8 @@ p {
       margin-top: 101px; } }
   @media (max-width: 840px) {
     .main-banner {
-      margin-top: 50px; } }
+      margin-top: 50px;
+      background-position: 100% 50%; } }
   .main-banner .h1 {
     width: 560px;
     margin-top: 100px;
@@ -3399,7 +3400,11 @@ p {
 
 /* PLANNING A SOFTWARE PROJECT */
 .quote-section {
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 60px; }
+  @media (max-width: 840px) {
+    .quote-section {
+      padding-bottom: 35px; } }
   .quote-section .quote-icon {
     width: 120px;
     height: 100px;
@@ -4614,7 +4619,8 @@ p {
 .dark-quote-section {
   text-align: center;
   background: url(../images/quote-background.jpg);
-  padding: 75px 0; }
+  padding: 75px 0;
+  background-size: cover; }
   @media (max-width: 840px) {
     .dark-quote-section {
       padding: 50px 0; } }
@@ -4737,7 +4743,7 @@ p {
           width: 275px !important; } }
       .projects-carousel-section .list-of-project .owl-item .project {
         text-align: left;
-        height: 350px;
+        height: 288px;
         background-position: 50% !important;
         background-size: cover !important;
         position: relative;
@@ -4749,7 +4755,7 @@ p {
         display: block; }
         @media (max-width: 1200px) {
           .projects-carousel-section .list-of-project .owl-item .project {
-            height: 275px; } }
+            height: 189px; } }
         @media (min-width: 1200px) {
           .projects-carousel-section .list-of-project .owl-item .project:hover {
             -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
@@ -4759,7 +4765,7 @@ p {
             .projects-carousel-section .list-of-project .owl-item .project:hover .text-block {
               background-color: rgba(255, 255, 255, 0.85); }
               .projects-carousel-section .list-of-project .owl-item .project:hover .text-block h3 {
-                bottom: 290px; }
+                bottom: 230px; }
               .projects-carousel-section .list-of-project .owl-item .project:hover .text-block p {
                 top: 0; }
               .projects-carousel-section .list-of-project .owl-item .project:hover .text-block:after {
@@ -6322,7 +6328,7 @@ template {
   margin-top: 50px;
   width: 100%; }
   .portfolio-projects-list .project {
-    height: 360px;
+    height: 225px;
     width: 360px;
     background-position: 50% !important;
     background-size: cover !important;
@@ -6338,13 +6344,15 @@ template {
     margin-left: 20px; }
     @media (max-width: 1200px) {
       .portfolio-projects-list .project {
-        height: 275px;
         margin-right: 19px; } }
     @media (max-width: 840px) {
       .portfolio-projects-list .project {
         margin-top: 15px;
         width: 100%;
-        margin-right: 20px; } }
+        padding-top: 57%;
+        margin-right: 20px; }
+        .portfolio-projects-list .project p {
+          display: none; } }
     .portfolio-projects-list .project h3 {
       position: absolute;
       bottom: 25px;
@@ -6361,7 +6369,7 @@ template {
         .portfolio-projects-list .project:hover .text-block {
           background-color: rgba(255, 255, 255, 0.85); }
           .portfolio-projects-list .project:hover .text-block h3 {
-            bottom: 300px; }
+            bottom: 170px; }
           .portfolio-projects-list .project:hover .text-block p {
             top: 0; }
           .portfolio-projects-list .project:hover .text-block:after {
@@ -7415,17 +7423,14 @@ template {
     background-image: url(../images/icons/arrow_small_gray.svg) !important; }
     .project-screenshoots-section .project-screenshots .owl-next:hover {
       background-image: url(../images/icons/arrow_small_green.svg) !important; }
-  .project-screenshoots-section .project-screenshots .owl-item {
-    width: 960px !important;
-    height: 500px !important; }
-    @media (max-width: 1200px) {
-      .project-screenshoots-section .project-screenshots .owl-item {
-        width: 637px !important;
-        height: 332px !important; } }
-    @media (max-width: 840px) {
-      .project-screenshoots-section .project-screenshots .owl-item {
-        width: auto !important;
-        height: 250px !important; } }
+  @media (min-width: 1200px) {
+    .project-screenshoots-section .project-screenshots .owl-item {
+      width: 960px !important;
+      height: 600px !important; } }
+  @media (max-width: 1200px) and (min-width: 840px) {
+    .project-screenshoots-section .project-screenshots .owl-item {
+      width: 637px !important;
+      height: 398px !important; } }
   .project-screenshoots-section .project-screenshots .owl-dots {
     padding: 15px 25px;
     background: #f9f9f9;
@@ -7577,7 +7582,7 @@ template {
     -ms-flex-pack: center;
     justify-content: center; }
   .related-projects-section .project {
-    height: 360px;
+    height: 225px;
     width: 360px;
     background-position: 50% !important;
     background-size: cover !important;
@@ -7593,14 +7598,16 @@ template {
     margin-left: 20px; }
     @media (max-width: 1200px) {
       .related-projects-section .project {
-        height: 275px;
         margin-right: 19px; } }
     @media (max-width: 840px) {
       .related-projects-section .project {
         margin-top: 15px;
         width: 100%;
+        padding-top: 57%;
         margin-right: 20px; }
         .related-projects-section .project:not(:first-child) {
+          display: none; }
+        .related-projects-section .project p {
           display: none; } }
     .related-projects-section .project h3 {
       position: absolute;
@@ -7618,7 +7625,7 @@ template {
         .related-projects-section .project:hover .text-block {
           background-color: rgba(255, 255, 255, 0.85); }
           .related-projects-section .project:hover .text-block h3 {
-            bottom: 300px; }
+            bottom: 170px; }
           .related-projects-section .project:hover .text-block p {
             top: 0; }
           .related-projects-section .project:hover .text-block:after {
@@ -7695,7 +7702,9 @@ template {
 
 .banner-with-statistic-section {
   height: 450px;
-  margin-top: 75px; }
+  margin-top: 75px;
+  background-size: cover;
+  background-position: 50% 50%; }
   .banner-with-statistic-section .statistic-list {
     height: 195px;
     background: #fff;

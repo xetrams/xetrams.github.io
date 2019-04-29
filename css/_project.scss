@@ -133,17 +133,20 @@
     }
 
     .owl-item {
-      width: 960px !important;
-      height: 500px !important;
 
-      @media (max-width: 1200px) {
+
+      @media (min-width: 1200px) {
+        width: 960px !important;
+        height: 600px !important;
+      }
+
+      @media (max-width: 1200px) and (min-width: 840px) {
         width: 637px !important;
-        height: 332px !important;
+        height: 398px !important;
       }
   
       @media (max-width: 840px) {
-        width: auto !important;
-        height: 250px !important;
+        
       }
     }
 
@@ -360,7 +363,7 @@
   }
 
   .project {
-    height: 360px;
+    height: 225px;
     width: 360px;
     background-position: 50% !important;
     background-size: cover !important;
@@ -376,16 +379,20 @@
     margin-left: 20px;
 
     @media (max-width: 1200px) {
-      height: 275px;
       margin-right: 19px;
     }
 
     @media (max-width: 840px) {
       margin-top: 15px;
       width: 100%;
+      padding-top: 57%;
       margin-right: 20px;
 
       &:not(:first-child) {
+        display: none;
+      }
+
+      p {
         display: none;
       }
     }
@@ -417,7 +424,7 @@
           background-color: rgba(#fff, .85);
 
           h3 {
-            bottom: 300px;
+            bottom: 170px;
           }
 
           p {

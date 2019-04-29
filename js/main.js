@@ -517,7 +517,11 @@ if($('.kanban-scheme').length > 0 ) {
 	$(window).scroll(function (event) {
 		let scroll = $(window).scrollTop();
 		let progressHeight = scroll - progressOffset + $(window).height() - chartHeight;
-		let progressPercents = (progressHeight / (vindowHeight - headerHeight - chartHeight));
+		let progressDevider = vindowHeight - headerHeight - 100 - chartHeight;
+		if (progressDevider <= 0) {
+			progressDevider = vindowHeight - headerHeight - chartHeight
+		}
+		let progressPercents = progressHeight /progressDevider;
 		if (progressPercents > 1) {
 			progressPercents = 1;
 		}
@@ -690,7 +694,7 @@ if($('.scrum-second-line').length > 0 ) {
 if($('.list-of-offices.owl-carousel').length >0 ) {
 	$('.list-of-offices.owl-carousel').owlCarousel({
 		center: true,
-		loop: false,
+		loop: true,
 		margin: 30,
 		autoWidth: true,
 		nav: false,

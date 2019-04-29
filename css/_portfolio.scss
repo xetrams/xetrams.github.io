@@ -189,7 +189,7 @@
   width: 100%;
 
   .project {
-    height: 360px;
+    height: 225px;
     width: 360px;
     background-position: 50% !important;
     background-size: cover !important;
@@ -205,14 +205,18 @@
     margin-left: 20px;
 
     @media (max-width: 1200px) {
-      height: 275px;
       margin-right: 19px;
     }
 
     @media (max-width: 840px) {
       margin-top: 15px;
       width: 100%;
+      padding-top: 57%;
       margin-right: 20px;
+
+      p {
+        display: none;
+      }
     }
 
     h3 {
@@ -242,7 +246,7 @@
           background-color: rgba(#fff, .85);
 
           h3 {
-            bottom: 300px;
+            bottom: 170px;
           }
 
           p {
