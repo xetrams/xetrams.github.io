@@ -3230,15 +3230,15 @@ p {
   overflow: hidden;
   font-size: 0;
   background: url(../images/home_hero.jpg);
-  background-size: cover;
-  background-position: 50% 50%; }
+  background-size: cover !important;
+  background-position: 50% 50% !important; }
   @media (max-width: 1200px) {
     .main-banner {
       margin-top: 101px; } }
   @media (max-width: 840px) {
     .main-banner {
       margin-top: 50px;
-      background-position: 100% 50%; } }
+      background-position: 100% 50% !important; } }
   .main-banner .h1 {
     width: 560px;
     margin-top: 100px;
@@ -3400,11 +3400,7 @@ p {
 
 /* PLANNING A SOFTWARE PROJECT */
 .quote-section {
-  text-align: center;
-  padding-bottom: 60px; }
-  @media (max-width: 840px) {
-    .quote-section {
-      padding-bottom: 35px; } }
+  text-align: center; }
   .quote-section .quote-icon {
     width: 120px;
     height: 100px;
@@ -7400,12 +7396,12 @@ template {
     background-color: #f9f9f9 !important;
     background-repeat: no-repeat !important;
     border-radius: 50%;
-    top: 225px;
+    top: 275px;
     outline: none; }
     @media (max-width: 1200px) {
       .project-screenshoots-section .project-screenshots .owl-prev,
       .project-screenshoots-section .project-screenshots .owl-next {
-        top: 150px; } }
+        top: 175px; } }
     @media (max-width: 840px) {
       .project-screenshoots-section .project-screenshots .owl-prev,
       .project-screenshoots-section .project-screenshots .owl-next {
@@ -7945,6 +7941,9 @@ template {
   padding-top: 75px; }
   .team-section .h-label {
     text-align: center; }
+  @media (min-width: 840px) {
+    .team-section .col-lg-3:first-child {
+      margin-left: 25%; } }
   .team-section .top-employee {
     text-align: center;
     border-radius: 4px;

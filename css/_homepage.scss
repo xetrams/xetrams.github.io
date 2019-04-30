@@ -3,8 +3,8 @@
   overflow: hidden;
   font-size: 0;
   background: url(../images/home_hero.jpg);
-  background-size: cover;
-  background-position: 50% 50%;
+  background-size: cover !important;
+  background-position: 50% 50% !important;
 
   @media (max-width: 1200px) {
     margin-top: 101px;
@@ -12,7 +12,7 @@
 
   @media (max-width: 840px) {
     margin-top: 50px;
-    background-position: 100% 50%;
+    background-position: 100% 50% !important;
   }
 
   .h1 {
@@ -207,11 +207,6 @@
 
 .quote-section {
   text-align: center;
-  padding-bottom: 60px;
-
-  @media (max-width: 840px) {
-    padding-bottom: 35px;
-  }
 
   .quote-icon {
     width: 120px;
