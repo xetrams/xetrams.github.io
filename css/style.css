@@ -6892,16 +6892,34 @@ template {
     left: 0; }
   .waterfall-section .waterfall-scheme .list-metodology-scheme div:nth-child(2) {
     left: 175px; }
+    @media (max-width: 1200px) {
+      .waterfall-section .waterfall-scheme .list-metodology-scheme div:nth-child(2) {
+        left: 115px; } }
   .waterfall-section .waterfall-scheme .list-metodology-scheme div:nth-child(3) {
     left: 350px; }
+    @media (max-width: 1200px) {
+      .waterfall-section .waterfall-scheme .list-metodology-scheme div:nth-child(3) {
+        left: 230px; } }
   .waterfall-section .waterfall-scheme .list-metodology-scheme div:nth-child(4) {
     left: 525px; }
+    @media (max-width: 1200px) {
+      .waterfall-section .waterfall-scheme .list-metodology-scheme div:nth-child(4) {
+        left: 345px; } }
   .waterfall-section .waterfall-scheme .list-metodology-scheme div:nth-child(5) {
     left: 700px; }
+    @media (max-width: 1200px) {
+      .waterfall-section .waterfall-scheme .list-metodology-scheme div:nth-child(5) {
+        left: 460px; } }
   .waterfall-section .waterfall-scheme .list-metodology-scheme div:nth-child(6) {
     left: 875px; }
+    @media (max-width: 1200px) {
+      .waterfall-section .waterfall-scheme .list-metodology-scheme div:nth-child(6) {
+        left: 575px; } }
   .waterfall-section .waterfall-scheme .list-metodology-scheme div:nth-child(7) {
     left: 1050px; }
+    @media (max-width: 1200px) {
+      .waterfall-section .waterfall-scheme .list-metodology-scheme div:nth-child(7) {
+        left: 690px; } }
 
 .metodology-scheme {
   position: relative;

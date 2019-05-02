@@ -476,26 +476,50 @@
 
       &:nth-child(2) {
         left: 175px;
+
+        @media (max-width: 1200px) {
+          left: 115px;
+        }
       }
 
       &:nth-child(3) {
         left: 350px;
+
+        @media (max-width: 1200px) {
+          left: 230px;
+        }
       }
 
       &:nth-child(4) {
         left: 525px;
+
+        @media (max-width: 1200px) {
+          left: 345px;
+        }
       }
 
       &:nth-child(5) {
         left: 700px;
+
+        @media (max-width: 1200px) {
+          left: 460px;
+        }
       }
 
       &:nth-child(6) {
         left: 875px;
+
+        @media (max-width: 1200px) {
+          left: 575px;
+        }
       }
 
       &:nth-child(7) {
         left: 1050px;
+
+        @media (max-width: 1200px) {
+          left: 690px;
+        }
       }
     }
   }
