@@ -327,6 +327,8 @@
       @media (max-width: 840px) {
         position: static;
         margin-top: 25px;
+        margin-left: 50%;
+        transform: translateX(-50%);
       }
     }
   }
@@ -361,6 +363,8 @@
       @media (max-width: 840px) {
         position: static;
         margin-top: 25px;
+        margin-left: 40%;
+        transform: translateX(-50%);
       }
     }
   }
@@ -373,7 +377,7 @@
     }
 
     &:nth-child(2) {
-      width: 230px;
+      width: 200px;
       left: 180px;
 
       @media (max-width: 1200px) {
@@ -382,7 +386,7 @@
     }
 
     &:nth-child(3) {
-      width: 260px;
+      width: 200px;
       left: 367px;
 
       @media (max-width: 1200px) {
@@ -451,6 +455,8 @@
       @media (max-width: 840px) {
         position: relative;
         margin-top: 25px;
+        margin-left: 50%;
+        transform: translateX(-50%);
       }
     }
   }

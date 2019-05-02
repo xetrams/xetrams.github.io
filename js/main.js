@@ -413,6 +413,9 @@ if($('.employee-list').length >0 ) {
 		autoWidth: true,
 		nav: true,
 		items: 1,
+		autoplay: true,
+		autoplayTimeout: 2000,
+		autoplayHoverPause: true,
 		responsive:{
 			0:{
 				margin: 15
@@ -519,7 +522,7 @@ if($('.kanban-scheme').length > 0 ) {
 		let progressHeight = scroll - progressOffset + $(window).height() - chartHeight;
 		let progressDevider = vindowHeight - headerHeight - 100 - chartHeight;
 		if (progressDevider <= 0) {
-			progressDevider = vindowHeight - headerHeight - chartHeight
+			progressDevider = vindowHeight - headerHeight - chartHeight;
 		}
 		let progressPercents = progressHeight /progressDevider;
 		if (progressPercents > 1) {
@@ -593,6 +596,10 @@ if($('.waterfall-scheme').length > 0 ) {
 }
 
 let scrumUnit = 150;
+let scrumAdditionalHeight = 0;
+if ($(window).height() > 800) {
+	scrumAdditionalHeight = ($(window).height() - 600)/2;
+}
 
 if($('.scrum-first-line').length > 0 ) {
 	let progressOffset = $('.scrum-first-line').offset().top;
@@ -602,7 +609,7 @@ if($('.scrum-first-line').length > 0 ) {
 
 	$(window).scroll(function (event) {
 		let scroll = $(window).scrollTop();
-		let progressHeight = scroll - progressOffset + $(window).height() - chartHeight;
+		let progressHeight = scroll - progressOffset + $(window).height() - chartHeight - scrumAdditionalHeight;
 		let progressPercents = progressHeight / scrumUnit;
 		if (progressPercents > 1) {
 			progressPercents = 1;
@@ -657,7 +664,7 @@ if($('.scrum-second-line').length > 0 ) {
 
 	$(window).scroll(function (event) {
 		let scroll = $(window).scrollTop();
-		let progressHeight = scroll - progressOffset + $(window).height() - chartHeight;
+		let progressHeight = scroll - progressOffset + $(window).height() - chartHeight - scrumAdditionalHeight;
 		let progressPercents = progressHeight / scrumUnit;
 		if (progressPercents > 1) {
 			progressPercents = 1;

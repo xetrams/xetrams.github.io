@@ -293,6 +293,7 @@
       a {
         border-left: 5px solid $very-light-blue;
         background: #fff;
+        white-space: nowrap;
         border-radius: 4px;
         display: block;
         line-height: 60px;
@@ -569,7 +570,8 @@
   text-align: center;
   background: url(../images/quote-background.jpg);
   padding: 75px 0;
-  background-size: cover;
+  background-size: cover !important;
+  background-position: 50% 50% !important;
 
   @media (max-width: 840px) {
     padding: 50px 0;

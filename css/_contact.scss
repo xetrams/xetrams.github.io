@@ -2,6 +2,34 @@
   background: #f4f4f4;
   overflow: hidden;
   margin-top: 70px;
+  position: relative;
+
+  @media (min-width: 1200px) {
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 50%;
+      bottom: 0;
+      display: block;
+      background: #fff;
+      z-index: 0;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      display: block;
+      background: #fff;
+      z-index: 0;
+      width: 180px;
+    }
+  }
 
   @media (max-width: 1200px) {
     margin-top: 101px;
