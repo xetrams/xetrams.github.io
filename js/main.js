@@ -923,8 +923,8 @@ $(document).ready(setTimeout(function() {
 	console.log(500);
 }, 500));
 
-if($('.send-block .btn-primary').length > 0 ) {
-	$('.send-block .btn-primary').click(function(){
-		$("html, body").animate({ scrollTop: 0 }, 500);
+if($('#wpcf7-f801-o1 .send-block .btn-primary').length > 0 ) {
+	$('#wpcf7-f801-o1 .send-block .btn-primary').click(function(){
+		$("html, body").animate({ scrollTop: 50 }, 500);
 	});
 }
