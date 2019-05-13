@@ -709,7 +709,7 @@
 
       .project {
         text-align: left;
-        height: 288px;
+        height: 350px;
         background-position: 50% !important;
         background-size: cover !important;
         position: relative;
@@ -721,7 +721,7 @@
         display: block;
     
         @media (max-width: 1200px) {
-          height: 189px;
+          height: 275px;
         }
   
         @media (min-width: 1200px) {
@@ -740,7 +740,7 @@
               background-color: rgba(#fff, .85);
     
               h3 {
-                bottom: 230px;
+                bottom: 290px
               }
     
               p {

@@ -415,7 +415,7 @@ if($('.employee-list').length >0 ) {
 		items: 1,
 		autoplay: true,
 		autoplayTimeout: 2000,
-		autoplayHoverPause: true,
+		autoplayHoverPause: false,
 		responsive:{
 			0:{
 				margin: 15
@@ -922,3 +922,9 @@ $(document).ready(setTimeout(function() {
 	}
 	console.log(500);
 }, 500));
+
+if($('.send-block .btn-primary').length > 0 ) {
+	$('.send-block .btn-primary').click(function(){
+		$("html, body").animate({ scrollTop: 0 }, 500);
+	});
+}

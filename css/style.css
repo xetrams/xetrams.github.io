@@ -4741,7 +4741,7 @@ p {
           width: 275px !important; } }
       .projects-carousel-section .list-of-project .owl-item .project {
         text-align: left;
-        height: 288px;
+        height: 350px;
         background-position: 50% !important;
         background-size: cover !important;
         position: relative;
@@ -4753,7 +4753,7 @@ p {
         display: block; }
         @media (max-width: 1200px) {
           .projects-carousel-section .list-of-project .owl-item .project {
-            height: 189px; } }
+            height: 275px; } }
         @media (min-width: 1200px) {
           .projects-carousel-section .list-of-project .owl-item .project:hover {
             -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
@@ -4763,7 +4763,7 @@ p {
             .projects-carousel-section .list-of-project .owl-item .project:hover .text-block {
               background-color: rgba(255, 255, 255, 0.85); }
               .projects-carousel-section .list-of-project .owl-item .project:hover .text-block h3 {
-                bottom: 230px; }
+                bottom: 290px; }
               .projects-carousel-section .list-of-project .owl-item .project:hover .text-block p {
                 top: 0; }
               .projects-carousel-section .list-of-project .owl-item .project:hover .text-block:after {
@@ -6348,7 +6348,7 @@ template {
   margin-top: 50px;
   width: 100%; }
   .portfolio-projects-list .project {
-    height: 225px;
+    height: 360px;
     width: 360px;
     background-position: 50% !important;
     background-size: cover !important;
@@ -6364,7 +6364,8 @@ template {
     margin-left: 20px; }
     @media (max-width: 1200px) {
       .portfolio-projects-list .project {
-        margin-right: 19px; } }
+        margin-right: 19px;
+        height: 275px; } }
     @media (max-width: 840px) {
       .portfolio-projects-list .project {
         margin-top: 15px;
@@ -6389,7 +6390,7 @@ template {
         .portfolio-projects-list .project:hover .text-block {
           background-color: rgba(255, 255, 255, 0.85); }
           .portfolio-projects-list .project:hover .text-block h3 {
-            bottom: 170px; }
+            bottom: 300px; }
           .portfolio-projects-list .project:hover .text-block p {
             top: 0; }
           .portfolio-projects-list .project:hover .text-block:after {
@@ -7372,17 +7373,16 @@ template {
 
 .portfolio-header-section {
   background: #f9f9f9;
-  height: 420px;
   margin-top: 70px;
-  overflow: hidden; }
+  overflow: hidden;
+  padding-bottom: 135px; }
   @media (max-width: 1200px) {
     .portfolio-header-section {
       margin-top: 101px; } }
   @media (max-width: 840px) {
     .portfolio-header-section {
       margin-top: 50px;
-      height: auto;
-      padding-bottom: 110px; } }
+      padding-bottom: 95px; } }
   .portfolio-header-section .back-link {
     color: #68789c;
     line-height: 12px;
@@ -7626,7 +7626,7 @@ template {
     -ms-flex-pack: center;
     justify-content: center; }
   .related-projects-section .project {
-    height: 225px;
+    height: 360px;
     width: 360px;
     background-position: 50% !important;
     background-size: cover !important;
@@ -7642,7 +7642,8 @@ template {
     margin-left: 20px; }
     @media (max-width: 1200px) {
       .related-projects-section .project {
-        margin-right: 19px; } }
+        margin-right: 19px;
+        height: 275px; } }
     @media (max-width: 840px) {
       .related-projects-section .project {
         margin-top: 15px;
@@ -7669,7 +7670,7 @@ template {
         .related-projects-section .project:hover .text-block {
           background-color: rgba(255, 255, 255, 0.85); }
           .related-projects-section .project:hover .text-block h3 {
-            bottom: 170px; }
+            bottom: 300px; }
           .related-projects-section .project:hover .text-block p {
             top: 0; }
           .related-projects-section .project:hover .text-block:after {
