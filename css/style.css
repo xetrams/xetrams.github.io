@@ -7475,6 +7475,12 @@ template {
     .project-screenshoots-section .project-screenshots .owl-item {
       width: 637px !important;
       height: 398px !important; } }
+  @media (max-width: 840px) {
+    .project-screenshoots-section .project-screenshots .owl-item .images-wrapper {
+      height: 57.6vw; }
+      .project-screenshoots-section .project-screenshots .owl-item .images-wrapper img {
+        object-fit: scale-down;
+        height: 100%; } }
   .project-screenshoots-section .project-screenshots .owl-dots {
     padding: 15px 25px;
     background: #f9f9f9;

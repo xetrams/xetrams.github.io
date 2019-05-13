@@ -146,6 +146,14 @@
   
       @media (max-width: 840px) {
         
+        .images-wrapper {
+          height: 57.6vw;
+
+          img {
+            object-fit: scale-down;
+            height: 100%;
+          }
+        }
       }
     }
 
