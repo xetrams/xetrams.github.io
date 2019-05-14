@@ -380,6 +380,31 @@ if($('.project-screenshots').length >0 ) {
 	});
 }
 
+$(document).ready(setTimeout(function() {
+
+	if($('.project-screenshots').length >0 ) {
+		$('.project-screenshots').owlCarousel({
+			center: true,
+			loop: true,
+			margin: 40,
+			autoWidth: true,
+			nav: true,
+			items: 1,
+			responsive:{
+				0:{
+					margin: 20
+				},
+				840:{
+					margin: 30
+				},
+				1200:{
+					margin: 40
+				}
+			}
+		});
+	}
+}, 500));
+
 // TESTIMONIALS
 
 if($('.testimonials-list').length >0 ) {

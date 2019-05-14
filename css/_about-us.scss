@@ -486,7 +486,7 @@
 
   .employee-list {
     margin-top: 75px;
-    padding-bottom: 100px;
+    padding-bottom: 75px;
   
     @media (max-width: 840px) {
       padding-bottom: 50px;
@@ -587,5 +587,9 @@
         }
       }
     }
+  }
+
+  .many-more-label {
+    padding-bottom: 75px;
   }
 }

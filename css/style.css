@@ -8094,7 +8094,7 @@ template {
       color: #68789c; }
   .team-section .employee-list {
     margin-top: 75px;
-    padding-bottom: 100px; }
+    padding-bottom: 75px; }
     @media (max-width: 840px) {
       .team-section .employee-list {
         padding-bottom: 50px;
@@ -8161,6 +8161,8 @@ template {
           transition: .3s; }
         .team-section .employee-list .employee a:hover svg {
           fill: rgba(255, 255, 255, 0.7); }
+  .team-section .many-more-label {
+    padding-bottom: 75px; }
 
 .inner-page-image-header {
   height: 350px;
@@ -8521,7 +8523,7 @@ template {
       color: #68789c; }
   .team-section .employee-list {
     margin-top: 75px;
-    padding-bottom: 100px; }
+    padding-bottom: 75px; }
     @media (max-width: 840px) {
       .team-section .employee-list {
         padding-bottom: 50px;
@@ -8588,6 +8590,8 @@ template {
           transition: .3s; }
         .team-section .employee-list .employee a:hover svg {
           fill: rgba(255, 255, 255, 0.7); }
+  .team-section .many-more-label {
+    padding-bottom: 75px; }
 
 .inner-page-main-banner[style="background-image: url(http://new.smartexlab.com/wp-content/uploads/2019/04/img_healthcare-hero.jpg);"],
 .inner-page-main-banner[style="background-image: url(http://smartexlab.com/wp-content/uploads/2019/04/img_healthcare-hero.jpg);"] {
