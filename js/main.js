@@ -131,25 +131,29 @@ if($('.tab-list').length >0 ) {
 
 // CAROUSEL
 
-if($('.projects-carousel').length >0 ) {
-	$('.projects-carousel').owlCarousel({
-		center: true,
-		loop: true,
-		margin: 40,
-		autoWidth: true,
-		responsive:{
-			0:{
-				margin: 20
-			},
-			840:{
-				margin: 30
-			},
-			1200:{
-				margin: 40
+
+
+$(window).load(function() {
+	if($('.projects-carousel').length >0 ) {
+		$('.projects-carousel').owlCarousel({
+			center: true,
+			loop: true,
+			margin: 40,
+			autoWidth: true,
+			responsive:{
+				0:{
+					margin: 20
+				},
+				840:{
+					margin: 30
+				},
+				1200:{
+					margin: 40
+				}
 			}
-		}
-	});
-}
+		});
+	}
+});
 
 
 // BENEFITS LIST
@@ -358,29 +362,7 @@ if ($(".legal-tabs").length > 0) {
 
 // PROJECT SCREENSHOOTS
 
-if($('.project-screenshots').length >0 ) {
-	$('.project-screenshots').owlCarousel({
-		center: true,
-		loop: true,
-		margin: 40,
-		autoWidth: true,
-		nav: true,
-		items: 1,
-		responsive:{
-			0:{
-				margin: 20
-			},
-			840:{
-				margin: 30
-			},
-			1200:{
-				margin: 40
-			}
-		}
-	});
-}
-
-$(document).ready(setTimeout(function() {
+$(window).load(function() {
 
 	if($('.project-screenshots').length >0 ) {
 		$('.project-screenshots').owlCarousel({
@@ -403,57 +385,62 @@ $(document).ready(setTimeout(function() {
 			}
 		});
 	}
-}, 500));
+});
 
 // TESTIMONIALS
 
-if($('.testimonials-list').length >0 ) {
-	$('.testimonials-list').owlCarousel({
-		center: true,
-		loop: true,
-		margin: 80,
-		autoWidth: true,
-		nav: true,
-		items: 1,
-		responsive:{
-			0:{
-				margin: 20,
-				singleItem: true,
-				autoWidth: false
-			},
-			840:{
-				margin: 80
+
+$(window).load(function() {
+	if($('.testimonials-list').length >0 ) {
+		$('.testimonials-list').owlCarousel({
+			center: true,
+			loop: true,
+			margin: 80,
+			autoWidth: true,
+			nav: true,
+			items: 1,
+			responsive:{
+				0:{
+					margin: 20,
+					singleItem: true,
+					autoWidth: false
+				},
+				840:{
+					margin: 80
+				}
 			}
-		}
-	});
-}
+		});
+	}
+});
 
 // TEAM SLIDER
 
-if($('.employee-list').length >0 ) {
-	$('.employee-list').owlCarousel({
-		center: true,
-		loop: true,
-		margin: 65,
-		autoWidth: true,
-		nav: true,
-		items: 1,
-		autoplay: true,
-		autoplayTimeout: 2000,
-		autoplayHoverPause: false,
-		responsive:{
-			0:{
-				margin: 15
-			},
-			840:{
-				margin: 50
-			},
-			1200:{
-				margin: 65
+$(window).load(function() {
+	if($('.employee-list').length >0 ) {
+		$('.employee-list').owlCarousel({
+			center: true,
+			loop: true,
+			margin: 65,
+			autoWidth: true,
+			nav: true,
+			items: 1,
+			autoplay: true,
+			autoplayTimeout: 2000,
+			autoplayHoverPause: false,
+			responsive:{
+				0:{
+					margin: 15
+				},
+				840:{
+					margin: 50
+				},
+				1200:{
+					margin: 65
+				}
 			}
-		}
-	});
-}
+		});
+	}
+});
 
 
 // METHODOLOGY STEPS
@@ -727,32 +714,35 @@ if($('.scrum-second-line').length > 0 ) {
 
 // TEAM SLIDER
 
-if($('.list-of-offices.owl-carousel').length >0 ) {
-	$('.list-of-offices.owl-carousel').owlCarousel({
-		center: true,
-		loop: true,
-		margin: 30,
-		autoWidth: true,
-		nav: false,
-		responsive:{
-			0:{
-				margin: 30
-			},
-			840:{
-				margin: 30
-			},
-			1200:{
-				margin: 30
+
+$(window).load(function() {
+	if($('.list-of-offices.owl-carousel').length >0 ) {
+		$('.list-of-offices.owl-carousel').owlCarousel({
+			center: true,
+			loop: true,
+			margin: 30,
+			autoWidth: true,
+			nav: false,
+			responsive:{
+				0:{
+					margin: 30
+				},
+				840:{
+					margin: 30
+				},
+				1200:{
+					margin: 30
+				}
 			}
-		}
-	});
-}
+		});
+	}
+});
 
 
 
 
 
-$(document).ready(setTimeout(function() {
+$(window).load(setTimeout(function() {
 	// METHODOLOGY GRAPH
 
 
