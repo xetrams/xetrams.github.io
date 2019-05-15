@@ -6364,14 +6364,12 @@ template {
     margin-left: 20px; }
     @media (max-width: 1200px) {
       .portfolio-projects-list .project {
-        margin-right: 19px;
-        height: 275px; } }
+        margin-right: 19px; } }
     @media (max-width: 840px) {
       .portfolio-projects-list .project {
         margin-top: 15px;
-        width: 100%;
-        padding-top: 57%;
-        margin-right: 20px; }
+        margin-right: 20px;
+        width: 100%; }
         .portfolio-projects-list .project p {
           display: none; } }
     .portfolio-projects-list .project h3 {
@@ -6381,6 +6379,10 @@ template {
       -webkit-transition: .3s;
       -o-transition: .3s;
       transition: .3s; }
+      @media (max-width: 840px) {
+        .portfolio-projects-list .project h3 {
+          left: 15px;
+          bottom: 15px; } }
     @media (min-width: 1200px) {
       .portfolio-projects-list .project:hover {
         -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
@@ -6419,9 +6421,6 @@ template {
       background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6) 100%);
       background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6) 100%);
       background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6) 100%); }
-      @media (max-width: 1200px) {
-        .portfolio-projects-list .project .text-block {
-          padding: 15px; } }
       .portfolio-projects-list .project .text-block:after {
         content: "";
         display: block;
