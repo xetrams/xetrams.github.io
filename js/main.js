@@ -132,31 +132,8 @@ if($('.tab-list').length >0 ) {
 // CAROUSEL
 
 
-
-// $(window).load(function() {
-// 	if($('.projects-carousel').length >0 ) {
-// 		$('.projects-carousel').owlCarousel({
-// 			center: true,
-// 			loop: true,
-// 			margin: 40,
-// 			autoWidth: true,
-// 			responsive:{
-// 				0:{
-// 					margin: 20
-// 				},
-// 				840:{
-// 					margin: 30
-// 				},
-// 				1200:{
-// 					margin: 40
-// 				}
-// 			}
-// 		});
-// 	}
-// });
-
 $(window).load(function() {
-	if($('.projects-carousel').length >0 ) {
+	if($('.projects-carousel').length > 0 ) {
 		$('.projects-carousel').owlCarousel({
 			center: true,
 			loop: true,
@@ -769,7 +746,7 @@ $(window).load(function() {
 
 
 
-$(window).load(setTimeout(function() {
+$(window).load(function() {
 	// METHODOLOGY GRAPH
 
 
@@ -963,7 +940,7 @@ $(window).load(setTimeout(function() {
 		});
 	}
 	console.log(500);
-}, 500));
+});
 
 if($('#wpcf7-f801-o1 .send-block .btn-primary').length > 0 ) {
 	$('#wpcf7-f801-o1 .send-block .btn-primary').click(function(){
