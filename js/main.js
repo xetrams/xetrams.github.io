@@ -133,6 +133,28 @@ if($('.tab-list').length >0 ) {
 
 
 
+// $(window).load(function() {
+// 	if($('.projects-carousel').length >0 ) {
+// 		$('.projects-carousel').owlCarousel({
+// 			center: true,
+// 			loop: true,
+// 			margin: 40,
+// 			autoWidth: true,
+// 			responsive:{
+// 				0:{
+// 					margin: 20
+// 				},
+// 				840:{
+// 					margin: 30
+// 				},
+// 				1200:{
+// 					margin: 40
+// 				}
+// 			}
+// 		});
+// 	}
+// });
+
 $(window).load(function() {
 	if($('.projects-carousel').length >0 ) {
 		$('.projects-carousel').owlCarousel({
@@ -140,6 +162,7 @@ $(window).load(function() {
 			loop: true,
 			margin: 40,
 			autoWidth: true,
+			dots: true,
 			responsive:{
 				0:{
 					margin: 20
@@ -149,6 +172,10 @@ $(window).load(function() {
 				},
 				1200:{
 					margin: 40
+				},
+				1500:{
+					center: false,
+					loop: false
 				}
 			}
 		});

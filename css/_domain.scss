@@ -696,6 +696,28 @@
       }
     }
 
+    @media (max-width: 1500px) {
+      
+      .owl-dots {
+        display: inline-block !important;
+      }
+    }
+
+    @media (min-width: 1500px) {
+
+      .owl-stage {
+        margin: 0 auto;
+
+        .owl-item:first-child {
+          margin-left: 20px;
+        }
+
+        .owl-item:last-child {
+          margin-right: 0 !important;
+        }
+      }
+    }
+
     .owl-item {
       width: 460px !important;
     

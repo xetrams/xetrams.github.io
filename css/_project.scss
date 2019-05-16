@@ -370,8 +370,8 @@
   }
 
   .project {
-    height: 360px;
-    width: 360px;
+    height: 350px;
+    width: 460px;
     background-position: 50% !important;
     background-size: cover !important;
     position: relative;
@@ -388,12 +388,12 @@
     @media (max-width: 1200px) {
       margin-right: 19px;
       height: 275px;
+      width: 300px;
     }
 
     @media (max-width: 840px) {
       margin-top: 15px;
       width: 100%;
-      padding-top: 57%;
       margin-right: 20px;
 
       &:not(:first-child) {
@@ -412,6 +412,12 @@
       -webkit-transition: .3s;
       -o-transition: .3s;
       transition: .3s;
+
+
+      @media (max-width: 1200px) {
+        left: 15px;
+        bottom: 15px;
+      }
     }
 
 
@@ -432,7 +438,7 @@
           background-color: rgba(#fff, .85);
 
           h3 {
-            bottom: 300px;
+            bottom: 295px;
           }
 
           p {

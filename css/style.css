@@ -4731,6 +4731,16 @@ p {
         .projects-carousel-section .list-of-project .owl-stage-outer {
           padding-top: 35px;
           padding-bottom: 35px; } }
+    @media (max-width: 1500px) {
+      .projects-carousel-section .list-of-project .owl-dots {
+        display: inline-block !important; } }
+    @media (min-width: 1500px) {
+      .projects-carousel-section .list-of-project .owl-stage {
+        margin: 0 auto; }
+        .projects-carousel-section .list-of-project .owl-stage .owl-item:first-child {
+          margin-left: 20px; }
+        .projects-carousel-section .list-of-project .owl-stage .owl-item:last-child {
+          margin-right: 0 !important; } }
     .projects-carousel-section .list-of-project .owl-item {
       width: 460px !important; }
       @media (max-width: 1200px) {
@@ -7631,8 +7641,8 @@ template {
     -ms-flex-pack: center;
     justify-content: center; }
   .related-projects-section .project {
-    height: 360px;
-    width: 360px;
+    height: 350px;
+    width: 460px;
     background-position: 50% !important;
     background-size: cover !important;
     position: relative;
@@ -7648,12 +7658,12 @@ template {
     @media (max-width: 1200px) {
       .related-projects-section .project {
         margin-right: 19px;
-        height: 275px; } }
+        height: 275px;
+        width: 300px; } }
     @media (max-width: 840px) {
       .related-projects-section .project {
         margin-top: 15px;
         width: 100%;
-        padding-top: 57%;
         margin-right: 20px; }
         .related-projects-section .project:not(:first-child) {
           display: none; }
@@ -7666,6 +7676,10 @@ template {
       -webkit-transition: .3s;
       -o-transition: .3s;
       transition: .3s; }
+      @media (max-width: 1200px) {
+        .related-projects-section .project h3 {
+          left: 15px;
+          bottom: 15px; } }
     @media (min-width: 1200px) {
       .related-projects-section .project:hover {
         -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
@@ -7675,7 +7689,7 @@ template {
         .related-projects-section .project:hover .text-block {
           background-color: rgba(255, 255, 255, 0.85); }
           .related-projects-section .project:hover .text-block h3 {
-            bottom: 300px; }
+            bottom: 295px; }
           .related-projects-section .project:hover .text-block p {
             top: 0; }
           .related-projects-section .project:hover .text-block:after {
@@ -8111,20 +8125,23 @@ template {
       text-align: center;
       -webkit-transition: .3s;
       -o-transition: .3s;
-      transition: .3s; }
+      transition: .3s;
+      line-height: 1.3;
+      padding-right: 20px;
+      padding-left: 20px; }
       @media (max-width: 840px) {
         .team-section .employee-list .employee {
           width: 100px;
-          height: 100px; } }
-      @media (min-width: 840px) {
-        .team-section .employee-list .employee:hover {
-          background: #31ca81; }
-          .team-section .employee-list .employee:hover .name {
-            opacity: 1; }
-          .team-section .employee-list .employee:hover .title {
-            opacity: 1; }
-          .team-section .employee-list .employee:hover a {
-            opacity: 1; } }
+          height: 100px;
+          font-size: 12px; } }
+      .team-section .employee-list .employee:hover {
+        background: #31ca81; }
+        .team-section .employee-list .employee:hover .name {
+          opacity: 1; }
+        .team-section .employee-list .employee:hover .title {
+          opacity: 1; }
+        .team-section .employee-list .employee:hover a {
+          opacity: 1; }
       .team-section .employee-list .employee img {
         position: absolute;
         top: 0;
@@ -8140,6 +8157,9 @@ template {
         -o-transition: .3s;
         transition: .3s;
         opacity: 0; }
+        @media (max-width: 840px) {
+          .team-section .employee-list .employee .name {
+            margin-top: 30px; } }
       .team-section .employee-list .employee .title {
         color: #fff;
         -webkit-transition: .3s;
@@ -8540,20 +8560,23 @@ template {
       text-align: center;
       -webkit-transition: .3s;
       -o-transition: .3s;
-      transition: .3s; }
+      transition: .3s;
+      line-height: 1.3;
+      padding-right: 20px;
+      padding-left: 20px; }
       @media (max-width: 840px) {
         .team-section .employee-list .employee {
           width: 100px;
-          height: 100px; } }
-      @media (min-width: 840px) {
-        .team-section .employee-list .employee:hover {
-          background: #31ca81; }
-          .team-section .employee-list .employee:hover .name {
-            opacity: 1; }
-          .team-section .employee-list .employee:hover .title {
-            opacity: 1; }
-          .team-section .employee-list .employee:hover a {
-            opacity: 1; } }
+          height: 100px;
+          font-size: 12px; } }
+      .team-section .employee-list .employee:hover {
+        background: #31ca81; }
+        .team-section .employee-list .employee:hover .name {
+          opacity: 1; }
+        .team-section .employee-list .employee:hover .title {
+          opacity: 1; }
+        .team-section .employee-list .employee:hover a {
+          opacity: 1; }
       .team-section .employee-list .employee img {
         position: absolute;
         top: 0;
@@ -8569,6 +8592,9 @@ template {
         -o-transition: .3s;
         transition: .3s;
         opacity: 0; }
+        @media (max-width: 840px) {
+          .team-section .employee-list .employee .name {
+            margin-top: 30px; } }
       .team-section .employee-list .employee .title {
         color: #fff;
         -webkit-transition: .3s;
