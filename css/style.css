@@ -4,7 +4,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Exo Regular"), local("Exo-Regular"), url(https://fonts.gstatic.com/s/exo/v8/4UaOrEtFpBISfX6j2jDu55XI.woff2) format("woff2");
+  src: local("Exo 2"), local("Exo2-Regular"), url(https://fonts.gstatic.com/s/exo2/v5/7cHmv4okm5zmbtYmK-4W4nIppT4.woff2) format("woff2");
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
 /* latin */
 @font-face {
@@ -12,7 +12,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Exo Regular"), local("Exo-Regular"), url(https://fonts.gstatic.com/s/exo/v8/4UaOrEtFpBISc36j2jDu5w.woff2) format("woff2");
+  src: local("Exo 2"), local("Exo2-Regular"), url(https://fonts.gstatic.com/s/exo2/v5/7cHmv4okm5zmbtYoK-4W4nIp.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 /* latin-ext */
 @font-face {
@@ -20,7 +20,7 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: local("Exo Medium"), local("Exo-Medium"), url(https://fonts.gstatic.com/s/exo/v8/4UaDrEtFpBIagF22-RLjza_B4qN1.woff2) format("woff2");
+  src: local("Exo 2 Medium"), local("Exo2-Medium"), url(https://fonts.gstatic.com/s/exo2/v5/7cHrv4okm5zmbt7bCPs1wH8DnzcjTrA.woff2) format("woff2");
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
 /* latin */
 @font-face {
@@ -28,7 +28,7 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: local("Exo Medium"), local("Exo-Medium"), url(https://fonts.gstatic.com/s/exo/v8/4UaDrEtFpBIagF229xLjza_B4g.woff2) format("woff2");
+  src: local("Exo 2 Medium"), local("Exo2-Medium"), url(https://fonts.gstatic.com/s/exo2/v5/7cHrv4okm5zmbt7bCPs7wH8Dnzcj.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 /* latin-ext */
 @font-face {
@@ -36,7 +36,7 @@
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: local("Exo SemiBold"), local("Exo-SemiBold"), url(https://fonts.gstatic.com/s/exo/v8/4UaDrEtFpBIarFq2-RLjza_B4qN1.woff2) format("woff2");
+  src: local("Exo 2 Semi Bold"), local("Exo2-SemiBold"), url(https://fonts.gstatic.com/s/exo2/v5/7cHrv4okm5zmbt73D_s1wH8DnzcjTrA.woff2) format("woff2");
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
 /* latin */
 @font-face {
@@ -44,7 +44,7 @@
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: local("Exo SemiBold"), local("Exo-SemiBold"), url(https://fonts.gstatic.com/s/exo/v8/4UaDrEtFpBIarFq29xLjza_B4g.woff2) format("woff2");
+  src: local("Exo 2 Semi Bold"), local("Exo2-SemiBold"), url(https://fonts.gstatic.com/s/exo2/v5/7cHrv4okm5zmbt73D_s7wH8Dnzcj.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 /* latin-ext */
 @font-face {
@@ -52,7 +52,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local("Exo Bold"), local("Exo-Bold"), url(https://fonts.gstatic.com/s/exo/v8/4UaDrEtFpBIayFu2-RLjza_B4qN1.woff2) format("woff2");
+  src: local("Exo 2 Bold"), local("Exo2-Bold"), url(https://fonts.gstatic.com/s/exo2/v5/7cHrv4okm5zmbt6TDvs1wH8DnzcjTrA.woff2) format("woff2");
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
 /* latin */
 @font-face {
@@ -60,7 +60,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local("Exo Bold"), local("Exo-Bold"), url(https://fonts.gstatic.com/s/exo/v8/4UaDrEtFpBIayFu29xLjza_B4g.woff2) format("woff2");
+  src: local("Exo 2 Bold"), local("Exo2-Bold"), url(https://fonts.gstatic.com/s/exo2/v5/7cHrv4okm5zmbt6TDvs7wH8Dnzcj.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 /* latin-ext */
 @font-face {
