@@ -3337,6 +3337,12 @@ html {
 p {
   margin: 15px 0; }
 
+.projects-carousel-section .section-label,
+.four-col-text-section .section-label,
+.what-we-do-section .section-label {
+  margin-left: 20px;
+  margin-right: 20px; }
+
 .main-banner {
   margin-top: 70px;
   overflow: hidden;
@@ -3820,6 +3826,7 @@ p {
         position: absolute;
         bottom: 25px;
         left: 25px;
+        right: 25px;
         -webkit-transition: .3s;
         -o-transition: .3s;
         transition: .3s; }
@@ -4963,6 +4970,7 @@ p {
             position: absolute;
             bottom: 25px;
             left: 25px;
+            right: 25px;
             -webkit-transition: .3s;
             -o-transition: .3s;
             transition: .3s; }
@@ -6498,12 +6506,14 @@ template {
       position: absolute;
       bottom: 25px;
       left: 25px;
+      right: 25px;
       -webkit-transition: .3s;
       -o-transition: .3s;
       transition: .3s; }
       @media (max-width: 840px) {
         .portfolio-projects-list .project h3 {
           left: 15px;
+          right: 15px;
           bottom: 15px; } }
     @media (min-width: 1200px) {
       .portfolio-projects-list .project:hover {
@@ -7785,12 +7795,14 @@ template {
       position: absolute;
       bottom: 25px;
       left: 25px;
+      right: 25px;
       -webkit-transition: .3s;
       -o-transition: .3s;
       transition: .3s; }
       @media (max-width: 1200px) {
         .related-projects-section .project h3 {
           left: 15px;
+          right: 15px;
           bottom: 15px; } }
     @media (min-width: 1200px) {
       .related-projects-section .project:hover {
