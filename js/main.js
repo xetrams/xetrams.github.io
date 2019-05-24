@@ -947,3 +947,10 @@ if($('#wpcf7-f801-o1 .send-block .btn-primary').length > 0 ) {
 		$("html, body").animate({ scrollTop: 50 }, 500);
 	});
 }
+
+// if ($('.employee').length > 0) {
+// 	$('.employee').mousedown(function() {
+// 		$(this).addClass('active');
+// 		console.log(123);
+// 	});
+// }
