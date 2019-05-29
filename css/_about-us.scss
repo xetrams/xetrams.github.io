@@ -2,7 +2,7 @@
   height: 350px;
   margin-top: 70px;
   background-size: cover;
-  background-position: 40% 50%;
+  background-position: 40% 70%;
   
   @media (max-width: 1200px) {
     margin-top: 101px;
@@ -120,6 +120,7 @@
   
       .description {
         color: $darkish-blue-darker;
+        margin-top: 10px;
 
         @media (max-width: 840px) {
           margin-top: 5px;

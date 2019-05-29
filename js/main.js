@@ -160,6 +160,8 @@ $(window).load(function() {
 });
 
 
+
+
 // BENEFITS LIST
 
 if($('.benefits-list').length >0 ) {
@@ -442,6 +444,18 @@ $(window).load(function() {
 					margin: 65
 				}
 			}
+		});
+		$(window).mouseup(function() {
+			console.log("mouseup");
+		});
+		$(window).on("vmouseup", function() {
+			console.log("vmouseup");
+		});
+		$(window).on("vmouseout", function() {
+			console.log("vmouseout");
+		});
+		$(window).on("vmousecancel", function() {
+			console.log("vmousecancel");
 		});
 	}
 });

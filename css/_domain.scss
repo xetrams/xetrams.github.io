@@ -39,6 +39,7 @@
       padding: 35px;
       left: 20px;
       right: 20px;
+      bottom: -150px;
     }
 
     .h-label {
@@ -76,6 +77,36 @@
   }
 }
 
+.page-template-how-we-work,
+.page-template-about-smartexlab {
+
+  .description-section {
+
+    .main-col {
+  
+      .lead {
+        font-family: "Exo 2";
+        font-size: 35px;
+        font-weight: bold;
+        line-height: 45px;
+        color: $light-navy;
+        margin: 0 0 35px;
+
+        @media (max-width: 1200px) {
+          font-size: 28px;
+          line-height: 38px;
+        }
+
+        @media (max-width: 840px) {
+          font-size: 24px;
+          line-height: 30px;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
+
 .description-section {
   padding: 75px 0;
   border-bottom: 1px solid $very-light-blue;
@@ -86,6 +117,7 @@
   
   @media (max-width: 840px) {
     padding-bottom: 25px;
+    padding-top: 150px;
   }
 
   .main-col {

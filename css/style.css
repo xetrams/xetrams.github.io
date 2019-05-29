@@ -4316,7 +4316,8 @@ p {
         width: auto;
         padding: 35px;
         left: 20px;
-        right: 20px; } }
+        right: 20px;
+        bottom: -150px; } }
     .inner-page-main-banner .dark-label .h-label {
       margin-bottom: 15px;
       color: #31ca81; }
@@ -4356,6 +4357,26 @@ p {
         .inner-page-main-banner .dark-label .btn-primary {
           margin-top: 25px; } }
 
+.page-template-how-we-work .description-section .main-col .lead,
+.page-template-about-smartexlab .description-section .main-col .lead {
+  font-family: "Exo 2";
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 45px;
+  color: #113059;
+  margin: 0 0 35px; }
+  @media (max-width: 1200px) {
+    .page-template-how-we-work .description-section .main-col .lead,
+    .page-template-about-smartexlab .description-section .main-col .lead {
+      font-size: 28px;
+      line-height: 38px; } }
+  @media (max-width: 840px) {
+    .page-template-how-we-work .description-section .main-col .lead,
+    .page-template-about-smartexlab .description-section .main-col .lead {
+      font-size: 24px;
+      line-height: 30px;
+      margin-top: 15px; } }
+
 .description-section {
   padding: 75px 0;
   border-bottom: 1px solid #e8ebf2; }
@@ -4364,7 +4385,8 @@ p {
       padding-top: 50px; } }
   @media (max-width: 840px) {
     .description-section {
-      padding-bottom: 25px; } }
+      padding-bottom: 25px;
+      padding-top: 150px; } }
   .description-section .main-col .lead {
     font-family: "Exo 2";
     font-size: 25px;
@@ -5159,7 +5181,7 @@ p {
     right: 0;
     opacity: .8; }
   .main-header .main-menu.opened + .overlay + .menu-cross {
-    right: 25px; }
+    right: 20px; }
   @media (max-width: 840px) {
     .main-header {
       display: block; } }
@@ -7876,7 +7898,7 @@ template {
   height: 350px;
   margin-top: 70px;
   background-size: cover;
-  background-position: 40% 50%; }
+  background-position: 40% 70%; }
   @media (max-width: 1200px) {
     .inner-page-image-header {
       margin-top: 101px; } }
@@ -7964,7 +7986,8 @@ template {
             font-size: 40px;
             line-height: 40px; } }
       .banner-with-statistic-section .statistic-list li .description {
-        color: #00298f; }
+        color: #00298f;
+        margin-top: 10px; }
         @media (max-width: 840px) {
           .banner-with-statistic-section .statistic-list li .description {
             margin-top: 5px; } }
@@ -8311,7 +8334,7 @@ template {
   height: 350px;
   margin-top: 70px;
   background-size: cover;
-  background-position: 40% 50%; }
+  background-position: 40% 70%; }
   @media (max-width: 1200px) {
     .inner-page-image-header {
       margin-top: 101px; } }
@@ -8399,7 +8422,8 @@ template {
             font-size: 40px;
             line-height: 40px; } }
       .banner-with-statistic-section .statistic-list li .description {
-        color: #00298f; }
+        color: #00298f;
+        margin-top: 10px; }
         @media (max-width: 840px) {
           .banner-with-statistic-section .statistic-list li .description {
             margin-top: 5px; } }
@@ -8789,6 +8813,9 @@ template {
 
 .page-id-82 .inner-page-main-banner {
   background-position: 85% 50%; }
+
+.page-id-634 .inner-page-main-banner {
+  background-position: 50% 35%; }
 
 body {
   font-size: 15px;
