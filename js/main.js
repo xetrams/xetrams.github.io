@@ -149,10 +149,6 @@ $(window).load(function() {
 				},
 				1200:{
 					margin: 40
-				},
-				1500:{
-					center: false,
-					loop: false
 				}
 			}
 		});
@@ -405,6 +401,7 @@ $(window).load(function() {
 			autoWidth: true,
 			nav: true,
 			items: 1,
+			autoHeight: true,
 			responsive:{
 				0:{
 					margin: 20,

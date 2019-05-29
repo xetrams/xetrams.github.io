@@ -4872,16 +4872,9 @@ p {
         .projects-carousel-section .list-of-project .owl-stage-outer {
           padding-top: 35px;
           padding-bottom: 35px; } }
-    @media (max-width: 1500px) {
+    @media (max-width: 840px) {
       .projects-carousel-section .list-of-project .owl-dots {
         display: inline-block !important; } }
-    @media (min-width: 1500px) {
-      .projects-carousel-section .list-of-project .owl-stage {
-        margin: 0 auto; }
-        .projects-carousel-section .list-of-project .owl-stage .owl-item:first-child {
-          margin-left: 20px; }
-        .projects-carousel-section .list-of-project .owl-stage .owl-item:last-child {
-          margin-right: 0 !important; } }
     .projects-carousel-section .list-of-project .owl-item {
       width: 460px !important; }
       @media (max-width: 1200px) {

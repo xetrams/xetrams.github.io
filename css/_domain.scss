@@ -662,7 +662,6 @@
     }
   }
 }
-
 .projects-carousel-section {
   padding: 75px 0 50px;
   overflow: hidden;
@@ -728,25 +727,10 @@
       }
     }
 
-    @media (max-width: 1500px) {
+    @media (max-width: 840px) {
       
       .owl-dots {
         display: inline-block !important;
-      }
-    }
-
-    @media (min-width: 1500px) {
-
-      .owl-stage {
-        margin: 0 auto;
-
-        .owl-item:first-child {
-          margin-left: 20px;
-        }
-
-        .owl-item:last-child {
-          margin-right: 0 !important;
-        }
       }
     }
 
