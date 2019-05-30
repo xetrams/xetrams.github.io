@@ -145,10 +145,14 @@ $(window).load(function() {
 					margin: 20
 				},
 				840:{
-					margin: 30
+					margin: 30,
+					center: true,
+					loop: true
 				},
-				1200:{
-					margin: 40
+				1500:{
+					margin: 40,
+					center: false,
+					loop: false
 				}
 			}
 		});

@@ -725,9 +725,24 @@
         padding-top: 35px;
         padding-bottom: 35px;
       }
+    }    
+    
+    @media (min-width: 1500px) {
+
+      .owl-stage {
+        margin: 0 auto;
+
+        .owl-item:first-child {
+          margin-left: 20px;
+        }
+
+        .owl-item:last-child {
+          margin-right: 0 !important;
+        }
+      }
     }
 
-    @media (max-width: 840px) {
+    @media (max-width: 1500px) {
       
       .owl-dots {
         display: inline-block !important;
