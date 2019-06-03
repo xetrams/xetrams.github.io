@@ -954,7 +954,6 @@ $(window).load(function() {
 			}
 		});
 	}
-	console.log(500);
 });
 
 if($('#wpcf7-f801-o1 .send-block .btn-primary').length > 0 ) {
@@ -969,3 +968,83 @@ if($('#wpcf7-f801-o1 .send-block .btn-primary').length > 0 ) {
 // 		console.log(123);
 // 	});
 // }
+
+if($('.portfolio-projects-list').length > 0) {
+	$('.portfolio-projects-list .project').hover(
+		function() {
+			if ($(window).width() > 1200) {
+				$(this).find('.h3').css('bottom', (330 - $(this).find('h3').height()));
+				$(this).find('p').css('top', (-30 + $(this).find('h3').height()));
+			}
+			
+		},
+		function() {
+			if ($(window).width() > 1200) {
+				if ($(window).width() > 1200) {
+					$(this).find('.h3').css('bottom', 25);
+					$(this).find('p').css('top', 300);
+				}
+			}
+		} 
+	);
+}
+
+if($('.portfolio-section').length > 0) {
+	$('.portfolio-section .project').hover(
+		function() {
+			if ($(window).width() > 1200) {
+				$(this).find('.h3').css('bottom', (300 - $(this).find('h3').height()));
+				$(this).find('p').css('top', (-30 + $(this).find('h3').height()));
+			}
+			
+		},
+		function() {
+			if ($(window).width() > 1200) {
+				if ($(window).width() > 1200) {
+					$(this).find('.h3').css('bottom', 25);
+					$(this).find('p').css('top', 300);
+				}
+			}
+		} 
+	);
+}
+
+if($('.related-projects-section').length > 0) {
+	$('.related-projects-section .project').hover(
+		function() {
+			if ($(window).width() > 1200) {
+				$(this).find('.h3').css('bottom', (330 - $(this).find('h3').height()));
+				$(this).find('p').css('top', (-30 + $(this).find('h3').height()));
+			}
+			
+		},
+		function() {
+			if ($(window).width() > 1200) {
+				if ($(window).width() > 1200) {
+					$(this).find('.h3').css('bottom', 25);
+					$(this).find('p').css('top', 300);
+				}
+			}
+		} 
+	);
+}
+
+if($('.projects-carousel-section').length > 0) {
+	$('.projects-carousel-section .project').hover(
+		function() {
+			if ($(window).width() > 1200) {
+				$(this).find('.h3').css('bottom', (330 - $(this).find('h3').height()));
+				$(this).find('p').css('top', (-30 + $(this).find('h3').height()));
+			}
+			
+		},
+		function() {
+			if ($(window).width() > 1200) {
+				if ($(window).width() > 1200) {
+					$(this).find('.h3').css('bottom', 25);
+					$(this).find('p').css('top', 300);
+				}
+			}
+		} 
+	);
+}
