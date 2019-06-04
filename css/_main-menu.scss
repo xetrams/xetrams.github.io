@@ -30,11 +30,8 @@
     
     .expandable .expandable {
 
-      .drop-opener {
-
-        &:after {
-          display: none !important;
-        }
+      a:after  {
+        display: none !important;
       }
 
       .dropdown {

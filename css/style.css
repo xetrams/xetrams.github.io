@@ -5141,7 +5141,7 @@ p {
       .main-header .burger-btn {
         display: block; } }
   @media (max-width: 840px) {
-    .main-header .expandable .expandable .drop-opener:after {
+    .main-header .expandable .expandable a:after {
       display: none !important; }
     .main-header .expandable .expandable .dropdown {
       display: block !important; }
